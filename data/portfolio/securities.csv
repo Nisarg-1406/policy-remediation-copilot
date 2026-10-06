@@ -1,0 +1,223 @@
+security_id,ticker,name,security_type,asset_class,sub_asset_class,issuer_id,issuer_name,sector,industry,country,rating_sp,rating_moodys,coupon_pct,maturity_date,price_quote,expense_ratio_pct,business_description,fossil_revenue_pct
+NRVL,NRVL,Northvale Systems Inc.,equity,equity,us_equity,ISS-NORTHVALE,Northvale Systems Inc.,Information Technology,"Technology Hardware, Storage & Peripherals",US,,,,,per_share,,"Designs consumer devices, laptops and a cloud services platform.",0
+HLDA,HLDA,Halden Search Inc. Class A,equity,equity,us_equity,ISS-HALDEN,Halden Search Inc.,Communication Services,Interactive Media & Services,US,,,,,per_share,,"Search engine, video platform and digital advertising. Class A voting shares.",0
+HLDC,HLDC,Halden Search Inc. Class C,equity,equity,us_equity,ISS-HALDEN,Halden Search Inc.,Communication Services,Interactive Media & Services,US,,,,,per_share,,"Search engine, video platform and digital advertising. Class C non-voting shares.",0
+KSMC,KSMC,Kestrel Semiconductor Corp.,equity,equity,us_equity,ISS-KESTREL,Kestrel Semiconductor Corp.,Information Technology,Semiconductors,US,,,,,per_share,,Designs data-center GPUs and networking chips.,0
+ORBP,ORBP,Orbital Payments Inc.,equity,equity,us_equity,ISS-ORBITAL,Orbital Payments Inc.,Financials,Transaction & Payment Processing Services,US,,,,,per_share,,Card network and merchant payment processing.,0
+MRDN,MRDN,Meridian Health Group,equity,equity,us_equity,ISS-MERIDIAN,Meridian Health Group,Health Care,Managed Health Care,US,,,,,per_share,,Health insurer and pharmacy benefits manager.,0
+CLRX,CLRX,Clearwater Pharmaceuticals,equity,equity,us_equity,ISS-CLEARWATER,Clearwater Pharmaceuticals,Health Care,Pharmaceuticals,US,,,,,per_share,,Branded oncology and immunology drugs.,0
+GRBC,GRBC,Granite Bancorp,equity,equity,us_equity,ISS-GRANITE,Granite Bancorp,Financials,Diversified Banks,US,,,,,per_share,,National retail and commercial bank.,0
+SUMM,SUMM,Summit Industrial Holdings,equity,equity,us_equity,ISS-SUMMIT,Summit Industrial Holdings,Industrials,Industrial Conglomerates,US,,,,,per_share,,"Aerospace components, HVAC systems and factory automation.",0
+BRCH,BRCH,Birchline Consumer Brands,equity,equity,us_equity,ISS-BIRCHLINE,Birchline Consumer Brands,Consumer Staples,Household Products,US,,,,,per_share,,"Detergents, paper goods and personal care products.",0
+TLLY,TLLY,Tallyard Retail Corp.,equity,equity,us_equity,ISS-TALLYARD,Tallyard Retail Corp.,Consumer Discretionary,Broadline Retail,US,,,,,per_share,,Department stores and e-commerce.,0
+AUTM,AUTM,Autumn Motor Company,equity,equity,us_equity,ISS-AUTUMN,Autumn Motor Company,Consumer Discretionary,Automobile Manufacturers,US,,,,,per_share,,Cars and light trucks. About 70% of 2025 unit sales were gasoline-powered; the rest hybrid or electric.,0
+PTRX,PTRX,Petrex Energy Corp.,equity,equity,us_equity,ISS-PETREX,Petrex Energy Corp.,Energy,Integrated Oil & Gas,US,,,,,per_share,,"Explores for, produces and refines crude oil and natural gas.",94
+CNDR,CNDR,Condor Midstream Corp.,equity,equity,us_equity,ISS-CONDOR,Condor Midstream Corp.,Energy,Oil & Gas Storage & Transportation,US,,,,,per_share,,Operates crude oil and natural gas pipelines and storage terminals.,91
+DQSV,DQSV,Drillquest Services Inc.,equity,equity,us_equity,ISS-DRILLQUEST,Drillquest Services Inc.,Energy,Oil & Gas Equipment & Services,US,,,,,per_share,,Provides drilling rigs and well-completion services to oil and gas producers.,
+SLTP,SLTP,Saltpine Power & Light Co.,equity,equity,us_equity,ISS-SALTPINE,Saltpine Power & Light Co.,Utilities,Electric Utilities,US,,,,,per_share,,"Regulated electric utility. 2025 generation mix: 22% coal, 31% natural gas, 29% nuclear, 18% wind and solar.",38
+VRDC,VRDC,Veridian Chemicals Inc.,equity,equity,us_equity,ISS-VERIDIAN,Veridian Chemicals Inc.,Materials,Commodity Chemicals,US,,,,,per_share,,Produces ethylene and polyethylene using natural gas liquids as feedstock.,
+SVRF,SVRF,Solvane Renewable Fuels Inc.,equity,equity,us_equity,ISS-SOLVANE,Solvane Renewable Fuels Inc.,Energy,Oil & Gas Refining & Marketing,US,,,,,per_share,,Produces renewable diesel and sustainable aviation fuel from waste fats and used cooking oil.,2
+TRNW,TRNW,Tern Wind Energy Inc.,equity,equity,us_equity,ISS-TERN,Tern Wind Energy Inc.,Utilities,Renewable Electricity,US,,,,,per_share,,Owns and operates onshore wind and utility-scale solar farms.,0
+NHVP,NHVP,Nordhav Petroleum ASA,equity,equity,intl_equity,ISS-NORDHAV,Nordhav Petroleum ASA,Energy,Integrated Oil & Gas,NO,,,,,per_share,,Norwegian offshore oil and gas producer.,85
+KAIY,KAIY,Kaiyo Robotics Co.,equity,equity,intl_equity,ISS-KAIYO,Kaiyo Robotics Co.,Industrials,Industrial Machinery,JP,,,,,per_share,,Japanese maker of industrial robots and motion controllers.,0
+KUSX,KUSX,Keystone US Total Market Index ETF,etf,equity,us_total_market,,,,,US,,,,,per_share,0.03,"Tracks a capitalization-weighted index of about 3,600 US stocks.",
+AXTL,AXTL,Apex Technology Leaders ETF,etf,equity,us_sector_technology,,,,,US,,,,,per_share,0.45,Concentrated portfolio of about 40 large US technology and technology-enabled companies.,
+LITL,LITL,Lighthouse International Equity Index ETF,etf,equity,intl_developed,,,,,US,,,,,per_share,0.06,Tracks developed-market stocks outside the US and Canada.,
+HPBAX,HPBAX,Harbor Point Balanced Fund,mutual_fund,multi_asset,balanced_60_40,,,,,US,,,,,per_share,0.58,Actively managed balanced fund. Targets roughly 60% stocks and 40% bonds and cash.,
+CRAG,CRAG,Crestline US Aggregate Bond ETF,etf,fixed_income,us_aggregate,,,,,US,,,,,per_share,0.04,Tracks the US investment-grade aggregate bond market. Average maturity about 8 years.,
+EVTGX,EVTGX,Evergreen Target Retirement 2035 Fund,mutual_fund,multi_asset,target_date,,,,,US,,,,,per_share,0.12,Target-date fund with a glide path toward a 2035 retirement.,
+KGMXX,KGMXX,Keystone Government Money Market Fund,money_market,cash_equivalent,government_mmf,,,,,US,,,,,per_share,0.09,Government money market fund with a stable $1.00 NAV.,
+SNBL,SNBL,Sandbar 0-3 Month Treasury Bill ETF,etf,fixed_income,ultra_short_treasury,,,,,US,,,,,per_share,0.10,Holds US Treasury bills with remaining maturities under three months.,
+BVLT,BVLT,Bitvault Bitcoin Trust,exchange_traded_product,alternative,digital_assets,,,,,US,,,,,per_share,0.25,Exchange-traded trust that holds spot bitcoin.,
+B-HALDEN-2031,,Halden Search Inc. 4.25% 03/15/2031,corporate_bond,fixed_income,us_corporate,ISS-HALDEN,Halden Search Inc.,Communication Services,,US,AA,Aa2,4.25,2031-03-15,pct_of_par,,Senior unsecured notes.,
+B-GRANITE-2030,,Granite Bancorp 5.10% 06/01/2030,corporate_bond,fixed_income,us_corporate,ISS-GRANITE,Granite Bancorp,Financials,,US,A-,A3,5.10,2030-06-01,pct_of_par,,Senior unsecured notes.,
+B-MERIDIAN-2029,,Meridian Health Group 4.50% 11/15/2029,corporate_bond,fixed_income,us_corporate,ISS-MERIDIAN,Meridian Health Group,Health Care,,US,A,A2,4.50,2029-11-15,pct_of_par,,Senior unsecured notes.,
+B-SUMMIT-2032,,Summit Industrial Holdings 4.80% 04/01/2032,corporate_bond,fixed_income,us_corporate,ISS-SUMMIT,Summit Industrial Holdings,Industrials,,US,BBB+,Baa1,4.80,2032-04-01,pct_of_par,,Senior unsecured notes.,
+B-TALLYARD-2031,,Tallyard Retail Corp. 5.60% 09/15/2031,corporate_bond,fixed_income,us_corporate,ISS-TALLYARD,Tallyard Retail Corp.,Consumer Discretionary,,US,BBB-,Ba1,5.60,2031-09-15,pct_of_par,,Senior unsecured notes. Moody's downgraded to Ba1 on 2026-08-12; S&P affirmed BBB-.,
+UST-2028,,US Treasury 4.000% 08/15/2028,treasury,fixed_income,us_treasury,ISS-UST,United States Treasury,Government,,US,AA+,Aa1,4.000,2028-08-15,pct_of_par,,Treasury note.,
+UST-2030,,US Treasury 4.125% 05/15/2030,treasury,fixed_income,us_treasury,ISS-UST,United States Treasury,Government,,US,AA+,Aa1,4.125,2030-05-15,pct_of_par,,Treasury note.,
+UST-2033,,US Treasury 4.375% 02/15/2033,treasury,fixed_income,us_treasury,ISS-UST,United States Treasury,Government,,US,AA+,Aa1,4.375,2033-02-15,pct_of_par,,Treasury note.,
+UST-BILL-20261217,,US Treasury Bill 12/17/2026,treasury_bill,fixed_income,us_treasury_bill,ISS-UST,United States Treasury,Government,,US,A-1+,P-1,0,2026-12-17,pct_of_par,,Zero-coupon Treasury bill.,
+CASH_USD,,US Dollar Cash,cash,cash,cash,,,,,US,,,,,per_unit,,Uninvested cash / sweep balance.,
+B-PETREX-2030,,Petrex Energy Corp. 5.25% 07/15/2030,corporate_bond,fixed_income,us_corporate,ISS-PETREX,Petrex Energy Corp.,Energy,,US,BBB+,Baa1,5.25,2030-07-15,pct_of_par,,Senior unsecured notes.,
+B-CONDOR-2032,,Condor Midstream Corp. 5.50% 10/01/2032,corporate_bond,fixed_income,us_corporate,ISS-CONDOR,Condor Midstream Corp.,Energy,,US,BBB,Baa2,5.50,2032-10-01,pct_of_par,,Senior unsecured notes.,
+B-NORTHVALE-2027,,Northvale Systems Inc. 3.60% 05/01/2027,corporate_bond,fixed_income,us_corporate,ISS-NORTHVALE,Northvale Systems Inc.,Information Technology,,US,AA+,Aa1,3.60,2027-05-01,pct_of_par,,Senior unsecured notes.,
+B-NORTHVALE-2034,,Northvale Systems Inc. 4.35% 02/01/2034,corporate_bond,fixed_income,us_corporate,ISS-NORTHVALE,Northvale Systems Inc.,Information Technology,,US,AA+,Aa1,4.35,2034-02-01,pct_of_par,,Senior unsecured notes.,
+B-HALDEN-2033,,Halden Search Inc. 4.60% 08/15/2033,corporate_bond,fixed_income,us_corporate,ISS-HALDEN,Halden Search Inc.,Communication Services,,US,AA,Aa2,4.60,2033-08-15,pct_of_par,,Senior unsecured notes.,
+ALDS,ALDS,Alderbank Software Inc.,equity,equity,us_equity,ISS-ALDERBANK,Alderbank Software Inc.,Information Technology,Systems Software,US,,,,,per_share,,Database and cloud infrastructure software.,0
+AMBS,AMBS,Ambervale Semiconductor Corp.,equity,equity,us_equity,ISS-AMBERVALE,Ambervale Semiconductor Corp.,Information Technology,Semiconductors,US,,,,,per_share,,Analog and power-management chips for cars and factories.,0
+ASHN,ASHN,Ashcombe Networks Inc.,equity,equity,us_equity,ISS-ASHCOMBE,Ashcombe Networks Inc.,Information Technology,Communications Equipment,US,,,,,per_share,,"Routers, switches and network security appliances.",0
+ASTD,ASTD,Asterion Data Services Inc.,equity,equity,us_equity,ISS-ASTERION,Asterion Data Services Inc.,Information Technology,IT Consulting & Other Services,US,,,,,per_share,,IT consulting and managed cloud services.,0
+BYLK,BYLK,Baylock Security Inc.,equity,equity,us_equity,ISS-BAYLOCK,Baylock Security Inc.,Information Technology,Systems Software,US,,,,,per_share,,Cybersecurity software for large companies.,0
+BLMI,BLMI,Bellmore Instruments Inc.,equity,equity,us_equity,ISS-BELLMORE,Bellmore Instruments Inc.,Information Technology,Electronic Equipment & Instruments,US,,,,,per_share,,Test and measurement equipment.,
+BRDL,BRDL,Brindle Payroll Systems Inc.,equity,equity,us_equity,ISS-BRINDLE,Brindle Payroll Systems Inc.,Information Technology,Application Software,US,,,,,per_share,,Payroll and HR software for small businesses.,0
+CMBL,CMBL,Cambrel Microdevices Inc.,equity,equity,us_equity,ISS-CAMBREL,Cambrel Microdevices Inc.,Information Technology,Semiconductor Materials & Equipment,US,,,,,per_share,,Equipment used to make semiconductor wafers.,0
+CRMS,CRMS,Carrowmore Design Software Inc.,equity,equity,us_equity,ISS-CARROWMORE,Carrowmore Design Software Inc.,Information Technology,Application Software,US,,,,,per_share,,Computer-aided design software for engineers.,
+CNDA,CNDA,Cindera Storage Corp.,equity,equity,us_equity,ISS-CINDERA,Cindera Storage Corp.,Information Technology,"Technology Hardware, Storage & Peripherals",US,,,,,per_share,,Data storage systems for corporate data centers.,
+CLVP,CLVP,Clovemont Photonics Inc.,equity,equity,us_equity,ISS-CLOVEMONT,Clovemont Photonics Inc.,Information Technology,Electronic Components,US,,,,,per_share,,Optical components for telecom networks.,0
+CBLA,CBLA,Cobbleton Analytics Inc.,equity,equity,us_equity,ISS-COBBLETON,Cobbleton Analytics Inc.,Information Technology,Application Software,US,,,,,per_share,,Business analytics and reporting software.,0
+CPLF,CPLF,Copperleaf Therapeutics Inc.,equity,equity,us_equity,ISS-COPPERLEAF,Copperleaf Therapeutics Inc.,Health Care,Biotechnology,US,,,,,per_share,,Develops treatments for rare genetic diseases.,
+CRVM,CRVM,Corvana Medical Inc.,equity,equity,us_equity,ISS-CORVANA,Corvana Medical Inc.,Health Care,Health Care Equipment,US,,,,,per_share,,Cardiac monitors and implantable devices.,0
+DLBD,DLBD,Dalbrook Diagnostics Inc.,equity,equity,us_equity,ISS-DALBROOK,Dalbrook Diagnostics Inc.,Health Care,Life Sciences Tools & Services,US,,,,,per_share,,Laboratory testing instruments and reagents.,0
+DNMH,DNMH,Dunmore Health Systems Inc.,equity,equity,us_equity,ISS-DUNMORE,Dunmore Health Systems Inc.,Health Care,Health Care Facilities,US,,,,,per_share,,Operates hospitals in the Southeast.,
+ESTP,ESTP,Eastmere Pharmaceuticals Inc.,equity,equity,us_equity,ISS-EASTMERE,Eastmere Pharmaceuticals Inc.,Health Care,Pharmaceuticals,US,,,,,per_share,,Generic and specialty medicines.,0
+ELMC,ELMC,Elmscott Surgical Inc.,equity,equity,us_equity,ISS-ELMSCOTT,Elmscott Surgical Inc.,Health Care,Health Care Equipment,US,,,,,per_share,,Surgical robots and instruments.,
+EMBB,EMBB,Embervale Biosciences Inc.,equity,equity,us_equity,ISS-EMBERVALE,Embervale Biosciences Inc.,Health Care,Biotechnology,US,,,,,per_share,,Antibody drugs for autoimmune disease.,0
+FRMD,FRMD,Fairmoor Dental Supply Inc.,equity,equity,us_equity,ISS-FAIRMOOR,Fairmoor Dental Supply Inc.,Health Care,Health Care Distributors,US,,,,,per_share,,Distributes dental and medical supplies.,0
+FLCA,FLCA,Falconer Animal Health Inc.,equity,equity,us_equity,ISS-FALCONER,Falconer Animal Health Inc.,Health Care,Pharmaceuticals,US,,,,,per_share,,Vaccines and medicines for pets and livestock.,0
+FNWC,FNWC,Fenwold Care Partners Inc.,equity,equity,us_equity,ISS-FENWOLD,Fenwold Care Partners Inc.,Health Care,Managed Health Care,US,,,,,per_share,,Medicare Advantage health plans.,0
+FXHL,FXHL,Foxhollow Labs Inc.,equity,equity,us_equity,ISS-FOXHOLLOW,Foxhollow Labs Inc.,Health Care,Life Sciences Tools & Services,US,,,,,per_share,,Contract research for drug developers.,0
+GLWB,GLWB,Galewood Bancshares Inc.,equity,equity,us_equity,ISS-GALEWOOD,Galewood Bancshares Inc.,Financials,Regional Banks,US,,,,,per_share,,Regional bank in the Mountain West.,
+GLMI,GLMI,Glenmarch Insurance Group,equity,equity,us_equity,ISS-GLENMARCH,Glenmarch Insurance Group,Financials,Property & Casualty Insurance,US,,,,,per_share,,Home and auto insurance.,0
+GDCA,GDCA,Goldcrest Asset Management Inc.,equity,equity,us_equity,ISS-GOLDCREST,Goldcrest Asset Management Inc.,Financials,Asset Management & Custody Banks,US,,,,,per_share,,Mutual fund and ETF sponsor.,0
+GRBL,GRBL,Granbury Life Corp.,equity,equity,us_equity,ISS-GRANBURY,Granbury Life Corp.,Financials,Life & Health Insurance,US,,,,,per_share,,Life insurance and annuities.,
+GRYM,GRYM,Greymere Capital Markets Inc.,equity,equity,us_equity,ISS-GREYMERE,Greymere Capital Markets Inc.,Financials,Investment Banking & Brokerage,US,,,,,per_share,,Investment bank and retail brokerage.,0
+HWEX,HWEX,Hartwell Exchange Group Inc.,equity,equity,us_equity,ISS-HARTWELL,Hartwell Exchange Group Inc.,Financials,Financial Exchanges & Data,US,,,,,per_share,,Operates stock and futures exchanges.,0
+HZMB,HZMB,Hazelmoor Bank Corp.,equity,equity,us_equity,ISS-HAZELMOOR,Hazelmoor Bank Corp.,Financials,Regional Banks,US,,,,,per_share,,Community bank holding company in the Midwest.,
+HGCR,HGCR,Highcastle Reinsurance Ltd.,equity,equity,us_equity,ISS-HIGHCASTLE,Highcastle Reinsurance Ltd.,Financials,Reinsurance,US,,,,,per_share,,Property catastrophe reinsurance.,0
+HLFC,HLFC,Hollinsford Consumer Finance Inc.,equity,equity,us_equity,ISS-HOLLINSFORD,Hollinsford Consumer Finance Inc.,Financials,Consumer Finance,US,,,,,per_share,,Personal loans and credit cards.,
+IRBK,IRBK,Ironbark Financial Corp.,equity,equity,us_equity,ISS-IRONBARK,Ironbark Financial Corp.,Financials,Diversified Banks,US,,,,,per_share,,National bank with wealth management arm.,0
+IVYM,IVYM,Ivydene Mortgage Corp.,equity,equity,us_equity,ISS-IVYDENE,Ivydene Mortgage Corp.,Financials,Commercial & Residential Mortgage Finance,US,,,,,per_share,,Originates and services home mortgages.,0
+JRWH,JRWH,Jarrowby Home Stores Inc.,equity,equity,us_equity,ISS-JARROWBY,Jarrowby Home Stores Inc.,Consumer Discretionary,Home Improvement Retail,US,,,,,per_share,,Home improvement stores.,0
+KSWA,KSWA,Kestwick Apparel Inc.,equity,equity,us_equity,ISS-KESTWICK,Kestwick Apparel Inc.,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",US,,,,,per_share,,Outdoor clothing and footwear.,0
+KNLR,KNLR,Kinloch Resorts Inc.,equity,equity,us_equity,ISS-KINLOCH,Kinloch Resorts Inc.,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",US,,,,,per_share,,Resorts and vacation clubs.,0
+LRCH,LRCH,Larchfield Restaurants Inc.,equity,equity,us_equity,ISS-LARCHFIELD,Larchfield Restaurants Inc.,Consumer Discretionary,Restaurants,US,,,,,per_share,,Casual dining restaurant chains.,0
+LNEV,LNEV,Lindell Electric Vehicles Inc.,equity,equity,us_equity,ISS-LINDELL,Lindell Electric Vehicles Inc.,Consumer Discretionary,Automobile Manufacturers,US,,,,,per_share,,Battery-electric cars and delivery vans only.,0
+LKMP,LKMP,Lockmere Auto Parts Inc.,equity,equity,us_equity,ISS-LOCKMERE,Lockmere Auto Parts Inc.,Consumer Discretionary,Automotive Parts & Equipment,US,,,,,per_share,,"Pistons, fuel-injection and exhaust systems for gasoline and diesel engines.",
+MRLH,MRLH,Marlowe Homebuilders Inc.,equity,equity,us_equity,ISS-MARLOWE,Marlowe Homebuilders Inc.,Consumer Discretionary,Homebuilding,US,,,,,per_share,,Builds single-family homes in the Sun Belt.,
+MDGO,MDGO,Meadowgate Online Inc.,equity,equity,us_equity,ISS-MEADOWGATE,Meadowgate Online Inc.,Consumer Discretionary,Broadline Retail,US,,,,,per_share,,Online marketplace for household goods.,0
+MRVE,MRVE,Merrivale Leisure Inc.,equity,equity,us_equity,ISS-MERRIVALE,Merrivale Leisure Inc.,Consumer Discretionary,Leisure Products,US,,,,,per_share,,"Bicycles, camping gear and fitness equipment.",0
+MLBM,MLBM,Milbrook Media Inc.,equity,equity,us_equity,ISS-MILBROOK,Milbrook Media Inc.,Communication Services,Movies & Entertainment,US,,,,,per_share,,Film studio and streaming service.,0
+MRWW,MRWW,Morrow Wireless Inc.,equity,equity,us_equity,ISS-MORROW,Morrow Wireless Inc.,Communication Services,Wireless Telecommunication Services,US,,,,,per_share,,National wireless carrier.,0
+NTHB,NTHB,Netherby Broadband Inc.,equity,equity,us_equity,ISS-NETHERBY,Netherby Broadband Inc.,Communication Services,Cable & Satellite,US,,,,,per_share,,Cable broadband and TV provider.,
+NWKG,NWKG,Northwick Games Inc.,equity,equity,us_equity,ISS-NORTHWICK,Northwick Games Inc.,Communication Services,Interactive Home Entertainment,US,,,,,per_share,,Video game publisher.,
+OKHP,OKHP,Oakhurst Publishing Inc.,equity,equity,us_equity,ISS-OAKHURST,Oakhurst Publishing Inc.,Communication Services,Publishing,US,,,,,per_share,,Newspapers and digital news subscriptions.,0
+ORRS,ORRS,Orrin Social Inc.,equity,equity,us_equity,ISS-ORRIN,Orrin Social Inc.,Communication Services,Interactive Media & Services,US,,,,,per_share,,Social networking apps.,0
+PLHA,PLHA,Pellham Aerospace Corp.,equity,equity,us_equity,ISS-PELLHAM,Pellham Aerospace Corp.,Industrials,Aerospace & Defense,US,,,,,per_share,,"Missiles, munitions and guidance systems for the US Department of Defense.",0
+PNKD,PNKD,Pennick Defense Systems Inc.,equity,equity,us_equity,ISS-PENNICK,Pennick Defense Systems Inc.,Industrials,Aerospace & Defense,US,,,,,per_share,,"Armored vehicles, artillery systems and military electronics.",0
+QRAE,QRAE,Quarrington Aero Inc.,equity,equity,us_equity,ISS-QUARRINGTON,Quarrington Aero Inc.,Industrials,Aerospace & Defense,US,,,,,per_share,,Commercial jet engines and aircraft components. About 20% of revenue comes from military aircraft programs.,
+RVLR,RVLR,Ravelston Rail Corp.,equity,equity,us_equity,ISS-RAVELSTON,Ravelston Rail Corp.,Industrials,Rail Transportation,US,,,,,per_share,,Freight railroad in the Midwest and Appalachia. Coal shipments are about 18% of freight revenue.,
+RDMP,RDMP,Redmarsh Pumps Inc.,equity,equity,us_equity,ISS-REDMARSH,Redmarsh Pumps Inc.,Industrials,Industrial Machinery,US,,,,,per_share,,"Pumps, valves and flow-control equipment for municipal water systems.",0
+RKWL,RKWL,Rookwood Logistics Inc.,equity,equity,us_equity,ISS-ROOKWOOD,Rookwood Logistics Inc.,Industrials,Air Freight & Logistics,US,,,,,per_share,,Parcel delivery and freight forwarding.,0
+RSBP,RSBP,Rosslyn Building Products Inc.,equity,equity,us_equity,ISS-ROSSLYN,Rosslyn Building Products Inc.,Industrials,Building Products,US,,,,,per_share,,"Windows, doors and insulation.",0
+SXEL,SXEL,Saxonby Electrical Corp.,equity,equity,us_equity,ISS-SAXONBY,Saxonby Electrical Corp.,Industrials,Electrical Components & Equipment,US,,,,,per_share,,Transformers and grid equipment for utilities.,0
+SDGW,SDGW,Sedgefield Waste Services Inc.,equity,equity,us_equity,ISS-SEDGEFIELD,Sedgefield Waste Services Inc.,Industrials,Environmental & Facilities Services,US,,,,,per_share,,"Trash collection, recycling and landfills.",0
+SHWS,SHWS,Shelwood Staffing Inc.,equity,equity,us_equity,ISS-SHELWOOD,Shelwood Staffing Inc.,Industrials,Human Resource & Employment Services,US,,,,,per_share,,Temporary staffing services.,
+SLWT,SLWT,Silverdale Water Technologies Inc.,equity,equity,us_equity,ISS-SILVERDALE,Silverdale Water Technologies Inc.,Industrials,Industrial Machinery,US,,,,,per_share,,"Water filtration, metering and treatment systems.",0
+SRLF,SRLF,Sorrel Foods Inc.,equity,equity,us_equity,ISS-SORREL,Sorrel Foods Inc.,Consumer Staples,Packaged Foods & Meats,US,,,,,per_share,,Frozen meals and snacks.,
+STWB,STWB,Stanwick Beverages Inc.,equity,equity,us_equity,ISS-STANWICK,Stanwick Beverages Inc.,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,US,,,,,per_share,,"Soft drinks, juices and bottled water.",0
+STLG,STLG,Stellan Grocers Inc.,equity,equity,us_equity,ISS-STELLAN,Stellan Grocers Inc.,Consumer Staples,Food Retail,US,,,,,per_share,,Supermarket chain.,0
+STNH,STNH,Stoneleigh Household Inc.,equity,equity,us_equity,ISS-STONELEIGH,Stoneleigh Household Inc.,Consumer Staples,Household Products,US,,,,,per_share,,Cleaning products and paper towels.,0
+TLBF,TLBF,Talbrook Farms Inc.,equity,equity,us_equity,ISS-TALBROOK,Talbrook Farms Inc.,Consumer Staples,Agricultural Products & Services,US,,,,,per_share,,Grain trading and food ingredients.,
+TMPC,TMPC,Tamsin Personal Care Inc.,equity,equity,us_equity,ISS-TAMSIN,Tamsin Personal Care Inc.,Consumer Staples,Personal Care Products,US,,,,,per_share,,Skin care and cosmetics.,
+THBR,THBR,Thornbury Brewing Co.,equity,equity,us_equity,ISS-THORNBURY,Thornbury Brewing Co.,Consumer Staples,Brewers,US,,,,,per_share,,Beer and hard seltzer.,0
+TDWX,TDWX,Tidewell Exploration Corp.,equity,equity,us_equity,ISS-TIDEWELL,Tidewell Exploration Corp.,Energy,Oil & Gas Exploration & Production,US,,,,,per_share,,Oil and gas producer in the Permian Basin.,97
+TRBR,TRBR,Torrance Basin Resources Inc.,equity,equity,us_equity,ISS-TORRANCE,Torrance Basin Resources Inc.,Energy,Oil & Gas Exploration & Production,US,,,,,per_share,,Natural gas producer in Appalachia.,99
+TRVR,TRVR,Trevane Refining Corp.,equity,equity,us_equity,ISS-TREVANE,Trevane Refining Corp.,Energy,Oil & Gas Refining & Marketing,US,,,,,per_share,,"Refines crude oil into gasoline, diesel and jet fuel.",93
+UNDC,UNDC,Underhill Coal Corp.,equity,equity,us_equity,ISS-UNDERHILL,Underhill Coal Corp.,Energy,Coal & Consumable Fuels,US,,,,,per_share,,Mines thermal coal for power plants.,98
+VLNG,VLNG,Valemont LNG Inc.,equity,equity,us_equity,ISS-VALEMONT,Valemont LNG Inc.,Energy,Oil & Gas Storage & Transportation,US,,,,,per_share,,Liquefies natural gas and ships it to Europe and Asia.,
+VRDG,VRDG,Varden Gas Distribution Co.,equity,equity,us_equity,ISS-VARDEN,Varden Gas Distribution Co.,Utilities,Gas Utilities,US,,,,,per_share,,Regulated natural gas distribution to 1.4 million homes and businesses.,
+WSTW,WSTW,Westbury Water Works Inc.,equity,equity,us_equity,ISS-WESTBURY,Westbury Water Works Inc.,Utilities,Water Utilities,US,,,,,per_share,,Regulated water and wastewater utility.,0
+WHLE,WHLE,Whitlow Electric Co.,equity,equity,us_equity,ISS-WHITLOW,Whitlow Electric Co.,Utilities,Electric Utilities,US,,,,,per_share,,"Regulated electric utility. 2025 generation mix: 41% natural gas, 35% nuclear, 24% hydro.",27
+WLDR,WLDR,Wildmere Renewables Inc.,equity,equity,us_equity,ISS-WILDMERE,Wildmere Renewables Inc.,Utilities,Renewable Electricity,US,,,,,per_share,,Develops and operates solar farms and battery storage.,0
+WLWC,WLWC,Willowby Water Company,equity,equity,us_equity,ISS-WILLOWBY,Willowby Water Company,Utilities,Water Utilities,US,,,,,per_share,,Regulated water utility in the Northeast.,0
+WNTP,WNTP,Winterbourne Plastics Inc.,equity,equity,us_equity,ISS-WINTERBOURNE,Winterbourne Plastics Inc.,Materials,Commodity Chemicals,US,,,,,per_share,,Polypropylene and PVC resins made from petrochemical feedstock.,
+WRNP,WRNP,Wrenfield Packaging Corp.,equity,equity,us_equity,ISS-WRENFIELD,Wrenfield Packaging Corp.,Materials,Paper & Plastic Packaging Products,US,,,,,per_share,,Cardboard boxes and paper packaging.,
+YRSC,YRSC,Yarrow Specialty Chemicals Inc.,equity,equity,us_equity,ISS-YARROW,Yarrow Specialty Chemicals Inc.,Materials,Specialty Chemicals,US,,,,,per_share,,Chemicals for water treatment and purification.,0
+YLVS,YLVS,Yelverton Steel Corp.,equity,equity,us_equity,ISS-YELVERTON,Yelverton Steel Corp.,Materials,Steel,US,,,,,per_share,,Recycled steel from electric arc furnaces.,0
+ZPHG,ZPHG,Zephyrine Gold Corp.,equity,equity,us_equity,ISS-ZEPHYRINE,Zephyrine Gold Corp.,Materials,Gold,US,,,,,per_share,,Gold mines in Nevada and Canada.,0
+BRKO,BRKO,Brackwell Office REIT,equity,equity,us_equity,ISS-BRACKWELL,Brackwell Office REIT,Real Estate,Office REITs,US,,,,,per_share,,Owns office buildings in major US cities.,
+CDHR,CDHR,Coldharbour Residential REIT,equity,equity,us_equity,ISS-COLDHARBOUR,Coldharbour Residential REIT,Real Estate,Multi-Family Residential REITs,US,,,,,per_share,,Owns apartment communities.,0
+ESKD,ESKD,Eskdale Data Centers REIT,equity,equity,us_equity,ISS-ESKDALE,Eskdale Data Centers REIT,Real Estate,Data Center REITs,US,,,,,per_share,,Owns and leases data centers.,0
+FRWI,FRWI,Farrowby Industrial Properties REIT,equity,equity,us_equity,ISS-FARROWBY,Farrowby Industrial Properties REIT,Real Estate,Industrial REITs,US,,,,,per_share,,Owns warehouses and distribution centers.,
+HKRE,HKRE,Hakuro Electronics Corp.,equity,equity,intl_equity,ISS-HAKURO,Hakuro Electronics Corp.,Information Technology,Electronic Components,JP,,,,,per_share,,Image sensors and electronic components.,
+HKRY,HKRY,Hakuro Electronics Corp. ADR,equity,equity,intl_equity,ISS-HAKURO,Hakuro Electronics Corp.,Information Technology,Electronic Components,JP,,,,,per_share,,American depositary receipt. Each ADR represents 2 ordinary shares of Hakuro Electronics.,
+KNMM,KNMM,Kanemori Motor Co.,equity,equity,intl_equity,ISS-KANEMORI,Kanemori Motor Co.,Consumer Discretionary,Automobile Manufacturers,JP,,,,,per_share,,Cars and motorcycles. Most cars sold are hybrids.,0
+MTSH,MTSH,Mitsuhara Trading Co.,equity,equity,intl_equity,ISS-MITSUHARA,Mitsuhara Trading Co.,Industrials,Trading Companies & Distributors,JP,,,,,per_share,,"Diversified trading house with interests in metals, food, LNG and coal mines.",22
+SEIP,SEIP,Seiran Pharmaceutical Co.,equity,equity,intl_equity,ISS-SEIRAN,Seiran Pharmaceutical Co.,Health Care,Pharmaceuticals,JP,,,,,per_share,,Prescription drugs for diabetes and oncology.,0
+RHNC,RHNC,Rheinholt Chemie AG,equity,equity,intl_equity,ISS-RHEINHOLT,Rheinholt Chemie AG,Materials,Diversified Chemicals,DE,,,,,per_share,,Industrial and specialty chemicals made largely from natural gas and naphtha.,
+VLKV,VLKV,Volkenstadt Versicherung AG,equity,equity,intl_equity,ISS-VOLKENSTADT,Volkenstadt Versicherung AG,Financials,Multi-line Insurance,DE,,,,,per_share,,"Property, life and health insurance in Europe.",
+BRNL,BRNL,Brandauer Logistik AG,equity,equity,intl_equity,ISS-BRANDAUER,Brandauer Logistik AG,Industrials,Air Freight & Logistics,DE,,,,,per_share,,Contract logistics and freight forwarding.,
+HRCB,HRCB,Harcastle Bank plc,equity,equity,intl_equity,ISS-HARCASTLE,Harcastle Bank plc,Financials,Diversified Banks,GB,,,,,per_share,,UK retail and commercial bank.,0
+HRCY,HRCY,Harcastle Bank plc ADR,equity,equity,intl_equity,ISS-HARCASTLE,Harcastle Bank plc,Financials,Diversified Banks,GB,,,,,per_share,,American depositary receipt. Each ADR represents 4 ordinary shares of Harcastle Bank.,0
+PMBF,PMBF,Pemberly Foods plc,equity,equity,intl_equity,ISS-PEMBERLY,Pemberly Foods plc,Consumer Staples,Packaged Foods & Meats,GB,,,,,per_share,,"Biscuits, tea and breakfast cereals.",
+NMEN,NMEN,Northmoor Energy plc,equity,equity,intl_equity,ISS-NORTHMOOR,Northmoor Energy plc,Energy,Integrated Oil & Gas,GB,,,,,per_share,,North Sea and West African oil and gas producer.,88
+MVAR,MVAR,Maison Varenne SA,equity,equity,intl_equity,ISS-VARENNE,Maison Varenne SA,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",FR,,,,,per_share,,Luxury leather goods and fashion.,0
+DLMA,DLMA,Delorme Aerospace SA,equity,equity,intl_equity,ISS-DELORME,Delorme Aerospace SA,Industrials,Aerospace & Defense,FR,,,,,per_share,,"Fighter jets, missiles and satellites.",0
+ALPW,ALPW,Alpenwerk Instruments AG,equity,equity,intl_equity,ISS-ALPENWERK,Alpenwerk Instruments AG,Information Technology,Electronic Equipment & Instruments,CH,,,,,per_share,,Flow meters and laboratory instruments.,
+ZRLP,ZRLP,Zurlinden Pharma AG,equity,equity,intl_equity,ISS-ZURLINDEN,Zurlinden Pharma AG,Health Care,Pharmaceuticals,CH,,,,,per_share,,Branded medicines and vaccines.,0
+VOSE,VOSE,Van Oort Semiconductor Equipment NV,equity,equity,intl_equity,ISS-VANOORT,Van Oort Semiconductor Equipment NV,Information Technology,Semiconductor Materials & Equipment,NL,,,,,per_share,,Lithography systems for chipmakers.,
+LNQI,LNQI,Lindqvist Industrial AB,equity,equity,intl_equity,ISS-LINDQVIST,Lindqvist Industrial AB,Industrials,Industrial Machinery,SE,,,,,per_share,,"Compressors, pumps and mining tools.",
+BRVH,BRVH,Brevik Hydro ASA,equity,equity,intl_equity,ISS-BREVIK,Brevik Hydro ASA,Utilities,Renewable Electricity,NO,,,,,per_share,,Hydroelectric power generation in Norway.,0
+KLSM,KLSM,Kallista Mining Ltd.,equity,equity,intl_equity,ISS-KALLISTA,Kallista Mining Ltd.,Materials,Diversified Metals & Mining,AU,,,,,per_share,,"Iron ore, copper and metallurgical and thermal coal mines.",12
+SRNX,SRNX,Seorin Electronics Co.,equity,equity,intl_equity,ISS-SEORIN,Seorin Electronics Co.,Information Technology,"Technology Hardware, Storage & Peripherals",KR,,,,,per_share,,"Smartphones, TVs and memory chips.",
+TCHF,TCHF,Taichen Foundry Corp.,equity,equity,intl_equity,ISS-TAICHEN,Taichen Foundry Corp.,Information Technology,Semiconductors,TW,,,,,per_share,,Contract chip manufacturing.,0
+IDVS,IDVS,Indravale Software Ltd.,equity,equity,intl_equity,ISS-INDRAVALE,Indravale Software Ltd.,Information Technology,IT Consulting & Other Services,IN,,,,,per_share,,IT outsourcing and consulting.,0
+CRDA,CRDA,Cordeiro Agro SA,equity,equity,intl_equity,ISS-CORDEIRO,Cordeiro Agro SA,Consumer Staples,Agricultural Products & Services,BR,,,,,per_share,,Soybean and sugar producer.,0
+PTSL,PTSL,Petrosul SA,equity,equity,intl_equity,ISS-PETROSUL,Petrosul SA,Energy,Integrated Oil & Gas,BR,,,,,per_share,,State-controlled Brazilian oil and gas producer.,90
+KXFF,KXFF,Keystone US Total Market ex-Fossil Fuels ETF,etf,equity,us_total_market,,,,,US,,,,,per_share,0.12,"Tracks a US total market index that excludes companies that own fossil fuel reserves, run fossil fuel pipelines or generate more than 10% of revenue from fossil fuels.",
+EQLW,EQLW,Lantern US Equal-Weight ETF,etf,equity,us_large_cap,,,,,US,,,,,per_share,0.20,"Holds about 500 large US companies in equal weights, rebalanced quarterly.",
+KLCG,KLCG,Keystone US Large Cap Growth ETF,etf,equity,us_large_growth,,,,,US,,,,,per_share,0.04,Tracks large US companies with above-average earnings growth.,
+CDVL,CDVL,Cobalt US Dividend Value ETF,etf,equity,us_large_value,,,,,US,,,,,per_share,0.08,Large US companies with high and stable dividends.,
+FWTR,FWTR,Fernbrook Global Water Infrastructure ETF,etf,equity,global_thematic,,,,,US,,,,,per_share,0.55,"About 40 companies worldwide in water utilities, treatment equipment and pipes.",
+KS5X,KS5X,Keystone US Large Cap 500 Index ETF,etf,equity,us_large_cap,,,,,US,,,,,per_share,0.03,Tracks a capitalization-weighted index of 500 large US companies.,
+KMCX,KMCX,Keystone US Mid Cap Index ETF,etf,equity,us_mid_cap,,,,,US,,,,,per_share,0.05,Tracks about 400 mid-sized US companies.,
+KSCX,KSCX,Keystone US Small Cap Index ETF,etf,equity,us_small_cap,,,,,US,,,,,per_share,0.06,"Tracks about 2,000 small US companies.",
+KVAL,KVAL,Keystone US Large Cap Value ETF,etf,equity,us_large_value,,,,,US,,,,,per_share,0.04,Tracks large US companies with low prices relative to earnings and book value.,
+PGTK,PGTK,Pinegate Technology Sector ETF,etf,equity,us_sector_technology,,,,,US,,,,,per_share,0.09,US Information Technology sector.,
+PGHC,PGHC,Pinegate Health Care Sector ETF,etf,equity,us_sector_health_care,,,,,US,,,,,per_share,0.09,US Health Care sector.,
+PGFN,PGFN,Pinegate Financials Sector ETF,etf,equity,us_sector_financials,,,,,US,,,,,per_share,0.09,US Financials sector.,
+PGNR,PGNR,Pinegate Energy Sector ETF,etf,equity,us_sector_energy,,,,,US,,,,,per_share,0.09,US Energy sector.,
+PGUT,PGUT,Pinegate Utilities Sector ETF,etf,equity,us_sector_utilities,,,,,US,,,,,per_share,0.09,US Utilities sector.,
+PGIN,PGIN,Pinegate Industrials Sector ETF,etf,equity,us_sector_industrials,,,,,US,,,,,per_share,0.09,US Industrials sector.,
+LIXF,LIXF,Lighthouse International ex-Fossil Fuels ETF,etf,equity,intl_developed,,,,,US,,,,,per_share,0.15,"Developed-market stocks outside the US and Canada, excluding companies that own fossil fuel reserves or generate more than 10% of revenue from fossil fuels.",
+LGLB,LGLB,Lighthouse Global Equity Index ETF,etf,equity,global_equity,,,,,US,,,,,per_share,0.07,"Tracks developed and emerging market stocks worldwide, including the US.",
+LEMK,LEMK,Lighthouse Emerging Markets Index ETF,etf,equity,emerging_markets,,,,,US,,,,,per_share,0.09,Tracks large and mid-sized companies in emerging markets.,
+LISC,LISC,Lighthouse International Small Cap ETF,etf,equity,intl_small_cap,,,,,US,,,,,per_share,0.12,Small companies in developed markets outside the US and Canada.,
+LEUR,LEUR,Lighthouse Europe Index ETF,etf,equity,intl_europe,,,,,US,,,,,per_share,0.09,Tracks large and mid-sized European companies.,
+FCLN,FCLN,Fernbrook Clean Energy ETF,etf,equity,global_thematic,,,,,US,,,,,per_share,0.50,"About 60 companies in renewable power, electric vehicles, grid equipment and low-carbon fuels.",
+FAIX,FAIX,Fernbrook Artificial Intelligence ETF,etf,equity,global_thematic,,,,,US,,,,,per_share,0.60,"About 50 companies building chips, software and data centers for artificial intelligence.",
+CQLT,CQLT,Cobalt US Quality ETF,etf,equity,us_large_cap,,,,,US,,,,,per_share,0.15,Large US companies with high profitability and low debt.,
+CLVF,CLVF,Cobalt US Low Volatility ETF,etf,equity,us_large_cap,,,,,US,,,,,per_share,0.15,Large US companies with the lowest share-price volatility.,
+KREI,KREI,Keystone US REIT Index ETF,etf,equity,us_reit,,,,,US,,,,,per_share,0.10,Tracks US real estate investment trusts.,
+KESG,KESG,Keystone US ESG Leaders ETF,etf,equity,us_large_cap,,,,,US,,,,,per_share,0.10,"Large US companies with the highest environmental, social and governance scores in each sector.",
+HPGRX,HPGRX,Harbor Point Growth Fund,mutual_fund,equity,us_large_growth,,,,,US,,,,,per_share,0.68,Actively managed fund of about 60 large US growth companies.,
+HPEIX,HPEIX,Harbor Point Equity Income Fund,mutual_fund,equity,us_large_value,,,,,US,,,,,per_share,0.62,Actively managed fund of dividend-paying US companies.,
+CSTB,CSTB,Crestline 1-3 Year Treasury ETF,etf,fixed_income,us_treasury_short,,,,,US,,,,,per_share,0.04,Holds US Treasury notes maturing in one to three years.,
+CRCB,CRCB,Crestline US Investment-Grade Corporate Bond ETF,etf,fixed_income,us_corporate_ig,,,,,US,,,,,per_share,0.06,"Investment-grade US corporate bonds, mostly rated A and BBB. Average maturity about 12 years.",
+HRHY,HRHY,Harrow High Yield Bond ETF,etf,fixed_income,us_high_yield,,,,,US,,,,,per_share,0.35,"US corporate bonds rated below investment grade, mostly BB and B.",
+CMUN,CMUN,Crestline National Municipal Bond ETF,etf,fixed_income,us_municipal,,,,,US,,,,,per_share,0.05,"Investment-grade, tax-exempt municipal bonds from issuers in all 50 states. Average maturity about 7 years.",
+CITB,CITB,Crestline 3-10 Year Treasury ETF,etf,fixed_income,us_treasury_intermediate,,,,,US,,,,,per_share,0.05,Holds US Treasury notes maturing in three to ten years.,
+CLTB,CLTB,Crestline 20+ Year Treasury ETF,etf,fixed_income,us_treasury_long,,,,,US,,,,,per_share,0.06,Holds US Treasury bonds maturing in more than 20 years.,
+CTIP,CTIP,Crestline TIPS ETF,etf,fixed_income,us_tips,,,,,US,,,,,per_share,0.05,Holds US Treasury inflation-protected securities.,
+CMBF,CMBF,Crestline Mortgage-Backed Securities ETF,etf,fixed_income,us_mbs,,,,,US,,,,,per_share,0.05,Holds mortgage-backed securities issued by US government agencies.,
+CSCB,CSCB,Crestline Short-Term Corporate Bond ETF,etf,fixed_income,us_corporate_ig_short,,,,,US,,,,,per_share,0.05,"Investment-grade US corporate bonds, mostly maturing in one to five years.",
+COHM,COHM,Crestline Ohio Municipal Bond ETF,etf,fixed_income,us_municipal_state,,,,,US,,,,,per_share,0.15,"Investment-grade, tax-exempt municipal bonds issued in Ohio.",
+LIBD,LIBD,Lighthouse International Bond ETF (USD Hedged),etf,fixed_income,intl_bond,,,,,US,,,,,per_share,0.07,"Investment-grade government and corporate bonds issued outside the US, with currency risk hedged to US dollars.",
+SUBF,SUBF,Sandbar Ultra-Short Bond ETF,etf,fixed_income,ultra_short_bond,,,,,US,,,,,per_share,0.15,Investment-grade corporate notes and commercial paper maturing within one year.,
+SBIX,SBIX,Sandbar 3-12 Month Treasury Bill ETF,etf,fixed_income,ultra_short_treasury,,,,,US,,,,,per_share,0.10,Holds US Treasury bills maturing in three to twelve months.,
+HFLT,HFLT,Harrow Floating Rate Loan ETF,etf,fixed_income,bank_loans,,,,,US,,,,,per_share,0.45,"Senior secured floating-rate loans to companies rated below investment grade, mostly B.",
+CGRN,CGRN,Crestline Green Bond ETF,etf,fixed_income,global_green_bond,,,,,US,,,,,per_share,0.20,"Investment-grade bonds whose proceeds fund renewable energy, clean water and other environmental projects.",
+HPCBX,HPCBX,Harbor Point Core Plus Bond Fund,mutual_fund,fixed_income,us_core_plus,,,,,US,,,,,per_share,0.48,"Actively managed. Mostly investment-grade bonds, with up to 20% in high-yield and emerging-market debt.",
+KTRXX,KTRXX,Keystone Treasury Money Market Fund,money_market,cash_equivalent,treasury_mmf,,,,,US,,,,,per_share,0.10,Treasury-only money market fund with a stable $1.00 NAV.,
+KPRXX,KPRXX,Keystone Prime Money Market Fund,money_market,cash_equivalent,prime_mmf,,,,,US,,,,,per_share,0.18,Prime money market fund investing in commercial paper and bank deposits. Floating NAV near $1.00. May charge a liquidity fee when redemptions are heavy.,
+UST-BILL-20261119,,US Treasury Bill 11/19/2026,treasury_bill,fixed_income,us_treasury_bill,ISS-UST,United States Treasury,Government,,US,A-1+,P-1,0,2026-11-19,pct_of_par,,Zero-coupon Treasury bill.,
+UST-BILL-20270121,,US Treasury Bill 01/21/2027,treasury_bill,fixed_income,us_treasury_bill,ISS-UST,United States Treasury,Government,,US,A-1+,P-1,0,2027-01-21,pct_of_par,,Zero-coupon Treasury bill.,
+UST-BILL-20270325,,US Treasury Bill 03/25/2027,treasury_bill,fixed_income,us_treasury_bill,ISS-UST,United States Treasury,Government,,US,A-1+,P-1,0,2027-03-25,pct_of_par,,Zero-coupon Treasury bill.,
+UST-2027,,US Treasury 3.875% 11/15/2027,treasury,fixed_income,us_treasury,ISS-UST,United States Treasury,Government,,US,AA+,Aa1,3.875,2027-11-15,pct_of_par,,Treasury note.,
+UST-2029,,US Treasury 4.250% 02/15/2029,treasury,fixed_income,us_treasury,ISS-UST,United States Treasury,Government,,US,AA+,Aa1,4.250,2029-02-15,pct_of_par,,Treasury note.,
+UST-2031,,US Treasury 4.000% 08/15/2031,treasury,fixed_income,us_treasury,ISS-UST,United States Treasury,Government,,US,AA+,Aa1,4.000,2031-08-15,pct_of_par,,Treasury note.,
+UST-2034,,US Treasury 4.250% 11/15/2034,treasury,fixed_income,us_treasury,ISS-UST,United States Treasury,Government,,US,AA+,Aa1,4.250,2034-11-15,pct_of_par,,Treasury note.,
+UST-2036,,US Treasury 4.500% 05/15/2036,treasury,fixed_income,us_treasury,ISS-UST,United States Treasury,Government,,US,AA+,Aa1,4.500,2036-05-15,pct_of_par,,Treasury note.,
+B-ALDERBANK-2031,,Alderbank Software Inc. 4.40% 06/01/2031,corporate_bond,fixed_income,us_corporate,ISS-ALDERBANK,Alderbank Software Inc.,Information Technology,,US,AA-,Aa3,4.40,2031-06-01,pct_of_par,,Senior unsecured notes.,
+B-IRONBARK-2029,,Ironbark Financial Corp. 4.95% 03/15/2029,corporate_bond,fixed_income,us_corporate,ISS-IRONBARK,Ironbark Financial Corp.,Financials,,US,A,A2,4.95,2029-03-15,pct_of_par,,Senior unsecured notes.,
+B-GALEWOOD-2028,,Galewood Bancshares Inc. 5.35% 10/01/2028,corporate_bond,fixed_income,us_corporate,ISS-GALEWOOD,Galewood Bancshares Inc.,Financials,,US,BBB,Baa2,5.35,2028-10-01,pct_of_par,,Senior unsecured notes.,
+B-CORVANA-2033,,Corvana Medical Inc. 4.60% 04/15/2033,corporate_bond,fixed_income,us_corporate,ISS-CORVANA,Corvana Medical Inc.,Health Care,,US,A+,A1,4.60,2033-04-15,pct_of_par,,Senior unsecured notes.,
+B-MORROW-2032,,Morrow Wireless Inc. 5.20% 01/15/2032,corporate_bond,fixed_income,us_corporate,ISS-MORROW,Morrow Wireless Inc.,Communication Services,,US,BBB-,Baa3,5.20,2032-01-15,pct_of_par,,Senior unsecured notes.,
+B-STANWICK-2030,,Stanwick Beverages Inc. 4.15% 09/01/2030,corporate_bond,fixed_income,us_corporate,ISS-STANWICK,Stanwick Beverages Inc.,Consumer Staples,,US,A+,A1,4.15,2030-09-01,pct_of_par,,Senior unsecured notes.,
+B-RAVELSTON-2034,,Ravelston Rail Corp. 5.05% 06/15/2034,corporate_bond,fixed_income,us_corporate,ISS-RAVELSTON,Ravelston Rail Corp.,Industrials,,US,BBB+,Baa1,5.05,2034-06-15,pct_of_par,,Senior unsecured notes.,
+B-TIDEWELL-2031,,Tidewell Exploration Corp. 5.80% 02/01/2031,corporate_bond,fixed_income,us_corporate,ISS-TIDEWELL,Tidewell Exploration Corp.,Energy,,US,BBB-,Baa3,5.80,2031-02-01,pct_of_par,,Senior unsecured notes.,
+B-WILDMERE-2035,,Wildmere Renewables Inc. 4.90% 05/01/2035,corporate_bond,fixed_income,us_corporate,ISS-WILDMERE,Wildmere Renewables Inc.,Utilities,,US,BBB,Baa2,4.90,2035-05-01,pct_of_par,,Green bond. Proceeds fund solar and battery storage projects.,
+B-KINLOCH-2030,,Kinloch Resorts Inc. 6.10% 12/01/2030,corporate_bond,fixed_income,us_corporate,ISS-KINLOCH,Kinloch Resorts Inc.,Consumer Discretionary,,US,BB+,Baa3,6.10,2030-12-01,pct_of_par,,Senior unsecured notes.,
+B-MARLOWE-2029,,Marlowe Homebuilders Inc. 5.95% 07/15/2029,corporate_bond,fixed_income,us_corporate,ISS-MARLOWE,Marlowe Homebuilders Inc.,Consumer Discretionary,,US,BBB-,Ba1,5.95,2029-07-15,pct_of_par,,Senior unsecured notes.,
+B-SAXONBY-2032,,Saxonby Electrical Corp. 4.70% 11/01/2032,corporate_bond,fixed_income,us_corporate,ISS-SAXONBY,Saxonby Electrical Corp.,Industrials,,US,A-,A3,4.70,2032-11-01,pct_of_par,,Senior unsecured notes.,

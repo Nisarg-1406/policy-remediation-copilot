@@ -1,0 +1,1294 @@
+{
+  "household": "HH-CHEN",
+  "snapshot_date": "2026-09-25",
+  "portfolio_mv": 5103329.2,
+  "is_clean": true,
+  "breaches": [
+    {
+      "rule_id": "R-S041",
+      "clause_id": "S041",
+      "status": "breach",
+      "measured": {
+        "ISS-HALDEN": 0.05307557336297255,
+        "__all__": {
+          "ISS-NORTHVALE": 0.05291755017489368,
+          "ISS-KESTREL": 0.0329314316818911,
+          "ISS-HALDEN": 0.05307557336297255,
+          "ISS-ORBITAL": 0.02384450550436762,
+          "ISS-MERIDIAN": 0.04316688063156889,
+          "ISS-CLEARWATER": 0.0018027974366223523,
+          "ISS-GRANITE": 0.046639639708134055,
+          "ISS-PETREX": 0.002478846475355734,
+          "ISS-TALLYARD": 0.01378114161242038,
+          "ISS-BIRCHLINE": 0.001352098077466764,
+          "ISS-SUMMIT": 0.01484451914252367,
+          "ISS-CONDOR": 0.0009013987183111761,
+          "ISS-SALTPINE": 0.000676049038733382,
+          "ISS-AUTUMN": 0.000676049038733382,
+          "ISS-DRILLQUEST": 0.00022534967957779404,
+          "ISS-NORDHAV": 0.0018811033393652129,
+          "ISS-KAIYO": 0.0014108275045239095
+        }
+      },
+      "limit": {
+        "max": 0.05
+      },
+      "margin": -0.003075573362972546,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 79955.75,
+          "share_of_measure": 0.29518985161570027
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "B-HALDEN-2031",
+          "via_fund": null,
+          "mv": 60505.9,
+          "share_of_measure": 0.2233826540664605
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDC",
+          "via_fund": null,
+          "mv": 59503.5,
+          "share_of_measure": 0.21968187823408347
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "HLDA",
+          "via_fund": "AXTL",
+          "mv": 22498.072500000002,
+          "share_of_measure": 0.08306097663913185
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "HLDC",
+          "via_fund": "AXTL",
+          "mv": 20248.26525,
+          "share_of_measure": 0.07475487897521867
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDA",
+          "via_fund": "KUSX",
+          "mv": 12650.3696,
+          "share_of_measure": 0.04670409226488108
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDC",
+          "via_fund": "KUSX",
+          "mv": 11500.336,
+          "share_of_measure": 0.042458265695346435
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDA",
+          "via_fund": "HPBAX",
+          "mv": 3999.9300000000003,
+          "share_of_measure": 0.014767402509177739
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 148558.80000000002,
+          "share_of_measure": 0.5501043360765615
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": "KUSX",
+          "mv": 57501.67999999999,
+          "share_of_measure": 0.21292527605020295
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "NRVL",
+          "via_fund": "AXTL",
+          "mv": 53995.373999999996,
+          "share_of_measure": 0.199941634998907
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": "HPBAX",
+          "mv": 9999.825,
+          "share_of_measure": 0.03702875287432856
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "Worst group: ISS-HALDEN = 0.0531",
+        "Breaching groups: ISS-HALDEN (0.0531), ISS-NORTHVALE (0.0529)"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "5.1 **Single issuer.** Exposure to any single issuer shall not exceed 5% of the market value of the Portfolio. Exposure to an issuer includes all of its securities held in the Portfolio, including every class of common or preferred stock and any bonds, as well as indirect exposure through mutual funds and exchange-traded funds held in the Portfolio. Obligations of the United States Treasury and US government agencies are exempt from this limit."
+      ],
+      "reason": null
+    }
+  ],
+  "needs_review_findings": [],
+  "cannot_evaluate_findings": [],
+  "pass_findings": [
+    {
+      "rule_id": "R-S033",
+      "clause_id": "S033",
+      "status": "pass",
+      "measured": 0.5874509722006567,
+      "limit": {
+        "min": 0.5,
+        "max": 0.7
+      },
+      "margin": 0.08745097220065667,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 1150033.5999999999,
+          "share_of_measure": 0.38360593520444614
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 599993.1,
+          "share_of_measure": 0.2001340780319069
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "AXTL",
+          "via_fund": null,
+          "mv": 449961.45,
+          "share_of_measure": 0.1500894259378149
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 148558.80000000002,
+          "share_of_measure": 0.04955336731626823
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "MRDN",
+          "via_fund": null,
+          "mv": 110144.49999999999,
+          "share_of_measure": 0.036739869104803646
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 99962.59999999999,
+          "share_of_measure": 0.033343588099050296
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 89887.5,
+          "share_of_measure": 0.029982931368865793
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "GRBC",
+          "via_fund": null,
+          "mv": 79969.2,
+          "share_of_measure": 0.02667457694588349
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 79955.75,
+          "share_of_measure": 0.02667009055537412
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "SUMM",
+          "via_fund": null,
+          "mv": 70006.3,
+          "share_of_measure": 0.02335134571868424
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Equity (US and international) | 50% | 60% | 70% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S034",
+      "clause_id": "S034",
+      "status": "pass",
+      "measured": 0.313595387889145,
+      "limit": {
+        "min": 0.25,
+        "max": 0.45
+      },
+      "margin": 0.06359538788914498,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "CRAG",
+          "via_fund": null,
+          "mv": 699954.6,
+          "share_of_measure": 0.4373676135144111
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "UST-2033",
+          "via_fund": null,
+          "mv": 300267.0,
+          "share_of_measure": 0.18762225608222544
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "UST-2028",
+          "via_fund": null,
+          "mv": 289855.0,
+          "share_of_measure": 0.18111630327912642
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "B-GRANITE-2030",
+          "via_fund": null,
+          "mv": 149998.0,
+          "share_of_measure": 0.09372646067607047
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "B-MERIDIAN-2029",
+          "via_fund": null,
+          "mv": 99800.0,
+          "share_of_measure": 0.062360169972078515
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "B-HALDEN-2031",
+          "via_fund": null,
+          "mv": 60505.9,
+          "share_of_measure": 0.03780719647608803
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Fixed income | 25% | 35% | 45% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S035",
+      "clause_id": "S035",
+      "status": "pass",
+      "measured": 0.020574804384557437,
+      "limit": {
+        "min": 0.0,
+        "max": 0.1
+      },
+      "margin": 0.020574804384557437,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 40000.0,
+          "share_of_measure": 0.38095238095238093
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "KGMXX",
+          "via_fund": null,
+          "mv": 40000.0,
+          "share_of_measure": 0.38095238095238093
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 20000.0,
+          "share_of_measure": 0.19047619047619047
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 5000.0,
+          "share_of_measure": 0.047619047619047616
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Cash and cash equivalents | 0% | 5% | 10% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S036",
+      "clause_id": "S036",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "min": 0.0,
+        "max": 0.1
+      },
+      "margin": 0.0,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Alternative investments | 0% | 0% | 10% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S037",
+      "clause_id": "S037",
+      "status": "pass",
+      "measured": 0.11756895871032579,
+      "limit": {
+        "min": 0.1,
+        "max": 0.2
+      },
+      "margin": 0.01756895871032578,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 599993.1,
+          "share_of_measure": 1.0
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "4.2 International equity will represent between 10% and 20% of the market value of the Portfolio."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S042-1",
+      "clause_id": "S042",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max": 0.15
+      },
+      "margin": 0.15,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "No matching holdings found \u2014 vacuous pass"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "5.2 **Pooled vehicles.** No single mutual fund or exchange-traded fund shall exceed 15% of the market value of the Portfolio, except for the Portfolio's core US broad-market index fund, which may represent up to 30%."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S042-2",
+      "clause_id": "S042",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max": 0.3
+      },
+      "margin": 0.3,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "No matching holdings found \u2014 vacuous pass"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "5.2 **Pooled vehicles.** No single mutual fund or exchange-traded fund shall exceed 15% of the market value of the Portfolio, except for the Portfolio's core US broad-market index fund, which may represent up to 30%."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S045",
+      "clause_id": "S045",
+      "status": "pass",
+      "measured": 0,
+      "limit": {
+        "max_sub_ig_count": 0
+      },
+      "margin": null,
+      "unit": "count",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "6.1 Individual bonds must be rated A- or better by S&P or A3 or better by Moody's."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S050",
+      "clause_id": "S050",
+      "status": "pass",
+      "measured": 0.23180155120112578,
+      "limit": {
+        "max": 0.6
+      },
+      "margin": 0.3681984487988742,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 148558.80000000002,
+          "share_of_measure": 0.12558230803425546
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "MRDN",
+          "via_fund": null,
+          "mv": 110144.49999999999,
+          "share_of_measure": 0.09310926399027891
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 99962.59999999999,
+          "share_of_measure": 0.08450212323406667
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 89887.5,
+          "share_of_measure": 0.07598526451094878
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "GRBC",
+          "via_fund": null,
+          "mv": 79969.2,
+          "share_of_measure": 0.06760095469035143
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 79955.75,
+          "share_of_measure": 0.06758958490247578
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "SUMM",
+          "via_fund": null,
+          "mv": 70006.3,
+          "share_of_measure": 0.05917894282222593
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "TLLY",
+          "via_fund": null,
+          "mv": 59979.4,
+          "share_of_measure": 0.05070282936123489
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDC",
+          "via_fund": null,
+          "mv": 59503.5,
+          "share_of_measure": 0.050300533298036326
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": "KUSX",
+          "mv": 57501.67999999999,
+          "share_of_measure": 0.04860832000694126
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "7.1 **Equity ceiling.** In light of the Trustees' experience in 2008 and 2022, total equity exposure, including the equity portion of balanced and multi-asset funds, shall not exceed 60% of the market value of the Portfolio."
+      ],
+      "reason": null
+    }
+  ],
+  "tracked_findings": [],
+  "review_items": [
+    {
+      "clause_id": "S046",
+      "reason": "missing_threshold",
+      "question": "For bond funds, what does \u201cprimarily\u201d mean? Examples: (a) at least 0.50 of holdings by market value in investment-grade, (b) at least 0.60, or (c) based on fund\u2019s stated mandate/portfolio composition.",
+      "assumption": "Assume 'primarily' = at least 0.50 investment-grade by market value."
+    },
+    {
+      "clause_id": "S047",
+      "reason": "missing_threshold",
+      "question": "What tolerance should we enforce for \u201cwithin two years of\u201d the Bloomberg US Aggregate Bond Index duration? Examples: enforce absolute difference <= 2.0 years, or <= 2.0 years for the fixed-income sleeve only, or use a percentage band.",
+      "assumption": "Assume absolute difference <= 2.0 years for the fixed-income allocation."
+    },
+    {
+      "clause_id": "S051",
+      "reason": "other",
+      "question": "What data fields are available to detect leverage, margin, short sales, and derivatives usage (e.g., position types, notional, margin balances, fund derivative holdings)? Also, define \u201cdiversified mutual funds or ETFs\u201d (any numeric diversification rule or rely on fund classification).",
+      "assumption": "If derivative/leverage/margin/short indicators are unavailable, flag this clause as uncheckable and require PM confirmation."
+    },
+    {
+      "clause_id": "S052",
+      "reason": "other",
+      "question": "How should we determine \u201ccannot ordinarily be sold within five business days\u201d? Examples: use a liquidity attribute, security type (private placement vs public), or a vendor liquidity score. Which data source should the checker use?",
+      "assumption": "Use security_type/market listing to approximate liquidity; treat private placements/private funds/LP interests as non-compliant."
+    }
+  ],
+  "trades": [
+    {
+      "account_id": "CHEN-TR",
+      "security_id": "NRVL",
+      "side": "sell",
+      "quantity": 76.0
+    },
+    {
+      "account_id": "CHEN-DC",
+      "security_id": "HLDA",
+      "side": "sell",
+      "quantity": 98.0
+    },
+    {
+      "account_id": "CHEN-TR",
+      "security_id": "CRAG",
+      "side": "buy",
+      "quantity": 178.0
+    },
+    {
+      "account_id": "CHEN-DC",
+      "security_id": "CRAG",
+      "side": "buy",
+      "quantity": 186.0
+    }
+  ],
+  "summary": {
+    "pass": 9,
+    "breach": 1,
+    "needs_review": 0,
+    "cannot_evaluate": 0,
+    "tracked": 0
+  },
+  "all_findings": [
+    {
+      "rule_id": "R-S033",
+      "clause_id": "S033",
+      "status": "pass",
+      "measured": 0.5874509722006567,
+      "limit": {
+        "min": 0.5,
+        "max": 0.7
+      },
+      "margin": 0.08745097220065667,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 1150033.5999999999,
+          "share_of_measure": 0.38360593520444614
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 599993.1,
+          "share_of_measure": 0.2001340780319069
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "AXTL",
+          "via_fund": null,
+          "mv": 449961.45,
+          "share_of_measure": 0.1500894259378149
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 148558.80000000002,
+          "share_of_measure": 0.04955336731626823
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "MRDN",
+          "via_fund": null,
+          "mv": 110144.49999999999,
+          "share_of_measure": 0.036739869104803646
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 99962.59999999999,
+          "share_of_measure": 0.033343588099050296
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 89887.5,
+          "share_of_measure": 0.029982931368865793
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "GRBC",
+          "via_fund": null,
+          "mv": 79969.2,
+          "share_of_measure": 0.02667457694588349
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 79955.75,
+          "share_of_measure": 0.02667009055537412
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "SUMM",
+          "via_fund": null,
+          "mv": 70006.3,
+          "share_of_measure": 0.02335134571868424
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Equity (US and international) | 50% | 60% | 70% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S034",
+      "clause_id": "S034",
+      "status": "pass",
+      "measured": 0.313595387889145,
+      "limit": {
+        "min": 0.25,
+        "max": 0.45
+      },
+      "margin": 0.06359538788914498,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "CRAG",
+          "via_fund": null,
+          "mv": 699954.6,
+          "share_of_measure": 0.4373676135144111
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "UST-2033",
+          "via_fund": null,
+          "mv": 300267.0,
+          "share_of_measure": 0.18762225608222544
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "UST-2028",
+          "via_fund": null,
+          "mv": 289855.0,
+          "share_of_measure": 0.18111630327912642
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "B-GRANITE-2030",
+          "via_fund": null,
+          "mv": 149998.0,
+          "share_of_measure": 0.09372646067607047
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "B-MERIDIAN-2029",
+          "via_fund": null,
+          "mv": 99800.0,
+          "share_of_measure": 0.062360169972078515
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "B-HALDEN-2031",
+          "via_fund": null,
+          "mv": 60505.9,
+          "share_of_measure": 0.03780719647608803
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Fixed income | 25% | 35% | 45% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S035",
+      "clause_id": "S035",
+      "status": "pass",
+      "measured": 0.020574804384557437,
+      "limit": {
+        "min": 0.0,
+        "max": 0.1
+      },
+      "margin": 0.020574804384557437,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 40000.0,
+          "share_of_measure": 0.38095238095238093
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "KGMXX",
+          "via_fund": null,
+          "mv": 40000.0,
+          "share_of_measure": 0.38095238095238093
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 20000.0,
+          "share_of_measure": 0.19047619047619047
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 5000.0,
+          "share_of_measure": 0.047619047619047616
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Cash and cash equivalents | 0% | 5% | 10% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S036",
+      "clause_id": "S036",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "min": 0.0,
+        "max": 0.1
+      },
+      "margin": 0.0,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Alternative investments | 0% | 0% | 10% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S037",
+      "clause_id": "S037",
+      "status": "pass",
+      "measured": 0.11756895871032579,
+      "limit": {
+        "min": 0.1,
+        "max": 0.2
+      },
+      "margin": 0.01756895871032578,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 599993.1,
+          "share_of_measure": 1.0
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "4.2 International equity will represent between 10% and 20% of the market value of the Portfolio."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S041",
+      "clause_id": "S041",
+      "status": "breach",
+      "measured": {
+        "ISS-HALDEN": 0.05307557336297255,
+        "__all__": {
+          "ISS-NORTHVALE": 0.05291755017489368,
+          "ISS-KESTREL": 0.0329314316818911,
+          "ISS-HALDEN": 0.05307557336297255,
+          "ISS-ORBITAL": 0.02384450550436762,
+          "ISS-MERIDIAN": 0.04316688063156889,
+          "ISS-CLEARWATER": 0.0018027974366223523,
+          "ISS-GRANITE": 0.046639639708134055,
+          "ISS-PETREX": 0.002478846475355734,
+          "ISS-TALLYARD": 0.01378114161242038,
+          "ISS-BIRCHLINE": 0.001352098077466764,
+          "ISS-SUMMIT": 0.01484451914252367,
+          "ISS-CONDOR": 0.0009013987183111761,
+          "ISS-SALTPINE": 0.000676049038733382,
+          "ISS-AUTUMN": 0.000676049038733382,
+          "ISS-DRILLQUEST": 0.00022534967957779404,
+          "ISS-NORDHAV": 0.0018811033393652129,
+          "ISS-KAIYO": 0.0014108275045239095
+        }
+      },
+      "limit": {
+        "max": 0.05
+      },
+      "margin": -0.003075573362972546,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 79955.75,
+          "share_of_measure": 0.29518985161570027
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "B-HALDEN-2031",
+          "via_fund": null,
+          "mv": 60505.9,
+          "share_of_measure": 0.2233826540664605
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDC",
+          "via_fund": null,
+          "mv": 59503.5,
+          "share_of_measure": 0.21968187823408347
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "HLDA",
+          "via_fund": "AXTL",
+          "mv": 22498.072500000002,
+          "share_of_measure": 0.08306097663913185
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "HLDC",
+          "via_fund": "AXTL",
+          "mv": 20248.26525,
+          "share_of_measure": 0.07475487897521867
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDA",
+          "via_fund": "KUSX",
+          "mv": 12650.3696,
+          "share_of_measure": 0.04670409226488108
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDC",
+          "via_fund": "KUSX",
+          "mv": 11500.336,
+          "share_of_measure": 0.042458265695346435
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDA",
+          "via_fund": "HPBAX",
+          "mv": 3999.9300000000003,
+          "share_of_measure": 0.014767402509177739
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 148558.80000000002,
+          "share_of_measure": 0.5501043360765615
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": "KUSX",
+          "mv": 57501.67999999999,
+          "share_of_measure": 0.21292527605020295
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "NRVL",
+          "via_fund": "AXTL",
+          "mv": 53995.373999999996,
+          "share_of_measure": 0.199941634998907
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": "HPBAX",
+          "mv": 9999.825,
+          "share_of_measure": 0.03702875287432856
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "Worst group: ISS-HALDEN = 0.0531",
+        "Breaching groups: ISS-HALDEN (0.0531), ISS-NORTHVALE (0.0529)"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "5.1 **Single issuer.** Exposure to any single issuer shall not exceed 5% of the market value of the Portfolio. Exposure to an issuer includes all of its securities held in the Portfolio, including every class of common or preferred stock and any bonds, as well as indirect exposure through mutual funds and exchange-traded funds held in the Portfolio. Obligations of the United States Treasury and US government agencies are exempt from this limit."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S042-1",
+      "clause_id": "S042",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max": 0.15
+      },
+      "margin": 0.15,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "No matching holdings found \u2014 vacuous pass"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "5.2 **Pooled vehicles.** No single mutual fund or exchange-traded fund shall exceed 15% of the market value of the Portfolio, except for the Portfolio's core US broad-market index fund, which may represent up to 30%."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S042-2",
+      "clause_id": "S042",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max": 0.3
+      },
+      "margin": 0.3,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "No matching holdings found \u2014 vacuous pass"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "5.2 **Pooled vehicles.** No single mutual fund or exchange-traded fund shall exceed 15% of the market value of the Portfolio, except for the Portfolio's core US broad-market index fund, which may represent up to 30%."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S045",
+      "clause_id": "S045",
+      "status": "pass",
+      "measured": 0,
+      "limit": {
+        "max_sub_ig_count": 0
+      },
+      "margin": null,
+      "unit": "count",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "6.1 Individual bonds must be rated A- or better by S&P or A3 or better by Moody's."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S050",
+      "clause_id": "S050",
+      "status": "pass",
+      "measured": 0.23180155120112578,
+      "limit": {
+        "max": 0.6
+      },
+      "margin": 0.3681984487988742,
+      "unit": "fraction",
+      "scope_accounts": [
+        "CHEN-TR",
+        "CHEN-DC",
+        "CHEN-MC"
+      ],
+      "denominator_value": 5103329.2,
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 148558.80000000002,
+          "share_of_measure": 0.12558230803425546
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "MRDN",
+          "via_fund": null,
+          "mv": 110144.49999999999,
+          "share_of_measure": 0.09310926399027891
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 99962.59999999999,
+          "share_of_measure": 0.08450212323406667
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 89887.5,
+          "share_of_measure": 0.07598526451094878
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "GRBC",
+          "via_fund": null,
+          "mv": 79969.2,
+          "share_of_measure": 0.06760095469035143
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 79955.75,
+          "share_of_measure": 0.06758958490247578
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "SUMM",
+          "via_fund": null,
+          "mv": 70006.3,
+          "share_of_measure": 0.05917894282222593
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "TLLY",
+          "via_fund": null,
+          "mv": 59979.4,
+          "share_of_measure": 0.05070282936123489
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "HLDC",
+          "via_fund": null,
+          "mv": 59503.5,
+          "share_of_measure": 0.050300533298036326
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": "KUSX",
+          "mv": 57501.67999999999,
+          "share_of_measure": 0.04860832000694126
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "7.1 **Equity ceiling.** In light of the Trustees' experience in 2008 and 2022, total equity exposure, including the equity portion of balanced and multi-asset funds, shall not exceed 60% of the market value of the Portfolio."
+      ],
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "household": "HH-BRIGHT",
+  "snapshot_date": "2026-09-25",
+  "portfolio_mv": 8439749.600000001,
+  "findings": [
+    {
+      "rule_id": "R-S024",
+      "clause_id": "S024",
+      "status": "pass",
+      "measured": 0.6089894598294717,
+      "limit": {
+        "min": 0.55,
+        "max": 0.75
+      },
+      "margin": 0.05898945982947168,
+      "unit": "fraction",
+      "scope_accounts": [
+        "BWF-MAIN",
+        "BWF-RES"
+      ],
+      "denominator_value": 8439749.600000001,
+      "contributors": [
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 1999876.7999999998,
+          "share_of_measure": 0.3891023954998469
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "AXTL",
+          "via_fund": null,
+          "mv": 1400023.6500000001,
+          "share_of_measure": 0.27239305739805536
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 320026.2,
+          "share_of_measure": 0.06226531606482615
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 300030.39999999997,
+          "share_of_measure": 0.058374869573354346
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 149987.25,
+          "share_of_measure": 0.029181996745716744
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "CLRX",
+          "via_fund": null,
+          "mv": 149979.75,
+          "share_of_measure": 0.029180537521845427
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "PTRX",
+          "via_fund": null,
+          "mv": 120003.0,
+          "share_of_measure": 0.02334816563058691
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 119850.0,
+          "share_of_measure": 0.023318397463612084
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "TRNW",
+          "via_fund": null,
+          "mv": 109993.40000000001,
+          "share_of_measure": 0.021400665995611762
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "SVRF",
+          "via_fund": null,
+          "mv": 99994.25,
+          "share_of_measure": 0.01945519954589731
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Global equity | 55% | 65% | 75% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S025",
+      "clause_id": "S025",
+      "status": "pass",
+      "measured": 0.20854189797289716,
+      "limit": {
+        "min": 0.2,
+        "max": 0.4
+      },
+      "margin": 0.008541897972897144,
+      "unit": "fraction",
+      "scope_accounts": [
+        "BWF-MAIN",
+        "BWF-RES"
+      ],
+      "denominator_value": 8439749.600000001,
+      "contributors": [
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "CRAG",
+          "via_fund": null,
+          "mv": 1169981.4,
+          "share_of_measure": 0.6647465224397562
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "UST-2030",
+          "via_fund": null,
+          "mv": 499992.0,
+          "share_of_measure": 0.28407968130749656
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "B-PETREX-2030",
+          "via_fund": null,
+          "mv": 90068.0,
+          "share_of_measure": 0.05117379625274724
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Fixed income | 20% | 30% | 40% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S026",
+      "clause_id": "S026",
+      "status": "pass",
+      "measured": 0.07583163367785223,
+      "limit": {
+        "min": 0.0,
+        "max": 0.1
+      },
+      "margin": 0.07583163367785223,
+      "unit": "fraction",
+      "scope_accounts": [
+        "BWF-MAIN",
+        "BWF-RES"
+      ],
+      "denominator_value": 8439749.600000001,
+      "contributors": [
+        {
+          "account_id": "BWF-RES",
+          "security_id": "KGMXX",
+          "via_fund": null,
+          "mv": 300000.0,
+          "share_of_measure": 0.46875
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 190000.0,
+          "share_of_measure": 0.296875
+        },
+        {
+          "account_id": "BWF-RES",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 150000.0,
+          "share_of_measure": 0.234375
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Cash and cash equivalents | 0% | 5% | 10% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S030",
+      "clause_id": "S030",
+      "status": "pass",
+      "measured": {
+        "NRVL": 0.037918921196429804,
+        "__all__": {
+          "NRVL": 0.037918921196429804,
+          "KSMC": 0.03554968028909292,
+          "HLDA": 0.01777152843491944,
+          "ORBP": 0.014200658275454046,
+          "CLRX": 0.01777063978296228,
+          "PTRX": 0.014218786775380158,
+          "CNDR": 0.009478806101072003,
+          "DQSV": 0.007107296169071175,
+          "SLTP": 0.010664386298854172,
+          "VRDC": 0.008290838391698255,
+          "SVRF": 0.011848011462330587,
+          "TRNW": 0.01303278002465855,
+          "AUTM": 0.008293368087602976
+        }
+      },
+      "limit": {
+        "max": 0.04
+      },
+      "margin": 0.0020810788035701966,
+      "unit": "fraction",
+      "scope_accounts": [
+        "BWF-MAIN",
+        "BWF-RES"
+      ],
+      "denominator_value": 8439749.600000001,
+      "contributors": [
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 320026.2,
+          "share_of_measure": 1.0
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "Worst group: NRVL = 0.0379",
+        "Top groups: {'NRVL': 0.037918921196429804, 'KSMC': 0.03554968028909292, 'HLDA': 0.01777152843491944}"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "6.2 No single security, other than diversified mutual funds, diversified exchange-traded funds and US Treasury obligations, may exceed 4% of the market value of the Portfolio."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S036",
+      "clause_id": "S036",
+      "status": "breach",
+      "measured": 0.05688187123466316,
+      "limit": {
+        "max": 0.0
+      },
+      "margin": -0.05688187123466316,
+      "unit": "fraction",
+      "scope_accounts": [
+        "BWF-MAIN",
+        "BWF-RES"
+      ],
+      "denominator_value": 8439749.600000001,
+      "contributors": [
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "PTRX",
+          "via_fund": null,
+          "mv": 120003.0,
+          "share_of_measure": 0.24997044694119333
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "SVRF",
+          "via_fund": null,
+          "mv": 99994.25,
+          "share_of_measure": 0.20829152074572652
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "B-PETREX-2030",
+          "via_fund": null,
+          "mv": 90068.0,
+          "share_of_measure": 0.18761479475595944
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "SLTP",
+          "via_fund": null,
+          "mv": 90004.75,
+          "share_of_measure": 0.1874830427933499
+        },
+        {
+          "account_id": "BWF-MAIN",
+          "security_id": "CNDR",
+          "via_fund": null,
+          "mv": 79998.75,
+          "share_of_measure": 0.16664019476377082
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "8.1 Consistent with its mission, the Foundation will not invest in fossil fuel companies."
+      ],
+      "reason": null
+    }
+  ],
+  "confirmed_breaches": [
+    "R-S036"
+  ],
+  "summary": {
+    "pass": 4,
+    "breach": 1,
+    "needs_review": 0,
+    "cannot_evaluate": 0,
+    "tracked": 0
+  }
+}

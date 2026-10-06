@@ -1,0 +1,27 @@
+# Policy configuration for the planner
+
+# If true: holdings that breach under ALL candidate readings of an ambiguous rule
+# (e.g. fossil_revenue_pct=94 under thresholds of 10%, 25%, 50%) are treated as
+# confirmed breaches and traded. Holdings that breach under only some readings are
+# left untouched and escalated to PM.
+# Set to false for most conservative behavior (never trade on any ambiguous rule).
+act_on_robust_breaches: true
+
+# Planner safety margin — each rule constraint gets a buffer above its limit
+margin_bp: 5                       # basis points (5 bp = 0.0005)
+margin_min_lots: 1                 # always at least 1 lot of margin
+
+# Dust threshold — drop trades smaller than this ($ MV or fraction of portfolio)
+dust_threshold_usd: 500
+dust_threshold_bp: 1               # 1 basis point of portfolio value
+
+# LP parameters
+lp_repair_max_iterations: 5
+lp_candidate_buys_per_account: 30  # max buy candidates per account (prune to keep LP small)
+
+# BudgetGuard — hard stop on LLM spend
+budget_hard_stop_usd: 1.50
+budget_warn_usd: 1.00
+
+# Tax tie-break: prefer IRA/Roth accounts when trades are equivalent
+prefer_tax_advantaged: true

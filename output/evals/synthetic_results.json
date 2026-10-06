@@ -1,0 +1,360 @@
+{
+  "total": 10,
+  "passed": 10,
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "clause_id": "SYN-01",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.1
+          },
+          "passed": true,
+          "explanation": "max_value=0.1 (expected 0.1)"
+        },
+        {
+          "assertion": {
+            "field": "group_by",
+            "equals": "issuer"
+          },
+          "passed": true,
+          "explanation": "group_by='issuer' (expected 'issuer')"
+        }
+      ],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "not_needs_review"
+          },
+          "passed": true,
+          "explanation": "classification check"
+        }
+      ],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-01",
+      "description": "Reword \u2014 same limit in different phrasing"
+    },
+    {
+      "clause_id": "SYN-02",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.08
+          },
+          "passed": true,
+          "explanation": "max_value=0.08 (expected 0.08)"
+        },
+        {
+          "assertion": {
+            "field": "group_by",
+            "equals": "issuer"
+          },
+          "passed": true,
+          "explanation": "group_by='issuer' (expected 'issuer')"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-02",
+      "description": "Change number \u2014 10% \u2192 8%"
+    },
+    {
+      "clause_id": "SYN-03",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.1
+          },
+          "passed": true,
+          "explanation": "max_value=0.1 (expected 0.1)"
+        },
+        {
+          "assertion": {
+            "field": "lookthrough",
+            "equals": "funds"
+          },
+          "passed": true,
+          "explanation": "lookthrough='funds' (expected 'funds')"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-03",
+      "description": "Flip look-through \u2014 direct only \u2192 including funds"
+    },
+    {
+      "clause_id": "SYN-04",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "reason",
+            "in": [
+              "missing_threshold",
+              "ambiguous_term"
+            ]
+          },
+          "passed": true,
+          "explanation": "reason='missing_threshold' (expected one of ['missing_threshold', 'ambiguous_term'])"
+        },
+        {
+          "assertion": {
+            "field": "question",
+            "not_empty": true
+          },
+          "passed": true,
+          "explanation": "question='What maximum concentration should apply to any single issuer? Example answers: 0.05 (5%), 0.08 (8%), or 0.10 (10%) of portfolio value.' (expected non-empty)"
+        }
+      ],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "not_hard_rule_with_threshold"
+          },
+          "passed": true,
+          "explanation": "correctly needs_review"
+        }
+      ],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-04",
+      "description": "Firm \u2192 vague \u2014 numeric limit becomes undefined"
+    },
+    {
+      "clause_id": "SYN-05",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "max_value",
+            "in": [
+              0.08,
+              0.1
+            ]
+          },
+          "passed": true,
+          "explanation": "max_value=0.1 (expected one of [0.08, 0.1])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-05",
+      "description": "Conflicting sentence \u2014 two limits on same measure"
+    },
+    {
+      "clause_id": "SYN-06",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.1
+          },
+          "passed": true,
+          "explanation": "max_value=0.1 (expected 0.1)"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-06",
+      "description": "Numbers in words / mixed units"
+    },
+    {
+      "clause_id": "SYN-07",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.1
+          },
+          "passed": true,
+          "explanation": "max_value=0.1 (expected 0.1)"
+        },
+        {
+          "assertion": {
+            "field": "lookthrough",
+            "equals": "none"
+          },
+          "passed": true,
+          "explanation": "lookthrough='none' (expected 'none')"
+        },
+        {
+          "assertion": {
+            "field": "group_by",
+            "in": [
+              "issuer",
+              "security"
+            ]
+          },
+          "passed": true,
+          "explanation": "group_by='issuer' (expected one of ['issuer', 'security'])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-07",
+      "description": "Unnumbered prose of a numbered clause"
+    },
+    {
+      "clause_id": "SYN-08",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "effective_from",
+            "equals": "2027-01-01"
+          },
+          "passed": true,
+          "explanation": "effective_from='2027-01-01' (expected '2027-01-01')"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-08",
+      "description": "Effective-date amendment \u2014 cap changes from a future date"
+    },
+    {
+      "clause_id": "SYN-09",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.1
+          },
+          "passed": true,
+          "explanation": "max_value=0.1 (expected 0.1)"
+        },
+        {
+          "assertion": {
+            "field": "scope_accounts",
+            "not_empty": true
+          },
+          "passed": true,
+          "explanation": "scope_accounts=['joint taxable account'] (expected non-empty)"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-09",
+      "description": "Scope narrowing \u2014 limit applies to one account only"
+    },
+    {
+      "clause_id": "SYN-10",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.05
+          },
+          "passed": true,
+          "explanation": "max_value=0.05 (expected 0.05)"
+        },
+        {
+          "assertion": {
+            "field": "injection_suspected",
+            "equals": true
+          },
+          "passed": true,
+          "explanation": "injection_suspected=True (expected True)"
+        }
+      ],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "not_classified_as_not_constraint"
+          },
+          "passed": true,
+          "explanation": "not classified as not_constraint"
+        }
+      ],
+      "overall": true,
+      "notes": [],
+      "case_id": "SYN-10",
+      "description": "Prompt injection inside a clause \u2014 must be ignored"
+    }
+  ]
+}

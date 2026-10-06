@@ -1,0 +1,201 @@
+security_id,name,approved_date,notes
+HLDA,Halden Search Inc. Class A,2023-10-08,Single stock.
+HLDC,Halden Search Inc. Class C,2023-12-13,Single stock.
+MRDN,Meridian Health Group,2025-04-06,Single stock.
+GRBC,Granite Bancorp,2021-02-20,Single stock.
+SUMM,Summit Industrial Holdings,2020-03-02,Single stock.
+BRCH,Birchline Consumer Brands,2023-12-06,Single stock.
+TLLY,Tallyard Retail Corp.,2025-06-16,Single stock.
+CNDR,Condor Midstream Corp.,2023-03-17,Single stock.
+SLTP,Saltpine Power & Light Co.,2023-09-12,Single stock.
+VRDC,Veridian Chemicals Inc.,2019-05-23,Single stock.
+TRNW,Tern Wind Energy Inc.,2022-02-15,Single stock.
+KAIY,Kaiyo Robotics Co.,2022-03-28,Single stock.
+KUSX,Keystone US Total Market Index ETF,2022-11-04,Core US equity.
+LITL,Lighthouse International Equity Index ETF,2019-03-12,Core international equity.
+CRAG,Crestline US Aggregate Bond ETF,2023-01-21,Core fixed income.
+KGMXX,Keystone Government Money Market Fund,2023-06-24,Cash management.
+SNBL,Sandbar 0-3 Month Treasury Bill ETF,2021-02-10,Short-term fixed income.
+B-GRANITE-2030,Granite Bancorp 5.10% 06/01/2030,2023-08-05,"Individual bond. Buy in $1,000 face."
+B-MERIDIAN-2029,Meridian Health Group 4.50% 11/15/2029,2020-02-15,"Individual bond. Buy in $1,000 face."
+B-SUMMIT-2032,Summit Industrial Holdings 4.80% 04/01/2032,2020-06-15,"Individual bond. Buy in $1,000 face."
+UST-2028,US Treasury 4.000% 08/15/2028,2020-09-05,"US Treasury. Buy in $1,000 face."
+UST-2030,US Treasury 4.125% 05/15/2030,2020-12-28,"US Treasury. Buy in $1,000 face."
+UST-2033,US Treasury 4.375% 02/15/2033,2022-09-28,"US Treasury. Buy in $1,000 face."
+UST-BILL-20261217,US Treasury Bill 12/17/2026,2026-06-18,"US Treasury. Buy in $1,000 face."
+B-NORTHVALE-2034,Northvale Systems Inc. 4.35% 02/01/2034,2026-02-20,"Individual bond. Buy in $1,000 face."
+B-HALDEN-2033,Halden Search Inc. 4.60% 08/15/2033,2026-08-14,"Individual bond. Buy in $1,000 face."
+ALDS,Alderbank Software Inc.,2022-01-28,Single stock.
+AMBS,Ambervale Semiconductor Corp.,2022-04-09,Single stock.
+ASHN,Ashcombe Networks Inc.,2020-03-11,Single stock.
+ASTD,Asterion Data Services Inc.,2024-07-19,Single stock.
+BYLK,Baylock Security Inc.,2024-08-22,Single stock.
+BLMI,Bellmore Instruments Inc.,2023-12-10,Single stock.
+BRDL,Brindle Payroll Systems Inc.,2025-07-03,Single stock.
+CMBL,Cambrel Microdevices Inc.,2023-10-01,Single stock.
+CRMS,Carrowmore Design Software Inc.,2021-06-07,Single stock.
+CNDA,Cindera Storage Corp.,2022-08-17,Single stock.
+CLVP,Clovemont Photonics Inc.,2023-04-07,Single stock.
+CBLA,Cobbleton Analytics Inc.,2023-04-08,Single stock.
+CPLF,Copperleaf Therapeutics Inc.,2025-10-24,Single stock.
+CRVM,Corvana Medical Inc.,2025-03-06,Single stock.
+DLBD,Dalbrook Diagnostics Inc.,2022-08-03,Single stock.
+DNMH,Dunmore Health Systems Inc.,2025-04-10,Single stock.
+ESTP,Eastmere Pharmaceuticals Inc.,2020-05-11,Single stock.
+ELMC,Elmscott Surgical Inc.,2020-06-14,Single stock.
+EMBB,Embervale Biosciences Inc.,2025-04-15,Single stock.
+FRMD,Fairmoor Dental Supply Inc.,2019-02-05,Single stock.
+FLCA,Falconer Animal Health Inc.,2021-10-11,Single stock.
+FNWC,Fenwold Care Partners Inc.,2025-05-03,Single stock.
+FXHL,Foxhollow Labs Inc.,2021-01-16,Single stock.
+GLWB,Galewood Bancshares Inc.,2021-03-18,Single stock.
+GLMI,Glenmarch Insurance Group,2026-06-13,Single stock.
+GDCA,Goldcrest Asset Management Inc.,2019-02-23,Single stock.
+GRBL,Granbury Life Corp.,2020-02-21,Single stock.
+GRYM,Greymere Capital Markets Inc.,2022-03-01,Single stock.
+HWEX,Hartwell Exchange Group Inc.,2021-07-16,Single stock.
+HZMB,Hazelmoor Bank Corp.,2023-07-26,Single stock.
+HGCR,Highcastle Reinsurance Ltd.,2020-01-25,Single stock.
+HLFC,Hollinsford Consumer Finance Inc.,2023-10-05,Single stock.
+IRBK,Ironbark Financial Corp.,2020-10-27,Single stock.
+IVYM,Ivydene Mortgage Corp.,2020-09-12,Single stock.
+JRWH,Jarrowby Home Stores Inc.,2024-05-08,Single stock.
+KSWA,Kestwick Apparel Inc.,2021-11-18,Single stock.
+KNLR,Kinloch Resorts Inc.,2024-12-12,Single stock.
+LRCH,Larchfield Restaurants Inc.,2025-02-27,Single stock.
+LNEV,Lindell Electric Vehicles Inc.,2019-05-16,Single stock.
+LKMP,Lockmere Auto Parts Inc.,2025-10-21,Single stock.
+MRLH,Marlowe Homebuilders Inc.,2026-03-28,Single stock.
+MDGO,Meadowgate Online Inc.,2025-09-28,Single stock.
+MRVE,Merrivale Leisure Inc.,2023-11-17,Single stock.
+MLBM,Milbrook Media Inc.,2020-07-05,Single stock.
+MRWW,Morrow Wireless Inc.,2021-10-19,Single stock.
+NTHB,Netherby Broadband Inc.,2019-05-06,Single stock.
+NWKG,Northwick Games Inc.,2024-04-20,Single stock.
+ORRS,Orrin Social Inc.,2021-03-20,Single stock.
+PLHA,Pellham Aerospace Corp.,2025-08-17,Single stock.
+PNKD,Pennick Defense Systems Inc.,2022-01-22,Single stock.
+QRAE,Quarrington Aero Inc.,2020-02-02,Single stock.
+RVLR,Ravelston Rail Corp.,2026-08-11,Single stock.
+RDMP,Redmarsh Pumps Inc.,2019-03-03,Single stock.
+RKWL,Rookwood Logistics Inc.,2021-06-13,Single stock.
+RSBP,Rosslyn Building Products Inc.,2019-08-28,Single stock.
+SXEL,Saxonby Electrical Corp.,2024-12-26,Single stock.
+SDGW,Sedgefield Waste Services Inc.,2021-05-20,Single stock.
+SLWT,Silverdale Water Technologies Inc.,2023-04-21,Single stock.
+SRLF,Sorrel Foods Inc.,2023-01-11,Single stock.
+STWB,Stanwick Beverages Inc.,2020-03-13,Single stock.
+STLG,Stellan Grocers Inc.,2026-04-28,Single stock.
+STNH,Stoneleigh Household Inc.,2023-07-12,Single stock.
+TLBF,Talbrook Farms Inc.,2024-08-23,Single stock.
+TMPC,Tamsin Personal Care Inc.,2019-08-16,Single stock.
+THBR,Thornbury Brewing Co.,2023-07-13,Single stock.
+TDWX,Tidewell Exploration Corp.,2025-06-14,Single stock.
+TRBR,Torrance Basin Resources Inc.,2019-08-24,Single stock.
+TRVR,Trevane Refining Corp.,2021-03-01,Single stock.
+UNDC,Underhill Coal Corp.,2021-04-07,Single stock.
+VLNG,Valemont LNG Inc.,2022-06-22,Single stock.
+VRDG,Varden Gas Distribution Co.,2023-03-11,Single stock.
+WSTW,Westbury Water Works Inc.,2025-07-08,Single stock.
+WHLE,Whitlow Electric Co.,2021-12-09,Single stock.
+WLDR,Wildmere Renewables Inc.,2023-02-13,Single stock.
+WLWC,Willowby Water Company,2022-06-10,Single stock.
+WNTP,Winterbourne Plastics Inc.,2020-10-03,Single stock.
+WRNP,Wrenfield Packaging Corp.,2023-12-12,Single stock.
+YRSC,Yarrow Specialty Chemicals Inc.,2026-02-27,Single stock.
+YLVS,Yelverton Steel Corp.,2019-12-23,Single stock.
+ZPHG,Zephyrine Gold Corp.,2024-04-07,Single stock.
+BRKO,Brackwell Office REIT,2025-11-12,Single stock.
+CDHR,Coldharbour Residential REIT,2022-07-04,Single stock.
+ESKD,Eskdale Data Centers REIT,2022-09-17,Single stock.
+FRWI,Farrowby Industrial Properties REIT,2021-06-17,Single stock.
+HKRE,Hakuro Electronics Corp.,2020-06-22,Single stock.
+HKRY,Hakuro Electronics Corp. ADR,2019-03-02,Single stock.
+KNMM,Kanemori Motor Co.,2022-12-07,Single stock.
+MTSH,Mitsuhara Trading Co.,2023-12-05,Single stock.
+SEIP,Seiran Pharmaceutical Co.,2025-12-24,Single stock.
+RHNC,Rheinholt Chemie AG,2026-03-16,Single stock.
+VLKV,Volkenstadt Versicherung AG,2026-08-14,Single stock.
+BRNL,Brandauer Logistik AG,2026-05-15,Single stock.
+HRCB,Harcastle Bank plc,2020-10-07,Single stock.
+HRCY,Harcastle Bank plc ADR,2020-12-08,Single stock.
+PMBF,Pemberly Foods plc,2019-12-09,Single stock.
+NMEN,Northmoor Energy plc,2022-11-04,Single stock.
+MVAR,Maison Varenne SA,2024-03-15,Single stock.
+DLMA,Delorme Aerospace SA,2025-10-04,Single stock.
+ALPW,Alpenwerk Instruments AG,2024-01-25,Single stock.
+ZRLP,Zurlinden Pharma AG,2024-11-17,Single stock.
+VOSE,Van Oort Semiconductor Equipment NV,2023-09-10,Single stock.
+LNQI,Lindqvist Industrial AB,2022-03-11,Single stock.
+BRVH,Brevik Hydro ASA,2021-04-19,Single stock.
+KLSM,Kallista Mining Ltd.,2020-05-27,Single stock.
+SRNX,Seorin Electronics Co.,2025-11-04,Single stock.
+TCHF,Taichen Foundry Corp.,2021-06-02,Single stock.
+IDVS,Indravale Software Ltd.,2021-09-25,Single stock.
+CRDA,Cordeiro Agro SA,2023-02-27,Single stock.
+KXFF,Keystone US Total Market ex-Fossil Fuels ETF,2026-05-07,Core US equity.
+EQLW,Lantern US Equal-Weight ETF,2023-12-10,Core US equity.
+KLCG,Keystone US Large Cap Growth ETF,2025-08-06,Satellite US equity.
+CDVL,Cobalt US Dividend Value ETF,2026-05-16,Satellite US equity.
+FWTR,Fernbrook Global Water Infrastructure ETF,2026-08-14,Thematic equity.
+KS5X,Keystone US Large Cap 500 Index ETF,2023-04-22,Core US equity.
+KMCX,Keystone US Mid Cap Index ETF,2026-08-01,Satellite US equity.
+KSCX,Keystone US Small Cap Index ETF,2021-04-06,Satellite US equity.
+KVAL,Keystone US Large Cap Value ETF,2020-01-21,Satellite US equity.
+PGTK,Pinegate Technology Sector ETF,2025-08-13,Sector equity.
+PGHC,Pinegate Health Care Sector ETF,2024-04-15,Sector equity.
+PGFN,Pinegate Financials Sector ETF,2025-06-06,Sector equity.
+PGNR,Pinegate Energy Sector ETF,2019-12-16,Sector equity.
+PGUT,Pinegate Utilities Sector ETF,2024-04-03,Sector equity.
+PGIN,Pinegate Industrials Sector ETF,2021-01-14,Sector equity.
+LIXF,Lighthouse International ex-Fossil Fuels ETF,2020-08-07,Core international equity.
+LGLB,Lighthouse Global Equity Index ETF,2024-07-07,Core global equity.
+LEMK,Lighthouse Emerging Markets Index ETF,2026-02-06,Satellite international equity.
+LISC,Lighthouse International Small Cap ETF,2025-09-12,Satellite international equity.
+LEUR,Lighthouse Europe Index ETF,2020-06-19,Satellite international equity.
+FCLN,Fernbrook Clean Energy ETF,2026-08-14,Thematic equity.
+FAIX,Fernbrook Artificial Intelligence ETF,2021-03-08,Thematic equity.
+CQLT,Cobalt US Quality ETF,2025-01-14,Satellite US equity.
+CLVF,Cobalt US Low Volatility ETF,2020-04-13,Satellite US equity.
+KREI,Keystone US REIT Index ETF,2024-02-23,Satellite US equity.
+KESG,Keystone US ESG Leaders ETF,2022-06-11,Core US equity.
+HPGRX,Harbor Point Growth Fund,2025-04-02,Satellite US equity.
+HPEIX,Harbor Point Equity Income Fund,2025-09-20,Satellite US equity.
+CSTB,Crestline 1-3 Year Treasury ETF,2022-11-07,Core fixed income.
+CRCB,Crestline US Investment-Grade Corporate Bond ETF,2019-07-27,Core fixed income.
+HRHY,Harrow High Yield Bond ETF,2026-08-14,Satellite fixed income.
+CMUN,Crestline National Municipal Bond ETF,2025-06-10,Tax-exempt fixed income.
+CITB,Crestline 3-10 Year Treasury ETF,2024-08-09,Core fixed income.
+CLTB,Crestline 20+ Year Treasury ETF,2026-08-14,Satellite fixed income.
+CTIP,Crestline TIPS ETF,2019-02-12,Core fixed income.
+CMBF,Crestline Mortgage-Backed Securities ETF,2021-08-15,Core fixed income.
+CSCB,Crestline Short-Term Corporate Bond ETF,2023-02-27,Core fixed income.
+COHM,Crestline Ohio Municipal Bond ETF,2021-11-15,Tax-exempt fixed income.
+LIBD,Lighthouse International Bond ETF (USD Hedged),2023-08-28,Satellite fixed income.
+SUBF,Sandbar Ultra-Short Bond ETF,2026-06-14,Short-term fixed income.
+SBIX,Sandbar 3-12 Month Treasury Bill ETF,2021-02-17,Short-term fixed income.
+HFLT,Harrow Floating Rate Loan ETF,2023-08-28,Satellite fixed income.
+CGRN,Crestline Green Bond ETF,2022-08-21,Thematic fixed income.
+HPCBX,Harbor Point Core Plus Bond Fund,2021-01-05,Core fixed income.
+KTRXX,Keystone Treasury Money Market Fund,2021-06-06,Cash management.
+KPRXX,Keystone Prime Money Market Fund,2024-06-09,Cash management.
+UST-BILL-20261119,US Treasury Bill 11/19/2026,2026-05-21,"US Treasury. Buy in $1,000 face."
+UST-BILL-20270121,US Treasury Bill 01/21/2027,2026-07-23,"US Treasury. Buy in $1,000 face."
+UST-BILL-20270325,US Treasury Bill 03/25/2027,2026-08-27,"US Treasury. Buy in $1,000 face."
+UST-2027,US Treasury 3.875% 11/15/2027,2021-11-28,"US Treasury. Buy in $1,000 face."
+UST-2029,US Treasury 4.250% 02/15/2029,2026-04-02,"US Treasury. Buy in $1,000 face."
+UST-2031,US Treasury 4.000% 08/15/2031,2025-08-07,"US Treasury. Buy in $1,000 face."
+UST-2034,US Treasury 4.250% 11/15/2034,2020-12-27,"US Treasury. Buy in $1,000 face."
+UST-2036,US Treasury 4.500% 05/15/2036,2019-12-01,"US Treasury. Buy in $1,000 face."
+B-ALDERBANK-2031,Alderbank Software Inc. 4.40% 06/01/2031,2019-06-20,"Individual bond. Buy in $1,000 face."
+B-IRONBARK-2029,Ironbark Financial Corp. 4.95% 03/15/2029,2025-04-26,"Individual bond. Buy in $1,000 face."
+B-GALEWOOD-2028,Galewood Bancshares Inc. 5.35% 10/01/2028,2024-06-26,"Individual bond. Buy in $1,000 face."
+B-CORVANA-2033,Corvana Medical Inc. 4.60% 04/15/2033,2023-07-26,"Individual bond. Buy in $1,000 face."
+B-MORROW-2032,Morrow Wireless Inc. 5.20% 01/15/2032,2023-01-14,"Individual bond. Buy in $1,000 face."
+B-STANWICK-2030,Stanwick Beverages Inc. 4.15% 09/01/2030,2025-04-01,"Individual bond. Buy in $1,000 face."
+B-RAVELSTON-2034,Ravelston Rail Corp. 5.05% 06/15/2034,2026-06-17,"Individual bond. Buy in $1,000 face."
+B-TIDEWELL-2031,Tidewell Exploration Corp. 5.80% 02/01/2031,2021-03-17,"Individual bond. Buy in $1,000 face."
+B-WILDMERE-2035,Wildmere Renewables Inc. 4.90% 05/01/2035,2023-10-28,"Individual bond. Buy in $1,000 face."
+B-KINLOCH-2030,Kinloch Resorts Inc. 6.10% 12/01/2030,2026-08-03,"Individual bond. Buy in $1,000 face."
+B-MARLOWE-2029,Marlowe Homebuilders Inc. 5.95% 07/15/2029,2024-12-04,"Individual bond. Buy in $1,000 face."
+B-SAXONBY-2032,Saxonby Electrical Corp. 4.70% 11/01/2032,2026-08-09,"Individual bond. Buy in $1,000 face."

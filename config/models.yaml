@@ -1,0 +1,39 @@
+# Models and LLM configuration
+# Keep model names here, never in code. Check https://platform.openai.com/docs/pricing before any run.
+
+extraction:
+  model: "gpt-5.4-nano"           # Primary extraction model
+  reasoning_effort: null           # null = use model default; "low" / "medium" for reasoning models
+  temperature: 0                   # Determinism; omit field if model rejects it (reasoning models)
+  max_tokens: 8192
+  response_format: "json_schema"   # strict structured outputs
+
+dev:
+  model: "gpt-5.4-nano"           # Dev model
+  reasoning_effort: null
+  temperature: 0
+  max_tokens: 4096
+
+# Cost estimates (USD per 1M tokens) — update from official pricing page before first paid run
+# These are used only for BudgetGuard estimates, not for billing.
+pricing:
+  gpt-4o-mini:
+    input: 0.15
+    output: 0.60
+    cached_input: 0.075            # ~50% discount on cached prefix (OpenAI automatic caching)
+  gpt-4o:
+    input: 2.50
+    output: 10.00
+    cached_input: 1.25
+  gpt-5.4-nano:
+    input: 0.20
+    output: 1.25
+    cached_input: 0.10
+  gpt-5.4-mini:
+    input: 0.75
+    output: 4.50
+    cached_input: 0.375
+  gpt-5-mini:
+    input: 0.25
+    output: 2.00
+    cached_input: 0.125

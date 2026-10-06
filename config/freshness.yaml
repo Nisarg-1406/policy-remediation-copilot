@@ -1,0 +1,7 @@
+# Data freshness thresholds (days)
+# If an input is older than this, the checker returns CANNOT_EVALUATE for rules that depend on it.
+
+prices_days: 0                     # prices must be valuation-date close (0 = same day required)
+prices_stale_ok: 1                 # 1 stale price allowed (helper warns; we report it)
+fund_data_days: 45                 # fund constituents/sector weights (typical monthly disclosure)
+client_cashflows_days: 180         # planning inputs; Brightwater 2025-03 data → stale → cannot eval

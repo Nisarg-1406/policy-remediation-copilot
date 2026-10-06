@@ -1,0 +1,1052 @@
+{
+  "household": "HH-PATEL",
+  "snapshot_date": "2026-09-25",
+  "portfolio_mv": 2400166.9000000004,
+  "is_clean": true,
+  "breaches": [
+    {
+      "rule_id": "R-S028-no_crypto",
+      "clause_id": "S028",
+      "status": "breach",
+      "measured": 0.012510838308785941,
+      "limit": {
+        "max": 0.0
+      },
+      "margin": -0.012510838308785941,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "BVLT",
+          "via_fund": null,
+          "mv": 30028.1,
+          "share_of_measure": 1.0
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "5.1 The Portfolio will not hold cryptocurrency, funds or trusts that hold cryptocurrency, or other digital asset products."
+      ],
+      "reason": null
+    }
+  ],
+  "needs_review_findings": [],
+  "cannot_evaluate_findings": [],
+  "pass_findings": [
+    {
+      "rule_id": "R-S019-min",
+      "clause_id": "S019",
+      "status": "pass",
+      "measured": 0.820796587104005,
+      "limit": {
+        "min": 0.75
+      },
+      "margin": 0.07079658710400505,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-EQP",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 719987.4,
+          "share_of_measure": 0.36546678437610275
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 600082.3999999999,
+          "share_of_measure": 0.30460280983902527
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 150027.75,
+          "share_of_measure": 0.07615433181147593
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 149947.2,
+          "share_of_measure": 0.0761134444994459
+        },
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "AXTL",
+          "via_fund": null,
+          "mv": 120006.95000000001,
+          "share_of_measure": 0.06091572452418438
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 99991.5,
+          "share_of_measure": 0.05075584929672808
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 80006.25,
+          "share_of_measure": 0.04061130363877281
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "AUTM",
+          "via_fund": null,
+          "mv": 49999.35,
+          "share_of_measure": 0.025379752014264824
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Equity | 75% | 85% | 95% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S019-max",
+      "clause_id": "S019",
+      "status": "pass",
+      "measured": 0.820796587104005,
+      "limit": {
+        "max": 0.95
+      },
+      "margin": 0.1292034128959949,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-EQP",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 719987.4,
+          "share_of_measure": 0.36546678437610275
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 600082.3999999999,
+          "share_of_measure": 0.30460280983902527
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 150027.75,
+          "share_of_measure": 0.07615433181147593
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 149947.2,
+          "share_of_measure": 0.0761134444994459
+        },
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "AXTL",
+          "via_fund": null,
+          "mv": 120006.95000000001,
+          "share_of_measure": 0.06091572452418438
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 99991.5,
+          "share_of_measure": 0.05075584929672808
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 80006.25,
+          "share_of_measure": 0.04061130363877281
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "AUTM",
+          "via_fund": null,
+          "mv": 49999.35,
+          "share_of_measure": 0.025379752014264824
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Equity | 75% | 85% | 95% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S020-min",
+      "clause_id": "S020",
+      "status": "pass",
+      "measured": 0.12502880528849888,
+      "limit": {
+        "min": 0.05
+      },
+      "margin": 0.07502880528849888,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "CRAG",
+          "via_fund": null,
+          "mv": 200001.0,
+          "share_of_measure": 0.6664700589823053
+        },
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "UST-2033",
+          "via_fund": null,
+          "mv": 100089.0,
+          "share_of_measure": 0.3335299410176947
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Fixed income | 5% | 10% | 20% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S020-max",
+      "clause_id": "S020",
+      "status": "pass",
+      "measured": 0.12502880528849888,
+      "limit": {
+        "max": 0.2
+      },
+      "margin": 0.07497119471150113,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "CRAG",
+          "via_fund": null,
+          "mv": 200001.0,
+          "share_of_measure": 0.6664700589823053
+        },
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "UST-2033",
+          "via_fund": null,
+          "mv": 100089.0,
+          "share_of_measure": 0.3335299410176947
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Fixed income | 5% | 10% | 20% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S021-min",
+      "clause_id": "S021",
+      "status": "pass",
+      "measured": 0.04166376929871001,
+      "limit": {
+        "min": 0.0
+      },
+      "margin": 0.04166376929871001,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 60000.0,
+          "share_of_measure": 0.6
+        },
+        {
+          "account_id": "PAT-EQP",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 40000.0,
+          "share_of_measure": 0.4
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Cash | 0% | 3% | 5% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S021-max",
+      "clause_id": "S021",
+      "status": "pass",
+      "measured": 0.04166376929871001,
+      "limit": {
+        "max": 0.05
+      },
+      "margin": 0.008336230701289991,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 60000.0,
+          "share_of_measure": 0.6
+        },
+        {
+          "account_id": "PAT-EQP",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 40000.0,
+          "share_of_measure": 0.4
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Cash | 0% | 3% | 5% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S024-single_issuer_cap",
+      "clause_id": "S024",
+      "status": "pass",
+      "measured": {
+        "ISS-NORTHVALE": 0.062473655477875305,
+        "__all__": {
+          "ISS-NORTHVALE": 0.062473655477875305,
+          "ISS-HALDEN": 0.04166022787831962,
+          "ISS-ORBITAL": 0.03333361942454918,
+          "ISS-AUTUMN": 0.020831613834854563,
+          "ISS-UST": 0.04170085005338586
+        }
+      },
+      "limit": {
+        "max": 0.1
+      },
+      "margin": 0.0375263445221247,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 149947.2,
+          "share_of_measure": 1.0
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "Worst group: ISS-NORTHVALE = 0.0625",
+        "Top groups: {'ISS-NORTHVALE': 0.062473655477875305, 'ISS-UST': 0.04170085005338586, 'ISS-HALDEN': 0.04166022787831962}"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "4.1 **Single issuer.** No single issuer may exceed 10% of the market value of the Portfolio, except for Kestrel Semiconductor, which is governed by Section 4.2. For this limit, exposure is measured on direct holdings only. Diversified mutual funds and ETFs are not looked through."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S026-individual_stocks_agg_cap",
+      "clause_id": "S026",
+      "status": "pass",
+      "measured": 0.15829911661559867,
+      "limit": {
+        "max": 0.2
+      },
+      "margin": 0.04170088338440134,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 149947.2,
+          "share_of_measure": 0.39465574296021816
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 99991.5,
+          "share_of_measure": 0.2631741020986497
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 80006.25,
+          "share_of_measure": 0.21057362881875055
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "AUTM",
+          "via_fund": null,
+          "mv": 49999.35,
+          "share_of_measure": 0.13159652612238162
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "4.3 **Individual stocks.** Individual stocks other than Kestrel may not exceed 20% of the market value of the Portfolio in aggregate."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S029-fixed_income_instrument_allowlist",
+      "clause_id": "S029",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max_outside_allowlist": 0.0
+      },
+      "margin": null,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "5.2 Fixed income will be held only through diversified bond funds or US Treasury securities."
+      ],
+      "reason": null
+    }
+  ],
+  "tracked_findings": [],
+  "review_items": [
+    {
+      "clause_id": "S025",
+      "reason": "other",
+      "question": "For the 'below 15% by Dec 31, 2028' requirement, should the system check (a) end-of-day market value on 2028-12-31, (b) any time during 2028, or (c) average over 2028? Also, should 'shares received through vesting' be included in the Kestrel position immediately upon vesting date?",
+      "assumption": "Check end-of-day on 2028-12-31 and include vesting shares in Kestrel exposure immediately on their vesting date."
+    },
+    {
+      "clause_id": "S030",
+      "reason": "missing_threshold",
+      "question": "What minimum fraction of the portfolio should be allocated to international equities (e.g., 0.10, 0.20)? Also, should 'international equities' include all non-US equity sub_asset_classes (intl_developed, intl_equity, intl_small_cap, etc.)?",
+      "assumption": "Use a minimum of 0.20 of portfolio in international equity sub-asset classes, including all non-US equity categories."
+    }
+  ],
+  "trades": [
+    {
+      "account_id": "PAT-JT",
+      "security_id": "BVLT",
+      "side": "sell",
+      "quantity": 467.0
+    },
+    {
+      "account_id": "PAT-JT",
+      "security_id": "CRAG",
+      "side": "buy",
+      "quantity": 307.0
+    }
+  ],
+  "summary": {
+    "pass": 9,
+    "breach": 1,
+    "needs_review": 0,
+    "cannot_evaluate": 0,
+    "tracked": 0
+  },
+  "all_findings": [
+    {
+      "rule_id": "R-S019-min",
+      "clause_id": "S019",
+      "status": "pass",
+      "measured": 0.820796587104005,
+      "limit": {
+        "min": 0.75
+      },
+      "margin": 0.07079658710400505,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-EQP",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 719987.4,
+          "share_of_measure": 0.36546678437610275
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 600082.3999999999,
+          "share_of_measure": 0.30460280983902527
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 150027.75,
+          "share_of_measure": 0.07615433181147593
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 149947.2,
+          "share_of_measure": 0.0761134444994459
+        },
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "AXTL",
+          "via_fund": null,
+          "mv": 120006.95000000001,
+          "share_of_measure": 0.06091572452418438
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 99991.5,
+          "share_of_measure": 0.05075584929672808
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 80006.25,
+          "share_of_measure": 0.04061130363877281
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "AUTM",
+          "via_fund": null,
+          "mv": 49999.35,
+          "share_of_measure": 0.025379752014264824
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Equity | 75% | 85% | 95% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S019-max",
+      "clause_id": "S019",
+      "status": "pass",
+      "measured": 0.820796587104005,
+      "limit": {
+        "max": 0.95
+      },
+      "margin": 0.1292034128959949,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-EQP",
+          "security_id": "KSMC",
+          "via_fund": null,
+          "mv": 719987.4,
+          "share_of_measure": 0.36546678437610275
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 600082.3999999999,
+          "share_of_measure": 0.30460280983902527
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 150027.75,
+          "share_of_measure": 0.07615433181147593
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 149947.2,
+          "share_of_measure": 0.0761134444994459
+        },
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "AXTL",
+          "via_fund": null,
+          "mv": 120006.95000000001,
+          "share_of_measure": 0.06091572452418438
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 99991.5,
+          "share_of_measure": 0.05075584929672808
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 80006.25,
+          "share_of_measure": 0.04061130363877281
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "AUTM",
+          "via_fund": null,
+          "mv": 49999.35,
+          "share_of_measure": 0.025379752014264824
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Equity | 75% | 85% | 95% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S020-min",
+      "clause_id": "S020",
+      "status": "pass",
+      "measured": 0.12502880528849888,
+      "limit": {
+        "min": 0.05
+      },
+      "margin": 0.07502880528849888,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "CRAG",
+          "via_fund": null,
+          "mv": 200001.0,
+          "share_of_measure": 0.6664700589823053
+        },
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "UST-2033",
+          "via_fund": null,
+          "mv": 100089.0,
+          "share_of_measure": 0.3335299410176947
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Fixed income | 5% | 10% | 20% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S020-max",
+      "clause_id": "S020",
+      "status": "pass",
+      "measured": 0.12502880528849888,
+      "limit": {
+        "max": 0.2
+      },
+      "margin": 0.07497119471150113,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "CRAG",
+          "via_fund": null,
+          "mv": 200001.0,
+          "share_of_measure": 0.6664700589823053
+        },
+        {
+          "account_id": "PAT-IRA",
+          "security_id": "UST-2033",
+          "via_fund": null,
+          "mv": 100089.0,
+          "share_of_measure": 0.3335299410176947
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Fixed income | 5% | 10% | 20% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S021-min",
+      "clause_id": "S021",
+      "status": "pass",
+      "measured": 0.04166376929871001,
+      "limit": {
+        "min": 0.0
+      },
+      "margin": 0.04166376929871001,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 60000.0,
+          "share_of_measure": 0.6
+        },
+        {
+          "account_id": "PAT-EQP",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 40000.0,
+          "share_of_measure": 0.4
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Cash | 0% | 3% | 5% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S021-max",
+      "clause_id": "S021",
+      "status": "pass",
+      "measured": 0.04166376929871001,
+      "limit": {
+        "max": 0.05
+      },
+      "margin": 0.008336230701289991,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 60000.0,
+          "share_of_measure": 0.6
+        },
+        {
+          "account_id": "PAT-EQP",
+          "security_id": "CASH_USD",
+          "via_fund": null,
+          "mv": 40000.0,
+          "share_of_measure": 0.4
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "| Cash | 0% | 3% | 5% |"
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S024-single_issuer_cap",
+      "clause_id": "S024",
+      "status": "pass",
+      "measured": {
+        "ISS-NORTHVALE": 0.062473655477875305,
+        "__all__": {
+          "ISS-NORTHVALE": 0.062473655477875305,
+          "ISS-HALDEN": 0.04166022787831962,
+          "ISS-ORBITAL": 0.03333361942454918,
+          "ISS-AUTUMN": 0.020831613834854563,
+          "ISS-UST": 0.04170085005338586
+        }
+      },
+      "limit": {
+        "max": 0.1
+      },
+      "margin": 0.0375263445221247,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 149947.2,
+          "share_of_measure": 1.0
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "Worst group: ISS-NORTHVALE = 0.0625",
+        "Top groups: {'ISS-NORTHVALE': 0.062473655477875305, 'ISS-UST': 0.04170085005338586, 'ISS-HALDEN': 0.04166022787831962}"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "4.1 **Single issuer.** No single issuer may exceed 10% of the market value of the Portfolio, except for Kestrel Semiconductor, which is governed by Section 4.2. For this limit, exposure is measured on direct holdings only. Diversified mutual funds and ETFs are not looked through."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S026-individual_stocks_agg_cap",
+      "clause_id": "S026",
+      "status": "pass",
+      "measured": 0.15829911661559867,
+      "limit": {
+        "max": 0.2
+      },
+      "margin": 0.04170088338440134,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "NRVL",
+          "via_fund": null,
+          "mv": 149947.2,
+          "share_of_measure": 0.39465574296021816
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "HLDA",
+          "via_fund": null,
+          "mv": 99991.5,
+          "share_of_measure": 0.2631741020986497
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "ORBP",
+          "via_fund": null,
+          "mv": 80006.25,
+          "share_of_measure": 0.21057362881875055
+        },
+        {
+          "account_id": "PAT-JT",
+          "security_id": "AUTM",
+          "via_fund": null,
+          "mv": 49999.35,
+          "share_of_measure": 0.13159652612238162
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "4.3 **Individual stocks.** Individual stocks other than Kestrel may not exceed 20% of the market value of the Portfolio in aggregate."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S028-no_crypto",
+      "clause_id": "S028",
+      "status": "breach",
+      "measured": 0.012510838308785941,
+      "limit": {
+        "max": 0.0
+      },
+      "margin": -0.012510838308785941,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [
+        {
+          "account_id": "PAT-JT",
+          "security_id": "BVLT",
+          "via_fund": null,
+          "mv": 30028.1,
+          "share_of_measure": 1.0
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "5.1 The Portfolio will not hold cryptocurrency, funds or trusts that hold cryptocurrency, or other digital asset products."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S029-fixed_income_instrument_allowlist",
+      "clause_id": "S029",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max_outside_allowlist": 0.0
+      },
+      "margin": null,
+      "unit": "fraction",
+      "scope_accounts": [
+        "PAT-JT",
+        "PAT-EQP",
+        "PAT-IRA"
+      ],
+      "denominator_value": 2400166.9000000004,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "5.2 Fixed income will be held only through diversified bond funds or US Treasury securities."
+      ],
+      "reason": null
+    }
+  ]
+}

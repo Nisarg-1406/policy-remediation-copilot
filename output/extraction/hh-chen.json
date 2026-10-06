@@ -1,0 +1,1417 @@
+{
+  "ips_id": "HH-CHEN",
+  "ips_hash": "50083040db5376cd",
+  "schema_version": "1.0",
+  "prompt_version": "1.0",
+  "model": "gpt-5.4-nano",
+  "cache_hit": true,
+  "usage": {
+    "completion_tokens": 6870,
+    "prompt_tokens": 7094,
+    "total_tokens": 13964,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "cost_usd": 0.0100063,
+  "latency_s": 38.852683917000036,
+  "clauses": [
+    {
+      "clause_id": "S002",
+      "segment_ids": [
+        "S002"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Client identification/background reference; not an investable constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S003",
+      "segment_ids": [
+        "S003"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Prepared-by attribution; no portfolio rule.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S004",
+      "segment_ids": [
+        "S004"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Effective date metadata; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S005",
+      "segment_ids": [
+        "S005"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Supersedes prior IPS; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S007",
+      "segment_ids": [
+        "S007"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "States IPS purpose; not a measurable portfolio restriction.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S008",
+      "segment_ids": [
+        "S008"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Duplicate purpose statement; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S009",
+      "segment_ids": [
+        "S009"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Continuation of purpose; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S010",
+      "segment_ids": [
+        "S010"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Bullet describing what IPS documents; not a portfolio rule.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S011",
+      "segment_ids": [
+        "S011"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Bullet about discretionary management guidelines; not a specific constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S012",
+      "segment_ids": [
+        "S012"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Monitoring/evaluation intent; not a measurable constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S013",
+      "segment_ids": [
+        "S013"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Disclaimer about results; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S014",
+      "segment_ids": [
+        "S014"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Statement of policy/disclaimer; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S015",
+      "segment_ids": [
+        "S015"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Value fluctuation disclaimer; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S017",
+      "segment_ids": [
+        "S017"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "scope",
+      "rules": [],
+      "review": null,
+      "rationale": "Defines that IPS governs certain accounts; scope definition only.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S018",
+      "segment_ids": [
+        "S018"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "scope",
+      "rules": [],
+      "review": null,
+      "rationale": "Table header for account scope; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S019",
+      "segment_ids": [
+        "S019"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Account listing (trust investment account); not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S020",
+      "segment_ids": [
+        "S020"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Account listing (individual account); not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S021",
+      "segment_ids": [
+        "S021"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Account listing (Roth IRA); not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S022",
+      "segment_ids": [
+        "S022"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Excludes 401(k) from Portfolio and states measurement basis; not itself a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S023",
+      "segment_ids": [
+        "S023"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Trustee communication authority; not a portfolio constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S025",
+      "segment_ids": [
+        "S025"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "background",
+      "rules": [],
+      "review": null,
+      "rationale": "Client background; not a measurable constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S026",
+      "segment_ids": [
+        "S026"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Return objective; not a holdings constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S027",
+      "segment_ids": [
+        "S027"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Risk tolerance narrative; constraints appear later.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S028",
+      "segment_ids": [
+        "S028"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Time horizon narrative; not a measurable constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S029",
+      "segment_ids": [
+        "S029"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Distribution expectations and planning approach; not a numeric constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S031",
+      "segment_ids": [
+        "S031"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Introduces allocation ranges table; the measurable ranges are in subsequent segments.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S032",
+      "segment_ids": [
+        "S032"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Table header; not a constraint by itself.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S033",
+      "segment_ids": [
+        "S033"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S033",
+          "clause_id": "S033",
+          "source_segment_ids": [
+            "S033"
+          ],
+          "kind": "allocation_range",
+          "measure": {
+            "all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "equity",
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "asset_class",
+          "aggregate": false,
+          "exempt": null,
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": {
+            "value": 0.5,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "max": {
+            "value": 0.7,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": 0.6,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "| Equity (US and international) | 50% | 60% | 70% |"
+          ]
+        }
+      ],
+      "review": null,
+      "rationale": "Equity allocation range is numeric and measurable against portfolio market value.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S034",
+      "segment_ids": [
+        "S034"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S034",
+          "clause_id": "S034",
+          "source_segment_ids": [
+            "S034"
+          ],
+          "kind": "allocation_range",
+          "measure": {
+            "all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "fixed_income",
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "asset_class",
+          "aggregate": false,
+          "exempt": null,
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": {
+            "value": 0.25,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "max": {
+            "value": 0.45,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": 0.35,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "| Fixed income | 25% | 35% | 45% |"
+          ]
+        }
+      ],
+      "review": null,
+      "rationale": "Fixed income allocation range is numeric and measurable against portfolio market value.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S035",
+      "segment_ids": [
+        "S035"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S035",
+          "clause_id": "S035",
+          "source_segment_ids": [
+            "S035"
+          ],
+          "kind": "allocation_range",
+          "measure": {
+            "all_of": [
+              {
+                "field": "asset_class",
+                "op": "in",
+                "value": [
+                  "cash",
+                  "cash_equivalent"
+                ],
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "asset_class",
+          "aggregate": false,
+          "exempt": null,
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": {
+            "value": 0.0,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "max": {
+            "value": 0.1,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": 0.05,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "| Cash and cash equivalents | 0% | 5% | 10% |"
+          ]
+        }
+      ],
+      "review": null,
+      "rationale": "Cash and cash equivalents allocation range is numeric and measurable against portfolio market value.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S036",
+      "segment_ids": [
+        "S036"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S036",
+          "clause_id": "S036",
+          "source_segment_ids": [
+            "S036"
+          ],
+          "kind": "allocation_range",
+          "measure": {
+            "all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "alternative",
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "asset_class",
+          "aggregate": false,
+          "exempt": null,
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": {
+            "value": 0.0,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "max": {
+            "value": 0.1,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": 0.0,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "| Alternative investments | 0% | 0% | 10% |"
+          ]
+        }
+      ],
+      "review": null,
+      "rationale": "Alternative investments allocation range is numeric and measurable against portfolio market value.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S037",
+      "segment_ids": [
+        "S037"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S037",
+          "clause_id": "S037",
+          "source_segment_ids": [
+            "S037"
+          ],
+          "kind": "allocation_range",
+          "measure": {
+            "all_of": [
+              {
+                "field": "sub_asset_class",
+                "op": "in",
+                "value": [
+                  "intl_equity",
+                  "intl_developed",
+                  "intl_europe",
+                  "intl_small_cap",
+                  "emerging_markets"
+                ],
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "asset_class",
+          "aggregate": false,
+          "exempt": null,
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": {
+            "value": 0.1,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "max": {
+            "value": 0.2,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": null,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "4.2 International equity will represent between 10% and 20% of the market value of the Portfolio."
+          ]
+        }
+      ],
+      "review": null,
+      "rationale": "International equity share range is numeric but requires mapping 'international equity' to holdings categories.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S038",
+      "segment_ids": [
+        "S038"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "background",
+      "rules": [],
+      "review": null,
+      "rationale": "Defines classification method for multi-asset/balanced funds; not a standalone constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S039",
+      "segment_ids": [
+        "S039"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "States firm may operate within ranges; not a measurable constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S041",
+      "segment_ids": [
+        "S041"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S041",
+          "clause_id": "S041",
+          "source_segment_ids": [
+            "S041"
+          ],
+          "kind": "exposure_cap",
+          "measure": {
+            "all_of": [],
+            "any_of": []
+          },
+          "group_by": "issuer",
+          "aggregate": false,
+          "exempt": {
+            "all_of": [],
+            "any_of": [
+              [
+                {
+                  "field": "is_treasury",
+                  "op": "eq",
+                  "value": 1.0,
+                  "entity_name": null,
+                  "resolved_issuer_ids": null
+                }
+              ]
+            ]
+          },
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "funds",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": null,
+          "max": {
+            "value": 0.05,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": null,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "5.1 **Single issuer.** Exposure to any single issuer shall not exceed 5% of the market value of the Portfolio. Exposure to an issuer includes all of its securities held in the Portfolio, including every class of common or preferred stock and any bonds, as well as indirect exposure through mutual funds and exchange-traded funds held in the Portfolio. Obligations of the United States Treasury and US government agencies are exempt from this limit."
+          ]
+        }
+      ],
+      "review": null,
+      "rationale": "Single-issuer exposure cap is numeric and measurable; includes indirect exposure via funds/ETFs.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S042",
+      "segment_ids": [
+        "S042"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S042-1",
+          "clause_id": "S042",
+          "source_segment_ids": [
+            "S042"
+          ],
+          "kind": "exposure_cap",
+          "measure": {
+            "all_of": [
+              {
+                "field": "is_fund",
+                "op": "eq",
+                "value": 1.0,
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "fund",
+          "aggregate": false,
+          "exempt": {
+            "all_of": [],
+            "any_of": [
+              [
+                {
+                  "field": "is_fund",
+                  "op": "eq",
+                  "value": 1.0,
+                  "entity_name": null,
+                  "resolved_issuer_ids": null
+                }
+              ]
+            ]
+          },
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": null,
+          "max": {
+            "value": 0.15,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": null,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "5.2 **Pooled vehicles.** No single mutual fund or exchange-traded fund shall exceed 15% of the market value of the Portfolio, except for the Portfolio's core US broad-market index fund, which may represent up to 30%."
+          ]
+        },
+        {
+          "rule_id": "R-S042-2",
+          "clause_id": "S042",
+          "source_segment_ids": [
+            "S042"
+          ],
+          "kind": "exposure_cap",
+          "measure": {
+            "all_of": [
+              {
+                "field": "is_fund",
+                "op": "eq",
+                "value": 1.0,
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "fund",
+          "aggregate": false,
+          "exempt": {
+            "all_of": [],
+            "any_of": [
+              [
+                {
+                  "field": "is_fund",
+                  "op": "eq",
+                  "value": 1.0,
+                  "entity_name": null,
+                  "resolved_issuer_ids": null
+                }
+              ]
+            ]
+          },
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": null,
+          "max": {
+            "value": 0.3,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": null,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "5.2 **Pooled vehicles.** No single mutual fund or exchange-traded fund shall exceed 15% of the market value of the Portfolio, except for the Portfolio's core US broad-market index fund, which may represent up to 30%."
+          ]
+        }
+      ],
+      "review": {
+        "reason": "identification_ambiguity",
+        "question": "Which specific security is the 'core US broad-market index fund'? Provide ticker/ISIN or the exact name used in holdings so the 0.30 exception applies only to that fund.",
+        "assumption": "If not specified, apply only the 0.15 cap to all funds/ETFs.",
+        "provisional_rule": null
+      },
+      "rationale": "Fund/ETF concentration cap with an explicit exception for a core US broad-market index fund.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S043",
+      "segment_ids": [
+        "S043"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Monitoring overlap is a process statement; not a deterministic constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S045",
+      "segment_ids": [
+        "S045"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S045",
+          "clause_id": "S045",
+          "source_segment_ids": [
+            "S045"
+          ],
+          "kind": "credit_quality",
+          "measure": {
+            "all_of": [
+              {
+                "field": "security_type",
+                "op": "eq",
+                "value": "corporate_bond",
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "security",
+          "aggregate": false,
+          "exempt": null,
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": null,
+          "max": null,
+          "informational_target": null,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "6.1 Individual bonds must be rated A- or better by S&P or A3 or better by Moody's."
+          ]
+        }
+      ],
+      "review": {
+        "reason": "other",
+        "question": "Should this rating requirement apply to all fixed-income securities (including treasuries/agency, munis, and bond funds), or only individual corporate bonds? If only individual bonds, confirm which security_type(s) to enforce.",
+        "assumption": "Apply to individual corporate bonds only (exclude treasuries and bond funds).",
+        "provisional_rule": null
+      },
+      "rationale": "Bond rating floor is explicit but requires mapping ratings to holdings rating fields.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S046",
+      "segment_ids": [
+        "S046"
+      ],
+      "classification": "needs_review",
+      "not_constraint_type": null,
+      "rules": [],
+      "review": {
+        "reason": "missing_threshold",
+        "question": "For bond funds, what does \u201cprimarily\u201d mean? Examples: (a) at least 0.50 of holdings by market value in investment-grade, (b) at least 0.60, or (c) based on fund\u2019s stated mandate/portfolio composition.",
+        "assumption": "Assume 'primarily' = at least 0.50 investment-grade by market value.",
+        "provisional_rule": null
+      },
+      "rationale": "\u201cInvest primarily\u201d is vague; needs a numeric threshold and scope (bond funds only).",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S047",
+      "segment_ids": [
+        "S047"
+      ],
+      "classification": "needs_review",
+      "not_constraint_type": null,
+      "rules": [],
+      "review": {
+        "reason": "missing_threshold",
+        "question": "What tolerance should we enforce for \u201cwithin two years of\u201d the Bloomberg US Aggregate Bond Index duration? Examples: enforce absolute difference <= 2.0 years, or <= 2.0 years for the fixed-income sleeve only, or use a percentage band.",
+        "assumption": "Assume absolute difference <= 2.0 years for the fixed-income allocation.",
+        "provisional_rule": null
+      },
+      "rationale": "Average duration target is relative to an index but lacks an explicit tolerance/band.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S048",
+      "segment_ids": [
+        "S048"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Tax placement preference is advisory and not a hard measurable restriction.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S050",
+      "segment_ids": [
+        "S050"
+      ],
+      "classification": "rule",
+      "not_constraint_type": null,
+      "rules": [
+        {
+          "rule_id": "R-S050",
+          "clause_id": "S050",
+          "source_segment_ids": [
+            "S050"
+          ],
+          "kind": "exposure_cap",
+          "measure": {
+            "all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "equity",
+                "entity_name": null,
+                "resolved_issuer_ids": null
+              }
+            ],
+            "any_of": []
+          },
+          "group_by": "none",
+          "aggregate": true,
+          "exempt": null,
+          "denominator": "portfolio",
+          "scope_accounts": null,
+          "lookthrough": "funds",
+          "lookthrough_basis": "explicit",
+          "multi_asset_treatment": null,
+          "min": null,
+          "max": {
+            "value": 0.6,
+            "unit": "fraction",
+            "inclusive": true
+          },
+          "informational_target": null,
+          "reserve": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "severity": "hard",
+          "readings": null,
+          "source_quotes": [
+            "7.1 **Equity ceiling.** In light of the Trustees' experience in 2008 and 2022, total equity exposure, including the equity portion of balanced and multi-asset funds, shall not exceed 60% of the market value of the Portfolio."
+          ]
+        }
+      ],
+      "review": null,
+      "rationale": "Equity ceiling is numeric and measurable, including equity portion of balanced/multi-asset funds.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S051",
+      "segment_ids": [
+        "S051"
+      ],
+      "classification": "needs_review",
+      "not_constraint_type": null,
+      "rules": [],
+      "review": {
+        "reason": "other",
+        "question": "What data fields are available to detect leverage, margin, short sales, and derivatives usage (e.g., position types, notional, margin balances, fund derivative holdings)? Also, define \u201cdiversified mutual funds or ETFs\u201d (any numeric diversification rule or rely on fund classification).",
+        "assumption": "If derivative/leverage/margin/short indicators are unavailable, flag this clause as uncheckable and require PM confirmation.",
+        "provisional_rule": null
+      },
+      "rationale": "Prohibits leverage/margin/shorts/derivatives except within diversified mutual funds/ETFs; requires transaction/position-type data.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S052",
+      "segment_ids": [
+        "S052"
+      ],
+      "classification": "needs_review",
+      "not_constraint_type": null,
+      "rules": [],
+      "review": {
+        "reason": "other",
+        "question": "How should we determine \u201ccannot ordinarily be sold within five business days\u201d? Examples: use a liquidity attribute, security type (private placement vs public), or a vendor liquidity score. Which data source should the checker use?",
+        "assumption": "Use security_type/market listing to approximate liquidity; treat private placements/private funds/LP interests as non-compliant.",
+        "provisional_rule": null
+      },
+      "rationale": "Illiquidity rule depends on whether holdings can be sold within five business days; requires liquidity/marketability data.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S054",
+      "segment_ids": [
+        "S054"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Rebalancing review frequency is operational; not a holdings constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S055",
+      "segment_ids": [
+        "S055"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Rebalancing action timing is a process rule, not a constraint evaluated against holdings.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S056",
+      "segment_ids": [
+        "S056"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Uses cash flows for rebalancing; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S058",
+      "segment_ids": [
+        "S058"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "objective",
+      "rules": [],
+      "review": null,
+      "rationale": "Tax-loss harvesting guidance is discretionary and not a deterministic constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S059",
+      "segment_ids": [
+        "S059"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Names tax advisor and coordination timing; not a portfolio constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S061",
+      "segment_ids": [
+        "S061"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Quarterly reporting requirement; not a holdings constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S062",
+      "segment_ids": [
+        "S062"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Annual meeting requirement; not a portfolio constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S063",
+      "segment_ids": [
+        "S063"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Prompt notification of changes; not a holdings constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S064",
+      "segment_ids": [
+        "S064"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "IPS review cadence; not a holdings constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S066",
+      "segment_ids": [
+        "S066"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Acknowledgment of agreement; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S067",
+      "segment_ids": [
+        "S067"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "procedure",
+      "rules": [],
+      "review": null,
+      "rationale": "Blank table formatting; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S068",
+      "segment_ids": [
+        "S068"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Signature line; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S069",
+      "segment_ids": [
+        "S069"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Signature line; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "S070",
+      "segment_ids": [
+        "S070"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "other",
+      "rules": [],
+      "review": null,
+      "rationale": "Signature line; not a constraint.",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S001",
+      "segment_ids": [
+        "S001"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: # Investment Policy Statement",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S006",
+      "segment_ids": [
+        "S006"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 1. Purpose",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S016",
+      "segment_ids": [
+        "S016"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 2. Scope",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S024",
+      "segment_ids": [
+        "S024"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 3. Background and Objectives",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S030",
+      "segment_ids": [
+        "S030"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 4. Asset Allocation",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S040",
+      "segment_ids": [
+        "S040"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 5. Diversification and Concentration",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S044",
+      "segment_ids": [
+        "S044"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 6. Fixed Income Guidelines",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S049",
+      "segment_ids": [
+        "S049"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 7. Risk Management",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S053",
+      "segment_ids": [
+        "S053"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 8. Rebalancing",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S057",
+      "segment_ids": [
+        "S057"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 9. Tax Considerations",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S060",
+      "segment_ids": [
+        "S060"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 10. Review and Communication",
+      "injection_suspected": false
+    },
+    {
+      "clause_id": "HDR-S065",
+      "segment_ids": [
+        "S065"
+      ],
+      "classification": "not_constraint",
+      "not_constraint_type": "structural",
+      "rules": [],
+      "review": null,
+      "rationale": "Document section heading / structure: ## 11. Acknowledgment",
+      "injection_suspected": false
+    }
+  ],
+  "parse_errors": [],
+  "grounding_warnings": [],
+  "entity_warnings": [],
+  "quote_errors": [],
+  "segment_count": 70,
+  "summary": {
+    "rules": 9,
+    "needs_review": 4,
+    "not_constraints": 57,
+    "total_clauses": 70
+  }
+}

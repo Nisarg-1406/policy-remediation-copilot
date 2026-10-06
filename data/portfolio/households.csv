@@ -1,0 +1,5 @@
+household_id,household_name,household_type,primary_contact,advisor,ips_file,ips_effective_date
+HH-CHEN,Chen Family Trust,trust,David and Mei Chen,"Laura Brennan, CFP",ips/chen_family_trust.md,2025-11-03
+HH-OKAFOR,Robert and Adaeze Okafor,joint,Robert and Adaeze Okafor,"Marcus Hale, CFP",ips/okafor_retirement.md,2026-02-18
+HH-BRIGHT,Brightwater Family Foundation,foundation,Elena Varga (Committee Chair),"Laura Brennan, CFP",ips/brightwater_foundation.md,2026-06-19
+HH-PATEL,Priya and Arjun Patel,joint,Priya and Arjun Patel,"Marcus Hale, CFP",ips/patel_household.md,2026-04-07

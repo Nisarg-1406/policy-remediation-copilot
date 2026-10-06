@@ -1,0 +1,390 @@
+{
+  "clauses": [
+    {
+      "clause_id": "P-05",
+      "segment_ids": ["S005"],
+      "classification": "rule",
+      "rationale": "Equity allocation range with min 75%, target 85%, max 95%.",
+      "rules": [
+        {
+          "rule_id": "R-P05",
+          "clause_id": "P-05",
+          "source_segment_ids": ["S005"],
+          "kind": "allocation_range",
+          "group_by": "none",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": 0.75,
+          "min_unit": "fraction",
+          "min_inclusive": true,
+          "max_value": 0.95,
+          "max_unit": "fraction",
+          "max_inclusive": true,
+          "informational_target": 0.85,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "scope_accounts": null,
+          "measure_all_of": [
+            {"field": "asset_class", "op": "eq", "value": "equity", "entity_name": null}
+          ],
+          "exempt_all_of": [],
+          "source_quotes": ["§3.1 Equity minimum 75%, target 85%, maximum 95%."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-06",
+      "segment_ids": ["S006"],
+      "classification": "rule",
+      "rationale": "Fixed income allocation range with min 5%, target 10%, max 20%.",
+      "rules": [
+        {
+          "rule_id": "R-P06",
+          "clause_id": "P-06",
+          "source_segment_ids": ["S006"],
+          "kind": "allocation_range",
+          "group_by": "none",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": 0.05,
+          "min_unit": "fraction",
+          "min_inclusive": true,
+          "max_value": 0.20,
+          "max_unit": "fraction",
+          "max_inclusive": true,
+          "informational_target": 0.10,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "scope_accounts": null,
+          "measure_all_of": [
+            {"field": "asset_class", "op": "eq", "value": "fixed_income", "entity_name": null}
+          ],
+          "exempt_all_of": [],
+          "source_quotes": ["§3.1 Fixed income minimum 5%, target 10%, maximum 20%."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-07",
+      "segment_ids": ["S007"],
+      "classification": "rule",
+      "rationale": "Cash allocation range with min 0%, target 3%, max 5%.",
+      "rules": [
+        {
+          "rule_id": "R-P07",
+          "clause_id": "P-07",
+          "source_segment_ids": ["S007"],
+          "kind": "allocation_range",
+          "group_by": "none",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": 0.0,
+          "min_unit": "fraction",
+          "min_inclusive": true,
+          "max_value": 0.05,
+          "max_unit": "fraction",
+          "max_inclusive": true,
+          "informational_target": 0.03,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "scope_accounts": null,
+          "measure_all_of": [
+            {"field": "asset_class", "op": "in", "value": ["cash", "cash_equivalent"], "entity_name": null}
+          ],
+          "exempt_all_of": [],
+          "source_quotes": ["§3.1 Cash minimum 0%, target 3%, maximum 5%."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-09",
+      "segment_ids": ["S009"],
+      "classification": "rule",
+      "rationale": "Issuer concentration cap 10%, direct only, Kestrel exempt.",
+      "rules": [
+        {
+          "rule_id": "R-P09",
+          "clause_id": "P-09",
+          "source_segment_ids": ["S009"],
+          "kind": "exposure_cap",
+          "group_by": "issuer",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": null,
+          "min_unit": null,
+          "min_inclusive": null,
+          "max_value": 0.10,
+          "max_unit": "fraction",
+          "max_inclusive": true,
+          "informational_target": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "scope_accounts": null,
+          "measure_all_of": [],
+          "exempt_all_of": [
+            {"field": "issuer_id", "op": "eq", "value": null, "entity_name": "Kestrel Semiconductor",
+             "resolved_issuer_ids": ["ISS-KESTREL"]}
+          ],
+          "source_quotes": ["No single issuer may exceed 10% of the market value of the Portfolio, except for Kestrel Semiconductor, which is governed by Section 4.2. For this limit, exposure is measured on direct holdings only. Diversified mutual funds and ETFs are not looked through."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-10",
+      "segment_ids": ["S010"],
+      "classification": "rule",
+      "rationale": "Tracked target: reduce Kestrel below 15% by 2028-12-31.",
+      "rules": [
+        {
+          "rule_id": "R-P10",
+          "clause_id": "P-10",
+          "source_segment_ids": ["S010"],
+          "kind": "tracked_target",
+          "group_by": "issuer",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "assumed",
+          "severity": "hard",
+          "min_value": null,
+          "min_unit": null,
+          "min_inclusive": null,
+          "max_value": 0.15,
+          "max_unit": "fraction",
+          "max_inclusive": false,
+          "informational_target": null,
+          "effective_from": null,
+          "deadline": "2028-12-31",
+          "data_requirements": [],
+          "scope_accounts": null,
+          "measure_all_of": [
+            {"field": "issuer_id", "op": "eq", "value": null, "entity_name": "Kestrel Semiconductor",
+             "resolved_issuer_ids": ["ISS-KESTREL"]}
+          ],
+          "exempt_all_of": [],
+          "source_quotes": ["The Firm will reduce the Kestrel position to below 15% of the market value of the Portfolio by December 31, 2028."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-11",
+      "segment_ids": ["S011"],
+      "classification": "rule",
+      "rationale": "Annual Kestrel sale requirement — cannot evaluate from snapshot.",
+      "rules": [
+        {
+          "rule_id": "R-P11",
+          "clause_id": "P-11",
+          "source_segment_ids": ["S011"],
+          "kind": "needs_external_data",
+          "group_by": "none",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": null,
+          "min_unit": null,
+          "min_inclusive": null,
+          "max_value": null,
+          "max_unit": null,
+          "max_inclusive": null,
+          "informational_target": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": ["transactions"],
+          "scope_accounts": null,
+          "measure_all_of": [],
+          "exempt_all_of": [],
+          "source_quotes": ["The Firm will sell at least one quarter of the Kestrel shares held at the start of each calendar year."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-12",
+      "segment_ids": ["S012"],
+      "classification": "rule",
+      "rationale": "No purchases of Kestrel — cannot check from snapshot alone.",
+      "rules": [
+        {
+          "rule_id": "R-P12",
+          "clause_id": "P-12",
+          "source_segment_ids": ["S012"],
+          "kind": "needs_external_data",
+          "group_by": "none",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": null,
+          "min_unit": null,
+          "min_inclusive": null,
+          "max_value": null,
+          "max_unit": null,
+          "max_inclusive": null,
+          "informational_target": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": ["transactions"],
+          "scope_accounts": null,
+          "measure_all_of": [],
+          "exempt_all_of": [],
+          "source_quotes": ["No additional Kestrel shares will be purchased in the Portfolio."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-13",
+      "segment_ids": ["S013"],
+      "classification": "rule",
+      "rationale": "Individual stocks (ex-Kestrel) aggregate cap 20%.",
+      "rules": [
+        {
+          "rule_id": "R-P13",
+          "clause_id": "P-13",
+          "source_segment_ids": ["S013"],
+          "kind": "exposure_cap",
+          "group_by": "none",
+          "aggregate": true,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": null,
+          "min_unit": null,
+          "min_inclusive": null,
+          "max_value": 0.20,
+          "max_unit": "fraction",
+          "max_inclusive": true,
+          "informational_target": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "scope_accounts": null,
+          "measure_all_of": [
+            {"field": "security_type", "op": "eq", "value": "equity", "entity_name": null}
+          ],
+          "exempt_all_of": [
+            {"field": "issuer_id", "op": "eq", "value": null, "entity_name": "Kestrel Semiconductor",
+             "resolved_issuer_ids": ["ISS-KESTREL"]}
+          ],
+          "source_quotes": ["Individual stocks other than Kestrel may not exceed 20% of the market value of the Portfolio in aggregate."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-14",
+      "segment_ids": ["S014"],
+      "classification": "rule",
+      "rationale": "No cryptocurrency or digital asset products — hard exclusion.",
+      "rules": [
+        {
+          "rule_id": "R-P14",
+          "clause_id": "P-14",
+          "source_segment_ids": ["S014"],
+          "kind": "exclusion",
+          "group_by": "none",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": null,
+          "min_unit": null,
+          "min_inclusive": null,
+          "max_value": 0.0,
+          "max_unit": "fraction",
+          "max_inclusive": true,
+          "informational_target": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "scope_accounts": null,
+          "measure_all_of": [
+            {"field": "asset_class", "op": "eq", "value": "alternative", "entity_name": null}
+          ],
+          "exempt_all_of": [],
+          "source_quotes": ["The Portfolio will not hold cryptocurrency, funds or trusts that hold cryptocurrency, or other digital asset products."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-15",
+      "segment_ids": ["S015"],
+      "classification": "rule",
+      "rationale": "Fixed income only via bond funds or US Treasuries.",
+      "rules": [
+        {
+          "rule_id": "R-P15",
+          "clause_id": "P-15",
+          "source_segment_ids": ["S015"],
+          "kind": "instrument_allowlist",
+          "group_by": "none",
+          "aggregate": false,
+          "denominator": "portfolio",
+          "lookthrough": "none",
+          "lookthrough_basis": "explicit",
+          "severity": "hard",
+          "min_value": null,
+          "min_unit": null,
+          "min_inclusive": null,
+          "max_value": null,
+          "max_unit": null,
+          "max_inclusive": null,
+          "informational_target": null,
+          "effective_from": null,
+          "deadline": null,
+          "data_requirements": [],
+          "scope_accounts": null,
+          "measure_all_of": [
+            {"field": "asset_class", "op": "eq", "value": "fixed_income", "entity_name": null}
+          ],
+          "exempt_all_of": [
+            {"field": "security_type", "op": "in",
+             "value": ["mutual_fund", "etf", "treasury", "treasury_bill"], "entity_name": null}
+          ],
+          "source_quotes": ["Fixed income will be held only through diversified bond funds or US Treasury securities."]
+        }
+      ],
+      "review": null
+    },
+    {
+      "clause_id": "P-16",
+      "segment_ids": ["S016"],
+      "classification": "needs_review",
+      "rationale": "International equity minimum direction clear, but no threshold stated.",
+      "rules": [],
+      "review": {
+        "reason": "missing_threshold",
+        "question": "What minimum international equity allocation should we target? Common choices: 10% of the Portfolio or 20% of equity. International equity is currently 6.25% of the Portfolio and 7.62% of equity.",
+        "assumption": "Assume 10% of Portfolio as a soft floor if no answer provided."
+      }
+    }
+  ]
+}

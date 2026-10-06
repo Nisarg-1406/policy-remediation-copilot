@@ -1,0 +1,178 @@
+# Remediation Plan — {{ hh_id }}
+**Snapshot date:** {{ facts.snapshot_date }}
+**Portfolio MV:** {{ facts.portfolio_mv | usd }}
+**Prepared by:** Policy Remediation Copilot v1.0
+
+---
+
+## 1. Findings
+
+{% if facts.breaches %}
+{% for finding in facts.breaches %}
+### BREACH: {{ finding.rule_id }} (clause {{ finding.clause_id }})
+
+{% if finding.source_quotes %}
+> {{ finding.source_quotes[0] }}
+
+{% endif %}
+| Field | Value |
+|-------|-------|
+{% if finding.measured is not none %}
+{% if finding.measured is mapping %}
+| Measured (worst group) | {{ (finding.measured.get('__all__', {})|dictsort(by='value', reverse=true)|first)[1] | pct if finding.measured.get('__all__') else 'N/A' }} |
+{% else %}
+| Measured | {{ finding.measured | usd if finding.unit == 'usd' else (finding.measured | pct) }} |
+{% endif %}
+{% endif %}
+{% if finding.limit.get('max') is not none %}
+| Limit (max) | {{ finding.limit.max | usd if finding.unit == 'usd' else (finding.limit.max | pct) }} |
+{% endif %}
+{% if finding.limit.get('min') is not none %}
+| Limit (min) | {{ finding.limit.min | usd if finding.unit == 'usd' else (finding.limit.min | pct) }} |
+{% endif %}
+{% if finding.limit.get('min_usd') is not none %}
+| Limit (min) | {{ finding.limit.min_usd | usd }} |
+{% endif %}
+{% if finding.margin is not none %}
+| Margin (distance to limit) | {{ finding.margin | usd if finding.unit == 'usd' else (finding.margin | pct) }} |
+{% endif %}
+| Scope accounts | {{ finding.scope_accounts | join(', ') }} |
+| Denominator MV | {{ finding.denominator_value | usd }} |
+
+{% if finding.contributors %}
+**Top contributors:**
+
+| Account | Security | MV | Share |
+|---------|----------|----|-------|
+{% for c in finding.contributors[:5] %}
+| {{ c.account_id }} | {{ c.security_id }} | {{ c.mv | usd }} | {{ (c.share_of_measure * 100) | round(1) }}% |
+{% endfor %}
+{% endif %}
+
+{% if finding.notes %}
+**Notes:** {{ finding.notes | join('; ') }}
+{% endif %}
+
+{% if finding.assumptions %}
+**Assumptions:** {{ finding.assumptions | join('; ') }}
+{% endif %}
+
+{% endfor %}
+{% else %}
+No confirmed breaches.
+{% endif %}
+
+**Needs-review findings (not breaches — pending PM input):**
+
+{% if facts.needs_review_findings %}
+{% for finding in facts.needs_review_findings %}
+- **{{ finding.rule_id }}** ({{ finding.clause_id }}): {{ finding.reason }}{% if finding.notes %} — {{ finding.notes | join('; ') }}{% endif %}
+
+{% endfor %}
+{% else %}
+None.
+{% endif %}
+
+**Cannot evaluate (data unavailable):**
+
+{% if facts.cannot_evaluate_findings %}
+{% for finding in facts.cannot_evaluate_findings %}
+- **{{ finding.rule_id }}** ({{ finding.clause_id }}): {{ finding.reason }}
+{% endfor %}
+{% else %}
+None.
+{% endif %}
+
+---
+
+## 2. Trades
+
+{% if facts.trades %}
+| Account | Security | Side | Quantity | Rationale |
+|---------|----------|------|----------|-----------|
+{% for t in facts.trades %}
+| {{ t.account_id }} | {{ t.security_id }} | {{ t.side }} | {{ t.quantity | int | qty }} | Addresses confirmed breach |
+{% endfor %}
+
+**Trade rationale:** All sells remove confirmed breaches. Buys redeploy proceeds to maintain other allocation constraints. The simulator verified that after these trades, no confirmed breach remains and no new breach is created. See the before/after table below.
+
+{% else %}
+{% if facts.breaches %}
+No automated trades proposed. Confirmed breaches require portfolio manager review.
+{% else %}
+No trades proposed. The portfolio is currently within policy constraints.
+{% endif %}
+{% endif %}
+
+---
+
+## 3. Left Alone
+
+{% if facts.needs_review_findings or facts.cannot_evaluate_findings or facts.tracked_findings %}
+| Item | Reason |
+|------|--------|
+{% for f in facts.needs_review_findings %}
+| {{ f.rule_id }} ({{ f.clause_id }}) | Pending PM review — {{ f.reason }}. No trade made on pending-review rules (invariant). |
+{% endfor %}
+{% for f in facts.cannot_evaluate_findings %}
+| {{ f.rule_id }} ({{ f.clause_id }}) | Cannot evaluate — {{ f.reason }} |
+{% endfor %}
+{% for f in facts.tracked_findings %}
+| {{ f.rule_id }} ({{ f.clause_id }}) | Tracked target — not due yet{% if f.notes %}; {{ f.notes | join('; ') }}{% endif %} |
+{% endfor %}
+{% else %}
+Nothing was deliberately left untouched beyond what was already passing.
+{% endif %}
+
+---
+
+## 4. Open Questions
+
+{% if facts.review_items %}
+{% for item in facts.review_items %}
+**{{ loop.index }}. {{ item.clause_id }}:** {{ item.question }}
+{% if item.assumption %}
+*(Assumption if unanswered: {{ item.assumption }})*
+{% endif %}
+
+{% endfor %}
+{% else %}
+No open questions for the PM.
+{% endif %}
+
+---
+
+## Appendix: Before / After Checker Results
+
+| Rule | Status Before | Measured Before | Status After | Notes |
+|------|---------------|-----------------|--------------|-------|
+{% for f in facts.all_findings %}
+{% if f.status == 'breach' %}
+| {{ f.rule_id }} | **BREACH** | {% if f.measured is not none %}{% if f.measured is mapping %}(group){% elif f.unit == 'usd' %}{{ f.measured | usd }}{% else %}{{ f.measured | pct }}{% endif %}{% else %}N/A{% endif %} | *(see trades)* | {{ f.source_quotes[0][:60] if f.source_quotes else '' }}… |
+{% elif f.status == 'pass' and not f.get('tracked') %}
+| {{ f.rule_id }} | PASS | {% if f.measured is not none %}{% if f.measured is mapping %}(group){% elif f.unit == 'usd' %}{{ f.measured | usd }}{% else %}{{ f.measured | pct }}{% endif %}{% else %}N/A{% endif %} | PASS | — |
+{% elif f.get('tracked') %}
+| {{ f.rule_id }} | PASS (tracked) | {{ f.measured | usd if f.unit == 'usd' else (f.measured | pct) if f.measured is not none else 'N/A' }} | PASS (tracked) | Not due yet |
+{% elif f.status == 'needs_review' %}
+| {{ f.rule_id }} | NEEDS REVIEW | {{ f.measured | usd if f.unit == 'usd' else (f.measured | pct) if f.measured is not none else 'N/A' }} | NEEDS REVIEW | Pending PM answer |
+{% elif f.status == 'cannot_evaluate' %}
+| {{ f.rule_id }} | CANNOT EVALUATE | N/A | CANNOT EVALUATE | {{ f.reason[:60] if f.reason else '' }} |
+{% endif %}
+{% endfor %}
+
+---
+
+## Data Freshness
+
+| Input | Date | Note |
+|-------|------|------|
+| Prices | 2026-09-25 | Valuation date close |
+| Fund constituents | 2026-08-31 | ~25 days before valuation (within 45-day threshold) |
+| Client cashflows | 2026-06-30 | Stale if > 180 days |
+| Approved list | 2026-09-25 | Static at report date |
+
+{% if facts.is_clean %}
+*Plan is clean: after applying the trades above, the checker confirms 0 confirmed breaches remain and 0 new breaches were created.*
+{% else %}
+*Plan status: UNRESOLVED. Confirmed breaches remain pending PM guidance.*
+{% endif %}

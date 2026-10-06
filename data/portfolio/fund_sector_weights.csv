@@ -1,0 +1,254 @@
+fund_id,as_of_date,sector,weight_pct
+KUSX,2026-08-31,Information Technology,31.00
+KUSX,2026-08-31,Financials,13.00
+KUSX,2026-08-31,Health Care,10.00
+KUSX,2026-08-31,Consumer Discretionary,10.00
+KUSX,2026-08-31,Communication Services,9.00
+KUSX,2026-08-31,Industrials,9.00
+KUSX,2026-08-31,Consumer Staples,5.00
+KUSX,2026-08-31,Real Estate,4.50
+KUSX,2026-08-31,Energy,3.50
+KUSX,2026-08-31,Utilities,2.50
+KUSX,2026-08-31,Materials,2.50
+AXTL,2026-08-31,Information Technology,72.00
+AXTL,2026-08-31,Communication Services,18.00
+AXTL,2026-08-31,Financials,6.00
+AXTL,2026-08-31,Consumer Discretionary,4.00
+LITL,2026-08-31,Financials,21.00
+LITL,2026-08-31,Industrials,16.00
+LITL,2026-08-31,Consumer Discretionary,11.00
+LITL,2026-08-31,Health Care,10.00
+LITL,2026-08-31,Information Technology,9.00
+LITL,2026-08-31,Consumer Staples,8.00
+LITL,2026-08-31,Materials,7.00
+LITL,2026-08-31,Energy,5.00
+LITL,2026-08-31,Communication Services,5.00
+LITL,2026-08-31,Real Estate,5.00
+LITL,2026-08-31,Utilities,3.00
+HPBAX,2026-08-31,Information Technology,18.00
+HPBAX,2026-08-31,Financials,9.00
+HPBAX,2026-08-31,Health Care,8.00
+HPBAX,2026-08-31,Consumer Discretionary,7.00
+HPBAX,2026-08-31,Industrials,6.00
+HPBAX,2026-08-31,Communication Services,5.00
+HPBAX,2026-08-31,Consumer Staples,3.00
+HPBAX,2026-08-31,Energy,2.00
+HPBAX,2026-08-31,Utilities,2.00
+HPBAX,2026-08-31,Materials,1.00
+HPBAX,2026-08-31,Real Estate,1.00
+HPBAX,2026-08-31,Not applicable (fixed income and cash),38.00
+KXFF,2026-08-31,Information Technology,32.50
+KXFF,2026-08-31,Financials,13.50
+KXFF,2026-08-31,Health Care,10.40
+KXFF,2026-08-31,Consumer Discretionary,10.40
+KXFF,2026-08-31,Communication Services,9.30
+KXFF,2026-08-31,Industrials,9.30
+KXFF,2026-08-31,Consumer Staples,5.20
+KXFF,2026-08-31,Real Estate,4.70
+KXFF,2026-08-31,Utilities,2.30
+KXFF,2026-08-31,Materials,2.00
+KXFF,2026-08-31,Energy,0.40
+EQLW,2026-08-31,Information Technology,14.00
+EQLW,2026-08-31,Financials,14.00
+EQLW,2026-08-31,Health Care,12.00
+EQLW,2026-08-31,Consumer Discretionary,10.00
+EQLW,2026-08-31,Communication Services,5.00
+EQLW,2026-08-31,Industrials,15.00
+EQLW,2026-08-31,Consumer Staples,7.00
+EQLW,2026-08-31,Real Estate,6.00
+EQLW,2026-08-31,Energy,4.50
+EQLW,2026-08-31,Utilities,6.00
+EQLW,2026-08-31,Materials,6.50
+KLCG,2026-08-31,Information Technology,45.00
+KLCG,2026-08-31,Communication Services,14.00
+KLCG,2026-08-31,Consumer Discretionary,14.00
+KLCG,2026-08-31,Health Care,9.00
+KLCG,2026-08-31,Financials,8.00
+KLCG,2026-08-31,Industrials,6.00
+KLCG,2026-08-31,Consumer Staples,2.00
+KLCG,2026-08-31,Real Estate,1.00
+KLCG,2026-08-31,Energy,0.50
+KLCG,2026-08-31,Materials,0.50
+CDVL,2026-08-31,Financials,20.00
+CDVL,2026-08-31,Energy,14.00
+CDVL,2026-08-31,Health Care,13.00
+CDVL,2026-08-31,Consumer Staples,12.00
+CDVL,2026-08-31,Industrials,10.00
+CDVL,2026-08-31,Utilities,9.00
+CDVL,2026-08-31,Information Technology,8.00
+CDVL,2026-08-31,Materials,5.00
+CDVL,2026-08-31,Consumer Discretionary,4.00
+CDVL,2026-08-31,Communication Services,3.00
+CDVL,2026-08-31,Real Estate,2.00
+FWTR,2026-08-31,Industrials,48.00
+FWTR,2026-08-31,Utilities,38.00
+FWTR,2026-08-31,Materials,8.00
+FWTR,2026-08-31,Information Technology,6.00
+KS5X,2026-08-31,Information Technology,32.50
+KS5X,2026-08-31,Financials,13.00
+KS5X,2026-08-31,Health Care,10.00
+KS5X,2026-08-31,Consumer Discretionary,10.00
+KS5X,2026-08-31,Communication Services,9.50
+KS5X,2026-08-31,Industrials,9.00
+KS5X,2026-08-31,Consumer Staples,5.50
+KS5X,2026-08-31,Energy,3.50
+KS5X,2026-08-31,Real Estate,2.50
+KS5X,2026-08-31,Utilities,2.50
+KS5X,2026-08-31,Materials,2.00
+KMCX,2026-08-31,Information Technology,15.00
+KMCX,2026-08-31,Financials,15.00
+KMCX,2026-08-31,Industrials,18.00
+KMCX,2026-08-31,Consumer Discretionary,12.00
+KMCX,2026-08-31,Health Care,10.00
+KMCX,2026-08-31,Real Estate,8.00
+KMCX,2026-08-31,Materials,6.00
+KMCX,2026-08-31,Utilities,5.00
+KMCX,2026-08-31,Energy,5.00
+KMCX,2026-08-31,Consumer Staples,4.00
+KMCX,2026-08-31,Communication Services,2.00
+KSCX,2026-08-31,Information Technology,13.00
+KSCX,2026-08-31,Financials,17.00
+KSCX,2026-08-31,Industrials,18.00
+KSCX,2026-08-31,Health Care,15.00
+KSCX,2026-08-31,Consumer Discretionary,11.00
+KSCX,2026-08-31,Real Estate,7.00
+KSCX,2026-08-31,Energy,5.00
+KSCX,2026-08-31,Materials,5.00
+KSCX,2026-08-31,Consumer Staples,4.00
+KSCX,2026-08-31,Utilities,3.00
+KSCX,2026-08-31,Communication Services,2.00
+KVAL,2026-08-31,Financials,22.00
+KVAL,2026-08-31,Health Care,15.00
+KVAL,2026-08-31,Industrials,12.00
+KVAL,2026-08-31,Energy,9.00
+KVAL,2026-08-31,Consumer Staples,9.00
+KVAL,2026-08-31,Information Technology,9.00
+KVAL,2026-08-31,Utilities,7.00
+KVAL,2026-08-31,Materials,5.00
+KVAL,2026-08-31,Consumer Discretionary,5.00
+KVAL,2026-08-31,Real Estate,4.00
+KVAL,2026-08-31,Communication Services,3.00
+PGTK,2026-08-31,Information Technology,100.00
+PGHC,2026-08-31,Health Care,100.00
+PGFN,2026-08-31,Financials,100.00
+PGNR,2026-08-31,Energy,100.00
+PGUT,2026-08-31,Utilities,100.00
+PGIN,2026-08-31,Industrials,100.00
+LIXF,2026-08-31,Financials,22.00
+LIXF,2026-08-31,Industrials,17.00
+LIXF,2026-08-31,Consumer Discretionary,11.50
+LIXF,2026-08-31,Health Care,10.50
+LIXF,2026-08-31,Information Technology,9.50
+LIXF,2026-08-31,Consumer Staples,8.50
+LIXF,2026-08-31,Materials,6.50
+LIXF,2026-08-31,Communication Services,5.50
+LIXF,2026-08-31,Real Estate,5.50
+LIXF,2026-08-31,Utilities,3.50
+LGLB,2026-08-31,Information Technology,25.00
+LGLB,2026-08-31,Financials,16.00
+LGLB,2026-08-31,Health Care,10.00
+LGLB,2026-08-31,Consumer Discretionary,10.00
+LGLB,2026-08-31,Industrials,11.00
+LGLB,2026-08-31,Communication Services,7.50
+LGLB,2026-08-31,Consumer Staples,6.00
+LGLB,2026-08-31,Energy,4.50
+LGLB,2026-08-31,Materials,4.00
+LGLB,2026-08-31,Utilities,3.00
+LGLB,2026-08-31,Real Estate,3.00
+LEMK,2026-08-31,Information Technology,24.00
+LEMK,2026-08-31,Financials,22.00
+LEMK,2026-08-31,Consumer Discretionary,13.00
+LEMK,2026-08-31,Communication Services,9.00
+LEMK,2026-08-31,Materials,7.00
+LEMK,2026-08-31,Energy,5.00
+LEMK,2026-08-31,Industrials,6.00
+LEMK,2026-08-31,Consumer Staples,5.00
+LEMK,2026-08-31,Health Care,4.00
+LEMK,2026-08-31,Utilities,3.00
+LEMK,2026-08-31,Real Estate,2.00
+LISC,2026-08-31,Industrials,22.00
+LISC,2026-08-31,Consumer Discretionary,12.00
+LISC,2026-08-31,Financials,12.00
+LISC,2026-08-31,Materials,10.00
+LISC,2026-08-31,Information Technology,11.00
+LISC,2026-08-31,Real Estate,9.00
+LISC,2026-08-31,Health Care,7.00
+LISC,2026-08-31,Consumer Staples,6.00
+LISC,2026-08-31,Communication Services,4.00
+LISC,2026-08-31,Energy,3.00
+LISC,2026-08-31,Utilities,4.00
+LEUR,2026-08-31,Financials,19.00
+LEUR,2026-08-31,Industrials,17.00
+LEUR,2026-08-31,Health Care,14.00
+LEUR,2026-08-31,Consumer Discretionary,10.00
+LEUR,2026-08-31,Consumer Staples,9.00
+LEUR,2026-08-31,Information Technology,8.00
+LEUR,2026-08-31,Materials,6.00
+LEUR,2026-08-31,Energy,5.00
+LEUR,2026-08-31,Utilities,5.00
+LEUR,2026-08-31,Communication Services,4.00
+LEUR,2026-08-31,Real Estate,3.00
+FCLN,2026-08-31,Utilities,52.00
+FCLN,2026-08-31,Industrials,22.00
+FCLN,2026-08-31,Information Technology,12.00
+FCLN,2026-08-31,Consumer Discretionary,8.00
+FCLN,2026-08-31,Energy,6.00
+FAIX,2026-08-31,Information Technology,70.00
+FAIX,2026-08-31,Communication Services,15.00
+FAIX,2026-08-31,Real Estate,5.00
+FAIX,2026-08-31,Industrials,5.00
+FAIX,2026-08-31,Consumer Discretionary,5.00
+CQLT,2026-08-31,Information Technology,28.00
+CQLT,2026-08-31,Health Care,14.00
+CQLT,2026-08-31,Financials,12.00
+CQLT,2026-08-31,Consumer Staples,10.00
+CQLT,2026-08-31,Industrials,11.00
+CQLT,2026-08-31,Consumer Discretionary,9.00
+CQLT,2026-08-31,Communication Services,8.00
+CQLT,2026-08-31,Materials,3.00
+CQLT,2026-08-31,Energy,2.00
+CQLT,2026-08-31,Utilities,2.00
+CQLT,2026-08-31,Real Estate,1.00
+CLVF,2026-08-31,Consumer Staples,16.00
+CLVF,2026-08-31,Utilities,15.00
+CLVF,2026-08-31,Health Care,14.00
+CLVF,2026-08-31,Financials,14.00
+CLVF,2026-08-31,Industrials,12.00
+CLVF,2026-08-31,Information Technology,10.00
+CLVF,2026-08-31,Real Estate,6.00
+CLVF,2026-08-31,Consumer Discretionary,5.00
+CLVF,2026-08-31,Communication Services,4.00
+CLVF,2026-08-31,Materials,3.00
+CLVF,2026-08-31,Energy,1.00
+KREI,2026-08-31,Real Estate,100.00
+KESG,2026-08-31,Information Technology,35.00
+KESG,2026-08-31,Financials,13.00
+KESG,2026-08-31,Health Care,11.00
+KESG,2026-08-31,Consumer Discretionary,10.00
+KESG,2026-08-31,Communication Services,9.00
+KESG,2026-08-31,Industrials,9.00
+KESG,2026-08-31,Consumer Staples,5.00
+KESG,2026-08-31,Real Estate,3.50
+KESG,2026-08-31,Energy,1.50
+KESG,2026-08-31,Utilities,1.50
+KESG,2026-08-31,Materials,1.50
+HPGRX,2026-08-31,Information Technology,42.00
+HPGRX,2026-08-31,Communication Services,14.00
+HPGRX,2026-08-31,Consumer Discretionary,14.00
+HPGRX,2026-08-31,Health Care,10.00
+HPGRX,2026-08-31,Financials,9.00
+HPGRX,2026-08-31,Industrials,8.00
+HPGRX,2026-08-31,Consumer Staples,1.00
+HPGRX,2026-08-31,Energy,1.00
+HPGRX,2026-08-31,Materials,1.00
+HPEIX,2026-08-31,Financials,21.00
+HPEIX,2026-08-31,Consumer Staples,13.00
+HPEIX,2026-08-31,Health Care,13.00
+HPEIX,2026-08-31,Energy,11.00
+HPEIX,2026-08-31,Utilities,10.00
+HPEIX,2026-08-31,Industrials,10.00
+HPEIX,2026-08-31,Information Technology,9.00
+HPEIX,2026-08-31,Materials,5.00
+HPEIX,2026-08-31,Consumer Discretionary,4.00
+HPEIX,2026-08-31,Communication Services,2.00
+HPEIX,2026-08-31,Real Estate,2.00

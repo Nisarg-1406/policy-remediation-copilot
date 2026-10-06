@@ -1,0 +1,665 @@
+{
+  "response": {
+    "clauses": [
+      {
+        "clause_id": "S003",
+        "segment_ids": [
+          "S003"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Board approval and recommendation metadata; not an investable constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S004",
+        "segment_ids": [
+          "S004"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Identifies the investment advisor; no portfolio constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S005",
+        "segment_ids": [
+          "S005"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Supersession history; not a constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S007",
+        "segment_ids": [
+          "S007"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Foundation mission description; not a portfolio rule.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S008",
+        "segment_ids": [
+          "S008"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Purpose and fiduciary framing; not a measurable constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S009",
+        "segment_ids": [
+          "S009"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "scope_definition",
+        "rationale": "Defines which accounts constitute the portfolio; scope only.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S011",
+        "segment_ids": [
+          "S011"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "roles_responsibilities",
+        "rationale": "Board responsibilities; not a portfolio constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S012",
+        "segment_ids": [
+          "S012"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "roles_responsibilities",
+        "rationale": "Investment Committee responsibilities; not a portfolio constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S013",
+        "segment_ids": [
+          "S013"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "roles_responsibilities",
+        "rationale": "Advisor reporting/notification process; not a holdings constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S015",
+        "segment_ids": [
+          "S015"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objective",
+        "rationale": "Investment objective statement; not a measurable constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S016",
+        "segment_ids": [
+          "S016"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objective",
+        "rationale": "Return target and spending-rate context; not a deterministic holdings constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S017",
+        "segment_ids": [
+          "S017"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objective",
+        "rationale": "Risk preference narrative; not a measurable constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S019",
+        "segment_ids": [
+          "S019"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "spending_policy",
+        "rationale": "Distribution/spending intent and confirmation process; not a holdings constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S020",
+        "segment_ids": [
+          "S020"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "spending_policy",
+        "rationale": "Board discretion on distributions; not a portfolio constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S022",
+        "segment_ids": [
+          "S022"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "scope_definition",
+        "rationale": "Introduces asset allocation ranges measured at market value; actual limits are in table segments.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S024",
+        "segment_ids": [
+          "S024"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Global equity allocation must stay within stated min/max bands.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S024",
+            "clause_id": "S024",
+            "source_segment_ids": [
+              "S024"
+            ],
+            "kind": "allocation_range",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": 0.55,
+            "min_unit": "fraction",
+            "min_inclusive": true,
+            "max_value": 0.75,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": 0.65,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "sub_asset_class",
+                "op": "in",
+                "value": [
+                  "global_equity",
+                  "intl_equity",
+                  "us_equity",
+                  "us_large_cap",
+                  "us_mid_cap",
+                  "us_small_cap",
+                  "us_sector_energy",
+                  "us_sector_financials",
+                  "us_sector_health_care",
+                  "us_sector_industrials",
+                  "us_sector_technology",
+                  "us_sector_utilities",
+                  "intl_small_cap",
+                  "us_total_market",
+                  "us_core_plus",
+                  "us_large_growth",
+                  "us_large_value"
+                ]
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ],
+        "review": null
+      },
+      {
+        "clause_id": "S025",
+        "segment_ids": [
+          "S025"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Fixed income allocation must stay within stated min/max bands.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S025",
+            "clause_id": "S025",
+            "source_segment_ids": [
+              "S025"
+            ],
+            "kind": "allocation_range",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": 0.2,
+            "min_unit": "fraction",
+            "min_inclusive": true,
+            "max_value": 0.4,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": 0.3,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "fixed_income"
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ],
+        "review": null
+      },
+      {
+        "clause_id": "S026",
+        "segment_ids": [
+          "S026"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Cash and cash equivalents allocation must stay within stated min/max bands.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S026",
+            "clause_id": "S026",
+            "source_segment_ids": [
+              "S026"
+            ],
+            "kind": "allocation_range",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": 0.0,
+            "min_unit": "fraction",
+            "min_inclusive": true,
+            "max_value": 0.1,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": 0.05,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "in",
+                "value": [
+                  "cash",
+                  "cash_equivalent"
+                ]
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ],
+        "review": null
+      },
+      {
+        "clause_id": "S027",
+        "segment_ids": [
+          "S027"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Rebalancing discretion/procedure; not a deterministic constraint on holdings.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S029",
+        "segment_ids": [
+          "S029"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "\u201cBroadly diversified\u201d and \u201cavoid excessive concentration\u201d are vague without measurable thresholds.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "missing_threshold",
+          "question": "What measurable concentration limits should we enforce for \u201cexcessive concentration\u201d (e.g., max sector %, max industry %, max theme %, or use the existing single-security cap only)? Example answers: (a) sector <= 0.15, industry <= 0.08; (b) only enforce the 4% single-security rule.",
+          "assumption": "Assume no additional diversification limits beyond the explicit single-security cap."
+        }
+      },
+      {
+        "clause_id": "S030",
+        "segment_ids": [
+          "S030"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard cap on any single security (with explicit exemptions) at 4% of portfolio market value.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S030",
+            "clause_id": "S030",
+            "source_segment_ids": [
+              "S030"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "security",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.04,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "security_type",
+                "op": "eq",
+                "value": "equity"
+              }
+            ],
+            "exempt_all_of": [
+              {
+                "field": "security_type",
+                "op": "in",
+                "value": [
+                  "mutual_fund",
+                  "exchange_traded_product"
+                ]
+              },
+              {
+                "field": "is_treasury",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ],
+        "review": null
+      },
+      {
+        "clause_id": "S031",
+        "segment_ids": [
+          "S031"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "\u201cPredominantly investment grade\u201d lacks a numeric IG threshold.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "missing_threshold",
+          "question": "What minimum fraction of fixed income holdings must be investment grade? Example answers: (a) at least 0.80 IG; (b) at least 0.50 IG; (c) no less than 0.75 IG by market value.",
+          "assumption": "Assume at least 0.80 of fixed income market value is investment grade."
+        }
+      },
+      {
+        "clause_id": "S033",
+        "segment_ids": [
+          "S033"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "Liquidity reserve equals next 12 months of approved grants; requires grant budget/expenses data not in holdings snapshot.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "needs_external_data",
+          "question": "How should we compute \u201cnext twelve months of approved grants\u201d for the reserve requirement\u2014use the most recently approved grant budget, and is it measured in dollars or months? Example answers: (a) use latest approved annual grant budget prorated to 12 months; (b) use trailing 12 months of grants paid.",
+          "assumption": "Assume reserve is computed from the latest approved grant budget prorated to the next 12 months."
+        }
+      },
+      {
+        "clause_id": "S034",
+        "segment_ids": [
+          "S034"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "scope_definition",
+        "rationale": "States Grant Reserve account is intended to hold reserves; not a standalone measurable rule.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S036",
+        "segment_ids": [
+          "S036"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Exclusion: no investment in fossil fuel companies.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S036",
+            "clause_id": "S036",
+            "source_segment_ids": [
+              "S036"
+            ],
+            "kind": "exclusion",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.0,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "fossil_revenue_pct",
+                "op": "gt",
+                "value": 0
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ],
+        "review": null
+      },
+      {
+        "clause_id": "S037",
+        "segment_ids": [
+          "S037"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "Encourages favoring water stewardship and reporting exposure; no enforceable threshold or definition.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "missing_threshold",
+          "question": "Is there any measurable constraint tied to \u201cstrong water stewardship practices\u201d or \u201cwater-intensive industries\u201d (e.g., max water-intensive exposure %)? If yes, provide the threshold and the data source/definition. Example answers: (a) no constraint, only reporting; (b) water-intensive industries exposure <= 0.10.",
+          "assumption": "Assume this is advisory/monitoring only and not enforced as a portfolio constraint."
+        }
+      },
+      {
+        "clause_id": "S038",
+        "segment_ids": [
+          "S038"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Proxy voting and reporting instructions; not a holdings constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S040",
+        "segment_ids": [
+          "S040"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Fund selection considerations; not a deterministic constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S041",
+        "segment_ids": [
+          "S041"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "Watch list trigger depends on fund benchmark-relative performance over rolling 3 years; requires performance history and benchmark mapping.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "needs_external_data",
+          "question": "For \u201cunderperforms its benchmark by more than 2% a year over a rolling three-year period,\u201d what exact performance metric should we use (annualized total return? calendar-year? net of fees?), and how do we map each fund to its benchmark in the data? Example answers: (a) annualized total return vs stated benchmark; (b) trailing 36-month CAGR vs benchmark CAGR.",
+          "assumption": "Assume annualized total return (net) vs the fund\u2019s stated benchmark over the last 36 months."
+        }
+      },
+      {
+        "clause_id": "S043",
+        "segment_ids": [
+          "S043"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Quarterly meeting and reporting cadence; not a portfolio constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S044",
+        "segment_ids": [
+          "S044"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Annual policy review and amendment process; not a portfolio constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S045",
+        "segment_ids": [
+          "S045"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Ratification/approval statement; not a constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S046",
+        "segment_ids": [
+          "S046"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Name of committee chair; not a constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S047",
+        "segment_ids": [
+          "S047"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Name of board chair; not a constraint.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": null
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 4517,
+    "prompt_tokens": 6294,
+    "total_tokens": 10811,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 1792,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "cost_usd": 0.00672585,
+  "latency_s": 24.76077137499999,
+  "model": "gpt-5.4-nano",
+  "cache_hit": false,
+  "cache_key": "3ec20a13be6b2cc50c4d62e5b86001c8825f5bf70a3fa57fb01398c08a07ee64",
+  "prompt_version": "1.0",
+  "schema_version": "1.0"
+}

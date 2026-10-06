@@ -1,0 +1,639 @@
+{
+  "total_clauses": 20,
+  "found": 20,
+  "classification_correct": 20,
+  "classification_accuracy": 1.0,
+  "overall_pass": 18,
+  "overall_accuracy": 0.9,
+  "false_firm_count": 0,
+  "false_firm_ids": [],
+  "coverage_pct": 1.0,
+  "clause_results": [
+    {
+      "clause_id": "P-01",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "not_constraint_type",
+            "in": [
+              "scope",
+              "background"
+            ]
+          },
+          "passed": true,
+          "explanation": "not_constraint_type='scope' (expected one of ['scope', 'background'])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-02",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "not_constraint_type",
+            "in": [
+              "background",
+              "scope"
+            ]
+          },
+          "passed": true,
+          "explanation": "not_constraint_type='scope' (expected one of ['background', 'scope'])"
+        }
+      ],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "no_cash_reserve_rule"
+          },
+          "passed": true,
+          "explanation": "no cash reserve rule generated"
+        }
+      ],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-03",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "not_constraint_type",
+            "in": [
+              "background",
+              "objective"
+            ]
+          },
+          "passed": true,
+          "explanation": "not_constraint_type='background' (expected one of ['background', 'objective'])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-04",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "not_constraint_type",
+            "in": [
+              "background",
+              "objective"
+            ]
+          },
+          "passed": true,
+          "explanation": "not_constraint_type='objective' (expected one of ['background', 'objective'])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-05",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "allocation_range"
+          },
+          "passed": true,
+          "explanation": "kind='allocation_range' (expected 'allocation_range')"
+        },
+        {
+          "assertion": {
+            "field": "min_value",
+            "equals": 0.75
+          },
+          "passed": true,
+          "explanation": "min_value=0.75 (expected 0.75)"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.95
+          },
+          "passed": true,
+          "explanation": "max_value=0.95 (expected 0.95)"
+        },
+        {
+          "assertion": {
+            "field": "measure.asset_class",
+            "equals": "equity"
+          },
+          "passed": true,
+          "explanation": "measure.asset_class='equity' (expected 'equity')"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-06",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "allocation_range"
+          },
+          "passed": true,
+          "explanation": "kind='allocation_range' (expected 'allocation_range')"
+        },
+        {
+          "assertion": {
+            "field": "min_value",
+            "equals": 0.05
+          },
+          "passed": true,
+          "explanation": "min_value=0.05 (expected 0.05)"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.2
+          },
+          "passed": true,
+          "explanation": "max_value=0.2 (expected 0.2)"
+        },
+        {
+          "assertion": {
+            "field": "measure.asset_class",
+            "equals": "fixed_income"
+          },
+          "passed": true,
+          "explanation": "measure.asset_class='fixed_income' (expected 'fixed_income')"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-07",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "allocation_range"
+          },
+          "passed": true,
+          "explanation": "kind='allocation_range' (expected 'allocation_range')"
+        },
+        {
+          "assertion": {
+            "field": "min_value",
+            "equals": 0.0
+          },
+          "passed": true,
+          "explanation": "min_value=0.0 (expected 0.0)"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.05
+          },
+          "passed": true,
+          "explanation": "max_value=0.05 (expected 0.05)"
+        },
+        {
+          "assertion": {
+            "field": "measure.asset_class",
+            "in": [
+              "cash",
+              "cash_equivalent"
+            ]
+          },
+          "passed": true,
+          "explanation": "measure.asset_class='cash' (expected one of ['cash', 'cash_equivalent'])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-08",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "not_constraint_type",
+            "equals": "procedure"
+          },
+          "passed": true,
+          "explanation": "not_constraint_type='procedure' (expected 'procedure')"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-09",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "group_by",
+            "equals": "issuer"
+          },
+          "passed": true,
+          "explanation": "group_by='issuer' (expected 'issuer')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.1
+          },
+          "passed": true,
+          "explanation": "max_value=0.1 (expected 0.1)"
+        },
+        {
+          "assertion": {
+            "field": "lookthrough",
+            "equals": "none"
+          },
+          "passed": true,
+          "explanation": "lookthrough='none' (expected 'none')"
+        },
+        {
+          "assertion": {
+            "field": "exempt",
+            "contains_entity": "Kestrel Semiconductor"
+          },
+          "passed": true,
+          "explanation": "found entity 'Kestrel Semiconductor' in exempt"
+        }
+      ],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "no_lookthrough_into_funds_as_issuers"
+          },
+          "passed": true,
+          "explanation": "ok"
+        }
+      ],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-10",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "tracked_target"
+          },
+          "passed": true,
+          "explanation": "kind matched tracked_target"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.15
+          },
+          "passed": true,
+          "explanation": "max_value=0.15 (expected 0.15)"
+        },
+        {
+          "assertion": {
+            "field": "deadline",
+            "equals": "2028-12-31"
+          },
+          "passed": true,
+          "explanation": "deadline='2028-12-31' (expected '2028-12-31')"
+        },
+        {
+          "assertion": {
+            "field": "measure",
+            "contains_entity": "Kestrel Semiconductor"
+          },
+          "passed": true,
+          "explanation": "found entity 'Kestrel Semiconductor' in measure"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": [
+        "Alternative classification accepted: 'needs_review'"
+      ]
+    },
+    {
+      "clause_id": "P-11",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "data_requirements",
+            "contains": "transactions"
+          },
+          "passed": false,
+          "explanation": "data_requirements=[] (expected to contain 'transactions')"
+        }
+      ],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "not_pass_or_fail_from_snapshot"
+          },
+          "passed": true,
+          "explanation": "marked as needs_review"
+        }
+      ],
+      "overall": false,
+      "notes": [
+        "Alternative classification accepted: 'needs_review'"
+      ]
+    },
+    {
+      "clause_id": "P-12",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "data_requirements",
+            "contains": "transactions"
+          },
+          "passed": false,
+          "explanation": "data_requirements=[] (expected to contain 'transactions')"
+        }
+      ],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "not_pass_or_fail_from_snapshot"
+          },
+          "passed": true,
+          "explanation": "marked as needs_review"
+        }
+      ],
+      "overall": false,
+      "notes": [
+        "Alternative classification accepted: 'needs_review'"
+      ]
+    },
+    {
+      "clause_id": "P-13",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exposure_cap"
+          },
+          "passed": true,
+          "explanation": "kind='exposure_cap' (expected 'exposure_cap')"
+        },
+        {
+          "assertion": {
+            "field": "aggregate",
+            "equals": true
+          },
+          "passed": true,
+          "explanation": "aggregate=True (expected True)"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.2
+          },
+          "passed": true,
+          "explanation": "max_value=0.2 (expected 0.2)"
+        },
+        {
+          "assertion": {
+            "field": "measure.security_type",
+            "equals": "equity"
+          },
+          "passed": true,
+          "explanation": "measure.security_type='equity' (expected 'equity')"
+        },
+        {
+          "assertion": {
+            "field": "exempt",
+            "contains_entity": "Kestrel Semiconductor"
+          },
+          "passed": true,
+          "explanation": "found entity 'Kestrel Semiconductor' in exempt"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-14",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "exclusion"
+          },
+          "passed": true,
+          "explanation": "kind='exclusion' (expected 'exclusion')"
+        },
+        {
+          "assertion": {
+            "field": "max_value",
+            "equals": 0.0
+          },
+          "passed": true,
+          "explanation": "max_value=0.0 (expected 0.0)"
+        },
+        {
+          "assertion": {
+            "field": "measure.asset_class",
+            "in": [
+              "alternative",
+              "digital_asset"
+            ]
+          },
+          "passed": true,
+          "explanation": "measure.asset_class='alternative' (expected one of ['alternative', 'digital_asset'])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-15",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "kind",
+            "equals": "instrument_allowlist"
+          },
+          "passed": true,
+          "explanation": "kind='instrument_allowlist' (expected 'instrument_allowlist')"
+        },
+        {
+          "assertion": {
+            "field": "measure.asset_class",
+            "equals": "fixed_income"
+          },
+          "passed": true,
+          "explanation": "measure.asset_class='fixed_income' (expected 'fixed_income')"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-16",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "reason",
+            "in": [
+              "missing_threshold",
+              "ambiguous_term"
+            ]
+          },
+          "passed": true,
+          "explanation": "reason='missing_threshold' (expected one of ['missing_threshold', 'ambiguous_term'])"
+        },
+        {
+          "assertion": {
+            "field": "question",
+            "mentions": "international equity"
+          },
+          "passed": true,
+          "explanation": "question=\"What minimum fraction of the portfolio should be allocated to international equities (e.g., 0.10, 0.20)? Also, should 'international equities' include all non-US equity sub_asset_classes (intl_developed, intl_equity, intl_small_cap, etc.)?\" (expected to mention 'international equity')"
+        }
+      ],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "not_hard_breach_without_pm_answer"
+          },
+          "passed": true,
+          "explanation": "correctly marked needs_review"
+        }
+      ],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-17",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "not_constraint_type",
+            "in": [
+              "procedure",
+              "background"
+            ]
+          },
+          "passed": true,
+          "explanation": "not_constraint_type='procedure' (expected one of ['procedure', 'background'])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-18",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [],
+      "must_not_results": [
+        {
+          "assertion": {
+            "assert": "not_hard_breach"
+          },
+          "passed": true,
+          "explanation": "no hard rule"
+        }
+      ],
+      "overall": true,
+      "notes": [
+        "Alternative classification accepted: 'not_constraint'"
+      ]
+    },
+    {
+      "clause_id": "P-19",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "not_constraint_type",
+            "equals": "procedure"
+          },
+          "passed": true,
+          "explanation": "not_constraint_type='procedure' (expected 'procedure')"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    },
+    {
+      "clause_id": "P-20",
+      "found": true,
+      "class_correct": true,
+      "must_capture_results": [
+        {
+          "assertion": {
+            "field": "not_constraint_type",
+            "in": [
+              "procedure",
+              "review_process"
+            ]
+          },
+          "passed": true,
+          "explanation": "not_constraint_type='procedure' (expected one of ['procedure', 'review_process'])"
+        }
+      ],
+      "must_not_results": [],
+      "overall": true,
+      "notes": []
+    }
+  ]
+}

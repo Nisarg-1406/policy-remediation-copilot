@@ -1,0 +1,211 @@
+# Patel gold extraction data — auto-derived from patel_household_expected.md
+# One entry per P-XX clause. Used by eval scorer.
+# NOTE: Do NOT use this file in extraction prompts (invariant I9).
+
+- id: P-01
+  expected_class: not_constraint
+  constraint_level: no
+  must_capture:
+    - {field: not_constraint_type, in: [scope, background]}
+  must_not: []
+
+- id: P-02
+  expected_class: not_constraint
+  constraint_level: no
+  must_capture:
+    - {field: not_constraint_type, in: [background, scope]}
+  must_not:
+    - {assert: no_cash_reserve_rule}  # generating "hold 6 months expenses" is wrong
+
+- id: P-03
+  expected_class: not_constraint
+  constraint_level: no
+  must_capture:
+    - {field: not_constraint_type, in: [background, objective]}
+  must_not: []
+
+- id: P-04
+  expected_class: not_constraint
+  constraint_level: no
+  must_capture:
+    - {field: not_constraint_type, in: [background, objective]}
+  must_not: []
+
+- id: P-05
+  expected_class: rule
+  constraint_level: yes
+  source_quotes:
+    - "75%"
+    - "95%"
+  must_capture:
+    - {field: kind, equals: allocation_range}
+    - {field: min_value, equals: 0.75}
+    - {field: max_value, equals: 0.95}
+    - {field: measure.asset_class, equals: equity}
+  must_not: []
+  expected_outcome: {status: pass, measured: 0.8208}
+
+- id: P-06
+  expected_class: rule
+  constraint_level: yes
+  must_capture:
+    - {field: kind, equals: allocation_range}
+    - {field: min_value, equals: 0.05}
+    - {field: max_value, equals: 0.20}
+    - {field: measure.asset_class, equals: fixed_income}
+  must_not: []
+  expected_outcome: {status: pass, measured: 0.1250}
+
+- id: P-07
+  expected_class: rule
+  constraint_level: yes
+  must_capture:
+    - {field: kind, equals: allocation_range}
+    - {field: min_value, equals: 0.0}
+    - {field: max_value, equals: 0.05}
+    - {field: measure.asset_class, in: [cash, cash_equivalent]}
+  must_not: []
+  expected_outcome: {status: pass, measured: 0.0417}
+
+- id: P-08
+  expected_class: not_constraint
+  constraint_level: no
+  must_capture:
+    - {field: not_constraint_type, equals: procedure}
+  must_not: []
+
+- id: P-09
+  expected_class: rule
+  constraint_level: yes
+  source_quotes:
+    - "No single issuer may exceed 10%"
+  must_capture:
+    - {field: kind, equals: exposure_cap}
+    - {field: group_by, equals: issuer}
+    - {field: max_value, equals: 0.10}
+    - {field: lookthrough, equals: none}
+    - {field: exempt, contains_entity: "Kestrel Semiconductor"}
+  must_not:
+    - {assert: no_lookthrough_into_funds_as_issuers}
+  expected_outcome: {status: pass, measured: 0.0625}
+
+- id: P-10
+  expected_class: rule
+  constraint_level: yes
+  acceptable_alternatives:
+    - tracked_target_with_deadline
+    - advisory_rule_with_assumption
+  source_quotes:
+    - "reduce the Kestrel position to below 15%"
+    - "2028"
+  must_capture:
+    - {field: kind, equals: tracked_target}
+    - {field: max_value, equals: 0.15}
+    - {field: deadline, equals: "2028-12-31"}
+    - {field: measure, contains_entity: "Kestrel Semiconductor"}
+  must_not: []
+  expected_outcome: {status: pass, tracked: true, measured: 0.30}
+
+- id: P-11
+  expected_class: rule
+  constraint_level: partly
+  acceptable_alternatives:
+    - needs_external_data_rule
+    - needs_review_with_question
+  must_capture:
+    - {field: data_requirements, contains: transactions}
+  must_not:
+    - {assert: not_pass_or_fail_from_snapshot}
+  expected_outcome: {status: cannot_evaluate}
+
+- id: P-12
+  expected_class: rule
+  constraint_level: partly
+  acceptable_alternatives:
+    - needs_external_data_rule
+    - needs_review_with_question
+  must_capture:
+    - {field: data_requirements, contains: transactions}
+  must_not:
+    - {assert: not_pass_or_fail_from_snapshot}
+  expected_outcome: {status: cannot_evaluate}
+
+- id: P-13
+  expected_class: rule
+  constraint_level: yes
+  must_capture:
+    - {field: kind, equals: exposure_cap}
+    - {field: aggregate, equals: true}
+    - {field: max_value, equals: 0.20}
+    - {field: measure.security_type, equals: equity}
+    - {field: exempt, contains_entity: "Kestrel Semiconductor"}
+  must_not: []
+  expected_outcome: {status: pass, measured: 0.1583}
+
+- id: P-14
+  expected_class: rule
+  constraint_level: yes
+  source_quotes:
+    - "will not hold cryptocurrency"
+    - "digital asset"
+  must_capture:
+    - {field: kind, equals: exclusion}
+    - {field: max_value, equals: 0.0}
+    - {field: measure.asset_class, in: [alternative, digital_asset]}
+  must_not: []
+  expected_outcome: {status: breach, measured: 0.0125}
+
+- id: P-15
+  expected_class: rule
+  constraint_level: yes
+  must_capture:
+    - {field: kind, equals: instrument_allowlist}
+    - {field: measure.asset_class, equals: fixed_income}
+  must_not: []
+  expected_outcome: {status: pass}
+
+- id: P-16
+  expected_class: needs_review
+  constraint_level: partly
+  acceptable_alternatives:
+    - needs_review_with_question
+    - advisory_rule_with_assumption
+  must_capture:
+    - {field: reason, in: [missing_threshold, ambiguous_term]}
+    - {field: question, mentions: international equity}
+  must_not:
+    - {assert: not_hard_breach_without_pm_answer}
+  expected_outcome: {status: needs_review}
+
+- id: P-17
+  expected_class: not_constraint
+  constraint_level: no
+  must_capture:
+    - {field: not_constraint_type, in: [procedure, background]}
+  must_not: []
+
+- id: P-18
+  expected_class: needs_review
+  constraint_level: partly
+  acceptable_alternatives:
+    - not_constraint_procedure
+    - advisory_rule
+    - needs_review
+  must_capture: []
+  must_not:
+    - {assert: not_hard_breach}
+  expected_outcome: {status: pass}
+
+- id: P-19
+  expected_class: not_constraint
+  constraint_level: no
+  must_capture:
+    - {field: not_constraint_type, equals: procedure}
+  must_not: []
+
+- id: P-20
+  expected_class: not_constraint
+  constraint_level: no
+  must_capture:
+    - {field: not_constraint_type, in: [procedure, review_process]}
+  must_not: []

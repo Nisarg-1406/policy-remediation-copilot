@@ -1,0 +1,18 @@
+{
+  "metrics": {
+    "classification_accuracy": 1.0,
+    "false_firm_count": 0,
+    "coverage_pct": 1.0,
+    "overall_accuracy": 0.9,
+    "synthetic_pass_rate": 1.0,
+    "synthetic_passed": 10,
+    "synthetic_total": 10
+  },
+  "gates": {
+    "coverage_100pct": true,
+    "classification_accuracy_gte_90": true,
+    "false_firm_rate_zero": true,
+    "synthetic_pass_rate_gte_80": true
+  },
+  "all_gates_pass": true
+}

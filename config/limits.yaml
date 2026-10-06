@@ -1,0 +1,10 @@
+# Rate limits — adjust per your OpenAI tier
+# RPM = requests per minute, TPM = tokens per minute
+
+openai:
+  rpm: 500
+  tpm: 200000
+  concurrency: 4                   # asyncio Semaphore — concurrent IPS extraction calls
+  per_call_timeout_s: 120          # hard timeout per LLM call
+  max_retries: 3
+  circuit_breaker_threshold: 3     # consecutive failures before circuit trips

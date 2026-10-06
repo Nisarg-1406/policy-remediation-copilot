@@ -1,0 +1,13 @@
+account_id,household_id,account_name,account_type,registration,custodian,managed_by_firm
+CHEN-TR,HH-CHEN,Chen Family Trust - Investment Account,trust,Chen Family Trust u/a 2011,Pinnacle Custody,true
+CHEN-DC,HH-CHEN,David Chen - Individual,taxable,David Chen,Pinnacle Custody,true
+CHEN-MC,HH-CHEN,Mei Chen - Roth IRA,roth_ira,Mei Chen,Pinnacle Custody,true
+CHEN-401K,HH-CHEN,David Chen - Employer 401(k),401k,David Chen,Ashbury Retirement Services,false
+OKF-JT,HH-OKAFOR,Okafor Joint Brokerage,taxable,Robert and Adaeze Okafor JTWROS,Pinnacle Custody,true
+OKF-RIRA,HH-OKAFOR,Robert Okafor - Traditional IRA,ira,Robert Okafor,Pinnacle Custody,true
+OKF-AIRA,HH-OKAFOR,Adaeze Okafor - Traditional IRA,ira,Adaeze Okafor,Pinnacle Custody,true
+BWF-MAIN,HH-BRIGHT,Brightwater Foundation - Endowment,foundation,Brightwater Family Foundation,Pinnacle Custody,true
+BWF-RES,HH-BRIGHT,Brightwater Foundation - Grant Reserve,foundation,Brightwater Family Foundation,Pinnacle Custody,true
+PAT-JT,HH-PATEL,Patel Joint Brokerage,taxable,Priya and Arjun Patel JTWROS,Pinnacle Custody,true
+PAT-EQP,HH-PATEL,Priya Patel - Kestrel Equity Plan,stock_plan,Priya Patel,Northstar Plan Services,true
+PAT-IRA,HH-PATEL,Arjun Patel - Rollover IRA,ira,Arjun Patel,Pinnacle Custody,true

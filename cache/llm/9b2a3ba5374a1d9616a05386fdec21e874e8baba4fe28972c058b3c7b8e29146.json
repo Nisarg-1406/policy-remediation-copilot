@@ -1,0 +1,1035 @@
+{
+  "response": {
+    "clauses": [
+      {
+        "clause_id": "S002",
+        "segment_ids": [
+          "S002"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Document metadata (prepared/agreed date). Not an investable constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S003",
+        "segment_ids": [
+          "S003"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "scope_definition",
+        "rationale": "Defines which accounts comprise \u201cthe portfolio.\u201d Not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S004",
+        "segment_ids": [
+          "S004"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Intro/background describing purpose of the document.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S005",
+        "segment_ids": [
+          "S005"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Replaces prior onboarding notes; administrative only.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S006",
+        "segment_ids": [
+          "S006"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "scope_definition",
+        "rationale": "Lists the three managed accounts; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S007",
+        "segment_ids": [
+          "S007"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "scope_definition",
+        "rationale": "Defines \u201cthe portfolio\u201d as those three accounts together.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S009",
+        "segment_ids": [
+          "S009"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Client situation summary (retirement, home, debts). Not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S010",
+        "segment_ids": [
+          "S010"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Client background (Robert retirement). Not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S011",
+        "segment_ids": [
+          "S011"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Client background (Adaeze retirement). Not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S012",
+        "segment_ids": [
+          "S012"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Client assets/debt summary. Not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S013",
+        "segment_ids": [
+          "S013"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Explains pension/Social Security timing and funding source. Not a portfolio rule.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S014",
+        "segment_ids": [
+          "S014"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Pension description only; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S015",
+        "segment_ids": [
+          "S015"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Social Security delay plan; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S016",
+        "segment_ids": [
+          "S016"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Social Security start timing; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S017",
+        "segment_ids": [
+          "S017"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Explains portfolio role until Social Security begins; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S018",
+        "segment_ids": [
+          "S018"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Risk/behavioral preferences narrative; not a measurable constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S019",
+        "segment_ids": [
+          "S019"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Preference statement; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S020",
+        "segment_ids": [
+          "S020"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Client worry narrative; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S021",
+        "segment_ids": [
+          "S021"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Preference for steadier return; not a measurable constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S022",
+        "segment_ids": [
+          "S022"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "Preference statement; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S024",
+        "segment_ids": [
+          "S024"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objectives",
+        "rationale": "Investment objective narrative (pay gap, inflation, leave something). Not directly measurable as a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S025",
+        "segment_ids": [
+          "S025"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objectives",
+        "rationale": "Objective statement (\u201csavings last\u201d). Not a measurable constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S026",
+        "segment_ids": [
+          "S026"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objectives",
+        "rationale": "Objective narrative (pay gap, inflation, leave something). Not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S027",
+        "segment_ids": [
+          "S027"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objectives",
+        "rationale": "Planned gifts timing/amount and revisit; not a holdings constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S028",
+        "segment_ids": [
+          "S028"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objectives",
+        "rationale": "Objective narrative about grandchildren education; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S029",
+        "segment_ids": [
+          "S029"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objectives",
+        "rationale": "Planned gifts amount/timing; not a measurable portfolio constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S030",
+        "segment_ids": [
+          "S030"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Plan to revisit amount; administrative/procedural.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S031",
+        "segment_ids": [
+          "S031"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "assumptions",
+        "rationale": "Expected return estimate; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S032",
+        "segment_ids": [
+          "S032"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objectives",
+        "rationale": "States no specific return target; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S033",
+        "segment_ids": [
+          "S033"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "assumptions",
+        "rationale": "Expected long-term return range; informational only.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S035",
+        "segment_ids": [
+          "S035"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard band on stock allocation with an explicit 30\u201345% range.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S035-stock_allocation_band",
+            "clause_id": "S035",
+            "source_segment_ids": [
+              "S035"
+            ],
+            "kind": "allocation_range",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": 0.3,
+            "min_unit": "fraction",
+            "min_inclusive": true,
+            "max_value": 0.45,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "equity"
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S036",
+        "segment_ids": [
+          "S036"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "informational_target",
+        "rationale": "\u201cRoughly 40%\u201d is a non-binding descriptive statement; the binding range is elsewhere.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S037",
+        "segment_ids": [
+          "S037"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard requirement to keep stocks within 30\u201345% without prior discussion.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S037-stock_allocation_band",
+            "clause_id": "S037",
+            "source_segment_ids": [
+              "S037"
+            ],
+            "kind": "allocation_range",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": 0.3,
+            "min_unit": "fraction",
+            "min_inclusive": true,
+            "max_value": 0.45,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "equity"
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S038",
+        "segment_ids": [
+          "S038"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "strategy_preference",
+        "rationale": "Describes how stocks are held (index funds vs individual companies); not a measurable constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S039",
+        "segment_ids": [
+          "S039"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "preference",
+        "rationale": "Preference for dividend-paying companies; no enforceable threshold.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S040",
+        "segment_ids": [
+          "S040"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard minimum bonds allocation, IG requirement, BBB cap within bond sleeve, and maturity preference.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S040-bonds_min_allocation",
+            "clause_id": "S040",
+            "source_segment_ids": [
+              "S040"
+            ],
+            "kind": "allocation_range",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": 0.5,
+            "min_unit": "fraction",
+            "min_inclusive": true,
+            "max_value": null,
+            "max_unit": null,
+            "max_inclusive": null,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "fixed_income"
+              }
+            ],
+            "exempt_all_of": []
+          },
+          {
+            "rule_id": "R-S040-bonds_investment_grade_floor",
+            "clause_id": "S040",
+            "source_segment_ids": [
+              "S040"
+            ],
+            "kind": "credit_quality",
+            "group_by": "security",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": null,
+            "max_unit": null,
+            "max_inclusive": null,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "fixed_income"
+              },
+              {
+                "field": "rating_bucket",
+                "op": "eq",
+                "value": "IG"
+              }
+            ],
+            "exempt_all_of": []
+          },
+          {
+            "rule_id": "R-S040-bbb_cap_within_bond_portfolio",
+            "clause_id": "S040",
+            "source_segment_ids": [
+              "S040"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "asset_class_of_selection",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.1,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "fixed_income"
+              },
+              {
+                "field": "rating_sp",
+                "op": "eq",
+                "value": "BBB"
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S041",
+        "segment_ids": [
+          "S041"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard minimum bonds allocation (at least half).",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S041-bonds_min_allocation",
+            "clause_id": "S041",
+            "source_segment_ids": [
+              "S041"
+            ],
+            "kind": "allocation_range",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": 0.5,
+            "min_unit": "fraction",
+            "min_inclusive": true,
+            "max_value": null,
+            "max_unit": null,
+            "max_inclusive": null,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "fixed_income"
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S042",
+        "segment_ids": [
+          "S042"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard requirement that bonds be investment grade.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S042-bonds_investment_grade_floor",
+            "clause_id": "S042",
+            "source_segment_ids": [
+              "S042"
+            ],
+            "kind": "credit_quality",
+            "group_by": "security",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": null,
+            "max_unit": null,
+            "max_inclusive": null,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "fixed_income"
+              },
+              {
+                "field": "rating_bucket",
+                "op": "eq",
+                "value": "IG"
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S043",
+        "segment_ids": [
+          "S043"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard cap on BBB-rated bonds within the bond portfolio.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S043-bbb_cap_within_bond_portfolio",
+            "clause_id": "S043",
+            "source_segment_ids": [
+              "S043"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "asset_class_of_selection",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.1,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "fixed_income"
+              },
+              {
+                "field": "rating_sp",
+                "op": "eq",
+                "value": "BBB"
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S044",
+        "segment_ids": [
+          "S044"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "Maturity preference (\u201cmostly within ten years\u201d) lacks a measurable threshold.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "missing_threshold",
+          "question": "How should \u201ckeep maturities mostly within ten years\u201d be quantified? Example answers: (a) at least 0.80 of bond MV has maturity <= 10 years; (b) no more than 0.20 has maturity > 10 years; (c) use a weighted-average maturity cap.",
+          "assumption": "Assume a weighted-average maturity <= 10 years if no answer is provided."
+        }
+      },
+      {
+        "clause_id": "S045",
+        "segment_ids": [
+          "S045"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard cap on any single stock at 5% of the portfolio.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S045-single_stock_cap",
+            "clause_id": "S045",
+            "source_segment_ids": [
+              "S045"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.05,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "eq",
+                "value": "equity"
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S046",
+        "segment_ids": [
+          "S046"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "strategy_preference",
+        "rationale": "Explains rationale for restriction; the actual restriction is in S046.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S048",
+        "segment_ids": [
+          "S048"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "Cash reserve rule depends on \u201ctwelve months of living expenses, net of pension\u201d which requires external cashflow inputs.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "needs_external_data",
+          "question": "What numeric \u201ctwelve months of living expenses, net of Robert\u2019s pension\u201d should the system use? Example answers: (a) use last refreshed annual expense amount minus expected annual pension; (b) use a fixed dollar amount provided by the PM; (c) use a percentage of portfolio value.",
+          "assumption": "Assume the PM will provide an annual net-expense dollar figure used to compute the required cash-equivalent minimum."
+        }
+      },
+      {
+        "clause_id": "S049",
+        "segment_ids": [
+          "S049"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "objective",
+        "rationale": "Narrative about avoiding forced selling; the measurable reserve requirement is in S050.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S050",
+        "segment_ids": [
+          "S050"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "Reserve requirement is defined in dollars via living expenses net of pension; needs external expense/pension inputs.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "needs_external_data",
+          "question": "For the reserve test, what is the current \u201ctwelve months of living expenses, net of Robert\u2019s pension\u201d amount (in dollars) to compare against cash + cash equivalents? Example answers: $X provided by PM; or compute from an annual expense estimate minus annual pension.",
+          "assumption": "Assume the system uses the latest PM-provided annual net expense figure."
+        }
+      },
+      {
+        "clause_id": "S051",
+        "segment_ids": [
+          "S051"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Defines which instruments count as cash equivalents for the reserve rule.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S051-cash_equivalents_definition",
+            "clause_id": "S051",
+            "source_segment_ids": [
+              "S051"
+            ],
+            "kind": "instrument_allowlist",
+            "group_by": "asset_class",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": null,
+            "max_unit": null,
+            "max_inclusive": null,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [
+              {
+                "field": "asset_class",
+                "op": "in",
+                "value": [
+                  "cash",
+                  "cash_equivalent"
+                ]
+              }
+            ],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S052",
+        "segment_ids": [
+          "S052"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Describes how/when expense figures are refreshed; not a holdings constraint by itself.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S053",
+        "segment_ids": [
+          "S053"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Procedure for refreshing expense figures; not directly measurable as a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S054",
+        "segment_ids": [
+          "S054"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Procedure to recalculate reserve when Social Security begins; not a direct constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S056",
+        "segment_ids": [
+          "S056"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Withdrawal/RMD handling instructions; not a portfolio holdings constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S057",
+        "segment_ids": [
+          "S057"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "background",
+        "rationale": "RMD timing background; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S058",
+        "segment_ids": [
+          "S058"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Withdrawal order preference; procedural/tax handling, not a holdings rule.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S059",
+        "segment_ids": [
+          "S059"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Administrative schedule for withdrawal plan; not a constraint.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S061",
+        "segment_ids": [
+          "S061"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Reporting/meeting cadence and update triggers; administrative text.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S062",
+        "segment_ids": [
+          "S062"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Quarterly report and annual meeting; administrative.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S063",
+        "segment_ids": [
+          "S063"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Phone them about anything needing a decision; administrative.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S064",
+        "segment_ids": [
+          "S064"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Email is fine for everything else; administrative.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S065",
+        "segment_ids": [
+          "S065"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "Update trigger uses \u201cmeaningful\u201d without a threshold.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "missing_threshold",
+          "question": "What qualifies as \u201cmeaningful\u201d change in health, living situation, or spending? Example answers: (a) spending changes by >= 0.10 (10%); (b) any change that alters annual net expenses by >= $X; (c) PM discretion with documented rationale.",
+          "assumption": "Assume spending changes by at least 0.10 (10%) are \u201cmeaningful\u201d if no answer is provided."
+        }
+      },
+      {
+        "clause_id": "S066",
+        "segment_ids": [
+          "S066"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Signature line for Robert Okafor; administrative.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S067",
+        "segment_ids": [
+          "S067"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Signature line for Adaeze Okafor; administrative.",
+        "injection_suspected": false
+      },
+      {
+        "clause_id": "S068",
+        "segment_ids": [
+          "S068"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "administrative",
+        "rationale": "Signature line for Marcus Hale; administrative.",
+        "injection_suspected": false
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 7011,
+    "prompt_tokens": 7241,
+    "total_tokens": 14252,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 1792,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "cost_usd": 0.01003275,
+  "latency_s": 39.23688249999992,
+  "model": "gpt-5.4-nano",
+  "cache_hit": false,
+  "cache_key": "9b2a3ba5374a1d9616a05386fdec21e874e8baba4fe28972c058b3c7b8e29146",
+  "prompt_version": "1.0",
+  "schema_version": "1.0"
+}

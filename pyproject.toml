@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "policy-remediation-copilot"
+version = "1.0.0"
+description = "IPS policy remediation copilot — Cedar Ridge Wealth Partners"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.5",
+    "openai>=1.40",
+    "tenacity>=8.2",
+    "jinja2>=3.1",
+    "scipy>=1.11",
+    "pyyaml>=6.0",
+    "rapidfuzz>=3.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-asyncio>=0.21",
+    "pytest-cov>=4.1",
+]
+
+[project.scripts]
+copilot = "copilot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

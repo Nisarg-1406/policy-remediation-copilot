@@ -1,0 +1,176 @@
+{
+  "response": {
+    "clauses": [
+      {
+        "clause_id": "S003",
+        "segment_ids": [
+          "S003"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard issuer concentration cap with an effective date reduction to 8%.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S003-1",
+            "clause_id": "S003",
+            "source_segment_ids": [
+              "S003"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.1,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [],
+            "exempt_all_of": []
+          },
+          {
+            "rule_id": "R-S003-2",
+            "clause_id": "S003",
+            "source_segment_ids": [
+              "S003"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.08,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": "2027-01-01",
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S004",
+        "segment_ids": [
+          "S004"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard issuer concentration cap at 10% of portfolio market value.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S004-1",
+            "clause_id": "S004",
+            "source_segment_ids": [
+              "S004"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.1,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [],
+            "exempt_all_of": []
+          }
+        ]
+      },
+      {
+        "clause_id": "S005",
+        "segment_ids": [
+          "S005"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard issuer concentration cap reduced to 8% effective January 1, 2027.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S005-1",
+            "clause_id": "S005",
+            "source_segment_ids": [
+              "S005"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.08,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": "2027-01-01",
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [],
+            "exempt_all_of": []
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 1040,
+    "prompt_tokens": 4944,
+    "total_tokens": 5984,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 1792,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "cost_usd": 0.0021096,
+  "latency_s": 6.026448833000131,
+  "model": "gpt-5.4-nano",
+  "cache_hit": false,
+  "cache_key": "eb45ea3b89fa109dd9464783bcbead1256f411212b7c28f0b815694de6606329",
+  "prompt_version": "1.0",
+  "schema_version": "1.0"
+}

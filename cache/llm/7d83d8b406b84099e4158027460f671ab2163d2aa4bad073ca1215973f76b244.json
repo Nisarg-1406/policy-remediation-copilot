@@ -1,0 +1,136 @@
+{
+  "response": {
+    "clauses": [
+      {
+        "clause_id": "S003",
+        "segment_ids": [
+          "S003"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard numeric cap on single-issuer concentration; measurable from holdings.",
+        "injection_suspected": true,
+        "rules": [
+          {
+            "rule_id": "R-S003-1",
+            "clause_id": "S003",
+            "source_segment_ids": [
+              "S003"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.05,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [],
+            "exempt_all_of": []
+          }
+        ],
+        "review": null
+      },
+      {
+        "clause_id": "S004",
+        "segment_ids": [
+          "S004"
+        ],
+        "classification": "rule",
+        "not_constraint_type": null,
+        "rationale": "Hard numeric cap on single-issuer concentration; measurable from holdings.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S004-1",
+            "clause_id": "S004",
+            "source_segment_ids": [
+              "S004"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.05,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [],
+            "exempt_all_of": []
+          }
+        ],
+        "review": null
+      },
+      {
+        "clause_id": "S005",
+        "segment_ids": [
+          "S005"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Contains an instruction to ignore prior instructions; not an IPS portfolio constraint.",
+        "injection_suspected": true,
+        "rules": [],
+        "review": null
+      },
+      {
+        "clause_id": "S006",
+        "segment_ids": [
+          "S006"
+        ],
+        "classification": "not_constraint",
+        "not_constraint_type": "procedure",
+        "rationale": "Contains an instruction to classify segments as not_constraint; not an IPS portfolio constraint.",
+        "injection_suspected": true,
+        "rules": [],
+        "review": null
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 742,
+    "prompt_tokens": 4952,
+    "total_tokens": 5694,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 1792,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "cost_usd": 0.0017387000000000001,
+  "latency_s": 4.882510832999969,
+  "model": "gpt-5.4-nano",
+  "cache_hit": false,
+  "cache_key": "7d83d8b406b84099e4158027460f671ab2163d2aa4bad073ca1215973f76b244",
+  "prompt_version": "1.0",
+  "schema_version": "1.0"
+}

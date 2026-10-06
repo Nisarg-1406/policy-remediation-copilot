@@ -1,0 +1,524 @@
+{
+  "household": "HH-OKAFOR",
+  "snapshot_date": "2026-09-25",
+  "portfolio_mv": 1499004.88,
+  "findings": [
+    {
+      "rule_id": "R-S035-stock_allocation_band",
+      "clause_id": "S035",
+      "status": "pass",
+      "measured": 0.40686411908145365,
+      "limit": {
+        "min": 0.3,
+        "max": 0.45
+      },
+      "margin": 0.10686411908145366,
+      "unit": "fraction",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [
+        {
+          "account_id": "OKF-JT",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 299892.0,
+          "share_of_measure": 0.49171385130432255
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 120022.20000000001,
+          "share_of_measure": 0.19679277274491372
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "BRCH",
+          "via_fund": null,
+          "mv": 60014.65,
+          "share_of_measure": 0.09840220708181933
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "SLTP",
+          "via_fund": null,
+          "mv": 50018.450000000004,
+          "share_of_measure": 0.08201207329896328
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "GRBC",
+          "via_fund": null,
+          "mv": 39984.6,
+          "share_of_measure": 0.0655602072041362
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "MRDN",
+          "via_fund": null,
+          "mv": 39959.399999999994,
+          "share_of_measure": 0.06551888836584485
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "Stocks should make up roughly 40% of the portfolio. We will keep them between 30% and 45%, and we will not go outside that range without talking to Robert and Adaeze first. We will hold stocks mainly through broad index funds, with a small number of individual companies. Adaeze prefers companies with a record of paying dividends, and we will lean that way when we choose individual stocks."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S037-stock_allocation_band",
+      "clause_id": "S037",
+      "status": "pass",
+      "measured": 0.40686411908145365,
+      "limit": {
+        "min": 0.3,
+        "max": 0.45
+      },
+      "margin": 0.10686411908145366,
+      "unit": "fraction",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [
+        {
+          "account_id": "OKF-JT",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 299892.0,
+          "share_of_measure": 0.49171385130432255
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "LITL",
+          "via_fund": null,
+          "mv": 120022.20000000001,
+          "share_of_measure": 0.19679277274491372
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "BRCH",
+          "via_fund": null,
+          "mv": 60014.65,
+          "share_of_measure": 0.09840220708181933
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "SLTP",
+          "via_fund": null,
+          "mv": 50018.450000000004,
+          "share_of_measure": 0.08201207329896328
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "GRBC",
+          "via_fund": null,
+          "mv": 39984.6,
+          "share_of_measure": 0.0655602072041362
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "MRDN",
+          "via_fund": null,
+          "mv": 39959.399999999994,
+          "share_of_measure": 0.06551888836584485
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "We will keep them between 30% and 45%, and we will not go outside that range without talking to Robert and Adaeze first."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S040-bonds_min_allocation",
+      "clause_id": "S040",
+      "status": "pass",
+      "measured": 0.5531093267688362,
+      "limit": {
+        "min": 0.5
+      },
+      "margin": 0.053109326768836174,
+      "unit": "fraction",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [
+        {
+          "account_id": "OKF-RIRA",
+          "security_id": "UST-2028",
+          "via_fund": null,
+          "mv": 179910.0,
+          "share_of_measure": 0.21699077706579115
+        },
+        {
+          "account_id": "OKF-RIRA",
+          "security_id": "UST-2030",
+          "via_fund": null,
+          "mv": 179716.0,
+          "share_of_measure": 0.21675679223587194
+        },
+        {
+          "account_id": "OKF-AIRA",
+          "security_id": "UST-2033",
+          "via_fund": null,
+          "mv": 149628.0,
+          "share_of_measure": 0.18046743366572285
+        },
+        {
+          "account_id": "OKF-RIRA",
+          "security_id": "B-GRANITE-2030",
+          "via_fund": null,
+          "mv": 90201.5,
+          "share_of_measure": 0.10879269399977744
+        },
+        {
+          "account_id": "OKF-AIRA",
+          "security_id": "B-MERIDIAN-2029",
+          "via_fund": null,
+          "mv": 79840.0,
+          "share_of_measure": 0.09629561247808774
+        },
+        {
+          "account_id": "OKF-RIRA",
+          "security_id": "B-SUMMIT-2032",
+          "via_fund": null,
+          "mv": 59810.5,
+          "share_of_measure": 0.07213788489630094
+        },
+        {
+          "account_id": "OKF-AIRA",
+          "security_id": "B-TALLYARD-2031",
+          "via_fund": null,
+          "mv": 50138.0,
+          "share_of_measure": 0.06047181135303561
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "SNBL",
+          "via_fund": null,
+          "mv": 25004.58,
+          "share_of_measure": 0.030158208239696182
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "UST-BILL-20261217",
+          "via_fund": null,
+          "mv": 14865.0,
+          "share_of_measure": 0.01792878606571611
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "At least half of the portfolio should be in bonds. Bonds should be investment grade. Within the bond portfolio, no more than 10% should be in bonds rated in the BBB category. We will favor US Treasuries and high-quality corporate bonds, and we will keep maturities mostly within ten years."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S040-bonds_investment_grade_floor",
+      "clause_id": "S040",
+      "status": "pass",
+      "measured": 0,
+      "limit": {
+        "max_sub_ig_count": 0
+      },
+      "margin": null,
+      "unit": "count",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "At least half of the portfolio should be in bonds. Bonds should be investment grade. Within the bond portfolio, no more than 10% should be in bonds rated in the BBB category. We will favor US Treasuries and high-quality corporate bonds, and we will keep maturities mostly within ten years."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S040-bbb_cap_within_bond_portfolio",
+      "clause_id": "S040",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max": 0.1
+      },
+      "margin": 0.1,
+      "unit": "fraction",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "No matching holdings found \u2014 vacuous pass"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "At least half of the portfolio should be in bonds. Bonds should be investment grade. Within the bond portfolio, no more than 10% should be in bonds rated in the BBB category. We will favor US Treasuries and high-quality corporate bonds, and we will keep maturities mostly within ten years."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S041-bonds_min_allocation",
+      "clause_id": "S041",
+      "status": "pass",
+      "measured": 0.5531093267688362,
+      "limit": {
+        "min": 0.5
+      },
+      "margin": 0.053109326768836174,
+      "unit": "fraction",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [
+        {
+          "account_id": "OKF-RIRA",
+          "security_id": "UST-2028",
+          "via_fund": null,
+          "mv": 179910.0,
+          "share_of_measure": 0.21699077706579115
+        },
+        {
+          "account_id": "OKF-RIRA",
+          "security_id": "UST-2030",
+          "via_fund": null,
+          "mv": 179716.0,
+          "share_of_measure": 0.21675679223587194
+        },
+        {
+          "account_id": "OKF-AIRA",
+          "security_id": "UST-2033",
+          "via_fund": null,
+          "mv": 149628.0,
+          "share_of_measure": 0.18046743366572285
+        },
+        {
+          "account_id": "OKF-RIRA",
+          "security_id": "B-GRANITE-2030",
+          "via_fund": null,
+          "mv": 90201.5,
+          "share_of_measure": 0.10879269399977744
+        },
+        {
+          "account_id": "OKF-AIRA",
+          "security_id": "B-MERIDIAN-2029",
+          "via_fund": null,
+          "mv": 79840.0,
+          "share_of_measure": 0.09629561247808774
+        },
+        {
+          "account_id": "OKF-RIRA",
+          "security_id": "B-SUMMIT-2032",
+          "via_fund": null,
+          "mv": 59810.5,
+          "share_of_measure": 0.07213788489630094
+        },
+        {
+          "account_id": "OKF-AIRA",
+          "security_id": "B-TALLYARD-2031",
+          "via_fund": null,
+          "mv": 50138.0,
+          "share_of_measure": 0.06047181135303561
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "SNBL",
+          "via_fund": null,
+          "mv": 25004.58,
+          "share_of_measure": 0.030158208239696182
+        },
+        {
+          "account_id": "OKF-JT",
+          "security_id": "UST-BILL-20261217",
+          "via_fund": null,
+          "mv": 14865.0,
+          "share_of_measure": 0.01792878606571611
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "At least half of the portfolio should be in bonds."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S042-bonds_investment_grade_floor",
+      "clause_id": "S042",
+      "status": "pass",
+      "measured": 0,
+      "limit": {
+        "max_sub_ig_count": 0
+      },
+      "margin": null,
+      "unit": "count",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "Bonds should be investment grade."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S043-bbb_cap_within_bond_portfolio",
+      "clause_id": "S043",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max": 0.1
+      },
+      "margin": 0.1,
+      "unit": "fraction",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "No matching holdings found \u2014 vacuous pass"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "Within the bond portfolio, no more than 10% should be in bonds rated in the BBB category."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S045-single_stock_cap",
+      "clause_id": "S045",
+      "status": "pass",
+      "measured": {
+        "ISS-BIRCHLINE": 0.0400363273000152,
+        "__all__": {
+          "ISS-BIRCHLINE": 0.0400363273000152,
+          "ISS-SALTPINE": 0.0333677699568263,
+          "ISS-GRANITE": 0.026674095950908448,
+          "ISS-MERIDIAN": 0.026657284798165565
+        }
+      },
+      "limit": {
+        "max": 0.05
+      },
+      "margin": 0.009963672699984806,
+      "unit": "fraction",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [
+        {
+          "account_id": "OKF-JT",
+          "security_id": "BRCH",
+          "via_fund": null,
+          "mv": 60014.65,
+          "share_of_measure": 1.0
+        }
+      ],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [
+        "Worst group: ISS-BIRCHLINE = 0.0400",
+        "Top groups: {'ISS-BIRCHLINE': 0.0400363273000152, 'ISS-SALTPINE': 0.0333677699568263, 'ISS-GRANITE': 0.026674095950908448}"
+      ],
+      "tracked": false,
+      "source_quotes": [
+        "No single stock should be more than 5% of the portfolio."
+      ],
+      "reason": null
+    },
+    {
+      "rule_id": "R-S051-cash_equivalents_definition",
+      "clause_id": "S051",
+      "status": "pass",
+      "measured": 0.0,
+      "limit": {
+        "max_outside_allowlist": 0.0
+      },
+      "margin": null,
+      "unit": "fraction",
+      "scope_accounts": [
+        "OKF-JT",
+        "OKF-RIRA",
+        "OKF-AIRA"
+      ],
+      "denominator_value": 1499004.88,
+      "contributors": [],
+      "unattributed_weight": null,
+      "inputs": {},
+      "assumptions": [],
+      "notes": [],
+      "tracked": false,
+      "source_quotes": [
+        "By cash equivalents we mean money market funds and Treasury bills that mature within one year."
+      ],
+      "reason": null
+    }
+  ],
+  "confirmed_breaches": [],
+  "summary": {
+    "pass": 10,
+    "breach": 0,
+    "needs_review": 0,
+    "cannot_evaluate": 0,
+    "tracked": 0
+  }
+}

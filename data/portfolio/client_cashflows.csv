@@ -1,0 +1,5 @@
+household_id,as_of_date,monthly_essential_expenses,monthly_discretionary_expenses,monthly_pension_income,monthly_social_security_income,planned_annual_withdrawals,planned_annual_grants,notes
+HH-CHEN,2026-06-30,28000,12000,0,0,150000,,Trust distributes to beneficiaries annually in January.
+HH-OKAFOR,2026-07-15,9000,3500,5500,0,,,Pension is Robert's (Halvorsen Rail defined-benefit plan). Robert defers Social Security to 2028. Adaeze's Social Security starts 2027.
+HH-BRIGHT,2025-03-31,,,0,0,,420000,FY2025 approved grant budget. FY2026 budget pending Board approval.
+HH-PATEL,2026-05-01,14000,9000,0,0,,,"Emergency reserve of $140,000 held at the clients' bank. The Firm does not manage it."

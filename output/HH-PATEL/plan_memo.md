@@ -42,8 +42,8 @@ None.
 
 | Account | Security | Side | Quantity | Rationale |
 |---------|----------|------|----------|-----------|
-| PAT-JT | BVLT | sell | 467 | Addresses confirmed breach |
-| PAT-JT | CRAG | buy | 307 | Addresses confirmed breach |
+| PAT-JT | BVLT | sell | 467 | Trims BVLT to reduce exposure within policy limit for R-S028-no_crypto (clause S028) |
+| PAT-JT | CRAG | buy | 307 | Reinvests proceeds from breach remediation into approved holding CRAG |
 
 **Trade rationale:** All sells remove confirmed breaches. Buys redeploy proceeds to maintain other allocation constraints. The simulator verified that after these trades, no confirmed breach remains and no new breach is created. See the before/after table below.
 
@@ -52,7 +52,17 @@ None.
 
 ## 3. Left Alone
 
-Nothing was deliberately left untouched beyond what was already passing.
+| Item | Reason |
+|------|--------|
+| R-S019-min (S019) | Passed — verified within policy limits (measured: 82.08%) |
+| R-S019-max (S019) | Passed — verified within policy limits (measured: 82.08%) |
+| R-S020-min (S020) | Passed — verified within policy limits (measured: 12.50%) |
+| R-S020-max (S020) | Passed — verified within policy limits (measured: 12.50%) |
+| R-S021-min (S021) | Passed — verified within policy limits (measured: 4.17%) |
+| R-S021-max (S021) | Passed — verified within policy limits (measured: 4.17%) |
+| R-S024-single_issuer_cap (S024) | Passed — verified within policy limits |
+| R-S026-individual_stocks_agg_cap (S026) | Passed — verified within policy limits (measured: 15.83%) |
+| R-S029-fixed_income_instrument_allowlist (S029) | Passed — verified within policy limits (measured: 0.00%) |
 
 ---
 

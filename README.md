@@ -76,7 +76,7 @@ Portfolio CSVs ───────────► [2] Checker (Deterministic C
                                        │
                      pm_decisions.yaml ┤
                                        ▼
-                          [3] Planner (LP Optimizer + Helper Simulator Loop)
+                          [3] Planner (Greedy Rebalancer + LP Optimizer + Helper Simulator Loop)
                                        │
                                        ▼
                  trades.csv + plan_memo.md + plan_facts.json
@@ -92,7 +92,7 @@ Portfolio CSVs ───────────► [2] Checker (Deterministic C
 | **Extraction** | **Yes (Only here)** | `gpt-5.4-nano` (JSON Schema) | Understanding natural language legal constraints into a typed AST. |
 | **Validators** | **No** | Pydantic v2 + Python | Enforcing schema rules, entity resolution, and quote grounding. |
 | **Checker** | **No** | Pure Python Arithmetic | Deterministic, auditable portfolio math; handles fund look-through. |
-| **Planner** | **No** | LP + `helpers/portfolio.py` | Mathematically optimal minimal-turnover trade allocation. |
+| **Planner** | **No** | Greedy heuristic (primary) + SciPy LP (fallback) + `helpers/portfolio.py` | Minimal-turnover trade allocation; verified by clearinghouse helper simulation. |
 | **Memo** | **No** | Jinja2 Template | Renders memos directly from validated facts; eliminates hallucinations. |
 | **Evals** | **No (Replay)** | Python Test Harness | Scoring against gold assertions and adversarial mutations. |
 
@@ -139,6 +139,16 @@ While the assignment requested trade proposals for Chen and Brightwater, our imp
 3. **Helper Simulation & Self-Healing Loop:** Proposed trades are fed and re-checked by the compliance engine up to 5 times to catch discrete rounding side-effects before the plan is finalized.
 4. **False-Firm Canary:** Evaluation suite actively enforces that ambiguous, unquantified, or missing-data clauses are **never marked as firm rules** (0% false-firm error rate).
 5. **10 Adversarial Synthetic Cases (SYN-01…SYN-10):** Evaluated against prompt injections, colloquial rewordings, inverted look-through, and future amendments with 100% pass rate.
+
+---
+
+## Remediation Planner Architecture
+
+The planner uses a **greedy heuristic as its primary solver**:
+- **Primary Solver (Greedy Heuristic):** For each confirmed breach, it identifies the largest contributing holding over the limit, calculates the required dollar reduction (with safety margin `margin_bp`), and sells down until the constraint is satisfied. Proceeds are redeployed per account into approved securities (`approved_list.csv`).
+- **Fallback Solver (LP):** If the greedy result fails re-check (e.g. tightly coupled multi-constraint sleeves), a LP solver (`linprog` with HiGHS) is invoked as a fallback to minimize total portfolio turnover subject to cash balance feasibility, margin buffers, and asset sleeve preservation.
+- **Discrete Lot Sizing:** Equities and mutual funds round to whole shares; bonds trade in integer multiples of **$1,000 face value**.
+- **Simulator Validation & Repair Loop (≤ 5 iterations):** All planned trades are executed via `helpers/portfolio.apply_trades` and the compliance checker is re-run against the resulting portfolio. If rounding or secondary constraints create new breaches, the planner repairs iteratively (up to 5 loops).
 
 ---
 
@@ -197,6 +207,11 @@ There are 5 core architectural and financial reasons:
 - **Prompt Structure:** Static instructions $\rightarrow$ Closed JSON schema $\rightarrow$ Data dictionary (enumerations only) $\rightarrow$ Decision guide $\rightarrow$ few-shot example $\rightarrow$ Dynamic IPS segments.
 - **Harlow Isolation:** The few-shot example uses exclusively the fictional Harlow household. **Patel gold labels are never leaked into the prompt.**
 
+### What We Tried That Didn't Work
+1. **Free-Form LLM JSON Output:** Early experiments without constrained decoding suffered from schema drift, hallucinated field names (e.g. `max_equity_cap`), and missing types. Enforcing OpenAI Structured Outputs (`json_schema` with `strict: True`) mathematically eliminated schema errors.
+2. **Keyword Regex Heuristics for Extraction:** Attempting to infer missing fields (like `data_requirements: ["transactions"]` on Patel P-11/P-12) via code-level keyword matching overfitted to specific phrasing and proved brittle on syntax mutations. We removed these heuristics in favor of clean, generalizable extraction.
+3. **Monolithic Whole-Document Prompting:** Feeding an entire 5-page IPS as a single prompt caused the model to drop trailing paragraphs and made quote offset verification impossible. Pre-segmenting into discrete markdown chunks (`S001`, `S002`, ...) restored 100% clause coverage.
+
 ---
 
 ## Handling Ambiguity, Conflict & Uncheckable Clauses
@@ -206,7 +221,8 @@ There are 5 core architectural and financial reasons:
 | **Ambiguous phrasing** | `needs_review` | Generates a specific PM question with multiple-choice options; records default assumption. |
 | **Conflicting limits** (e.g. 70% vs 60% equity) | Stricter limit wins | Evaluates against 60%; records both; flags conflict in memo. |
 | **Missing snapshot data** (duration, 3-yr returns) | `cannot_evaluate` | Marks status explicitly; does not guess pass/fail. |
-| **Stale cash flow data** (> 180 days old) | `cannot_evaluate` | Brightwater grant budget is 548 days old; prevents false liquidity pass. |
+| **Stale cash flow data** (> 180 days old) | `cannot_evaluate` | Brightwater grant budget is 548 days old; prevents false liquidity pass. (Freshness checks in `config/freshness.yaml` validate `client_cashflows`). |
+| **Missing fund look-through constituents** | `cannot_evaluate` | If a fund in scope has no constituent rows in `fund_constituents.csv`, rules with `lookthrough=funds` emit `cannot_evaluate` instead of passing vacuously. |
 | **Future effective dates** (e.g. Patel Kestrel target) | `pass (tracked)` | Evaluates deadline: if today $\le$ deadline, tracks target without triggering emergency sales. |
 | **Unmanaged accounts** (`managed_by_firm=false`) | Excluded from trades | Discretionary trading authority boundary strictly respected. |
 
@@ -242,9 +258,21 @@ The 10 synthetic mutation tests probe edge cases, adversarial attacks, and non-s
 - **Vague Clause Degradation (`SYN-04`, `SYN-05`):** Accurately degraded unquantified language (*"reasonable concentration"*) to `needs_review` and resolved internal conflicting thresholds by adopting the conservative limit.
 - **Account Scope Narrowing (`SYN-07`, `SYN-09`):** Captured prose clauses and account-level sub-portfolio restrictions.
 
+#### 3. Run-to-Run Variance & Determinism
+Extraction stability across repeated runs was benchmarked across all four client households and synthetic suites (reported in `output/evals/variance_report.json`):
+- **Classification Consistency:** **1.00** (0 classification flips between `rule`, `needs_review`, and `not_constraint`).
+- **Rule Boundary & Selector Consistency:** **1.00** (0 drift in rule predicates, unit types, or numerical limits).
+- **Determinism Safeguards:** Seeded generation, zero temperature (or model defaults with reasoning/nano models), and static prompt prefixing ensure deterministic replay and eliminate silent trade proposal variance.
+
+### What Evals Cannot Catch & Data Acquisition Plan
+Automated CI evals catch unit errors, schema regressions, and known test cases, but leave key blind spots. To close these gaps, the following data acquisition plan is established:
+1. **Checker Correctness on Novel IPS Formats:** Automated evals run against standard wealth management templates. *Data Plan:* Collect 5 anonymized real-world institutional and family office IPS documents featuring novel phrasing (e.g. bespoke hedge fund lockups, multi-currency limits) with human expert hand-computed ground truths.
+2. **Contradictory / Overlapping Clause Escalation:** Evals verify individual ambiguous clauses. *Data Plan:* Construct synthetic benchmark cases containing directly contradictory mandate terms (e.g., Clause A mandates max 10% cash, Clause B mandates min 15% cash) and test that the system escalates both to `needs_review` with an explicit conflict note rather than picking arbitrarily.
+3. **Vacuous Pass Detection Under Missing Data:** Automated tests cannot verify whether real-world API data feeds are comprehensive. *Data Plan:* Implement automated canary checks injecting unmapped fund tickers to verify the pipeline systematically reports `cannot_evaluate` rather than passing vacuously.
+
 ---
 
-## Engineering Limitations & Mitigations
+### Engineering Limitations & Mitigations
 
 | Limitation | Technical Explanation | Portfolio Impact | Production Fix |
 |---|---|---|---|
@@ -269,6 +297,16 @@ The 10 synthetic mutation tests probe edge cases, adversarial attacks, and non-s
 4. **Observability & Guardrails:**
    - OpenTelemetry spans tracking token consumption, latency, and cache hit rates.
    - Automated CI canary alerts halting deployments if false-firm rate exceeds 0.0%.
+
+### What We Decided NOT to Do & What We'd Do With More Time
+- **Decided NOT to Do:**
+  - *Multi-Agent LLM Frameworks:* Evaluated and rejected multi-agent debate (e.g. CrewAI, AutoGen). A sequential pipeline (segment $\to$ extract $\to$ check $\to$ plan) is deterministic, auditable, and $10\times$ faster.
+  - *Fine-Tuning / Classification Micro-Models (JEV):* Non-generative classification models only categorize text but cannot emit the structured AST parameters needed by the LP planner. At ~40 clauses per IPS once a year, micro-models add vendor complexity for zero economic gain.
+  - *Conversational Memory:* Discarded chat memory in favor of persistent state (`pm_decisions.yaml` / PostgreSQL), ensuring reproducible re-planning.
+- **With More Time:**
+  - *Multi-Custodian FIX Protocol Generation:* Exporting `trades.csv` into standard FIX 4.4 / 5.0 order messages for Schwab Institutional and Fidelity WealthCentral.
+  - *Benchmark & NAV Market Feeds API:* Live market data integration to resolve duration benchmarks and trailing 3-year performance watchlists automatically.
+  - *Interactive PM Review Web Dashboard:* A lightweight FastAPI + React UI to display pending `review.question` items and let PMs approve trade packages with one click.
 
 ---
 

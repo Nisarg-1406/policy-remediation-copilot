@@ -530,13 +530,15 @@
       "account_id": "PAT-JT",
       "security_id": "BVLT",
       "side": "sell",
-      "quantity": 467.0
+      "quantity": 467.0,
+      "rationale": "Trims BVLT to reduce exposure within policy limit for R-S028-no_crypto (clause S028)"
     },
     {
       "account_id": "PAT-JT",
       "security_id": "CRAG",
       "side": "buy",
-      "quantity": 307.0
+      "quantity": 307.0,
+      "rationale": "Reinvests proceeds from breach remediation into approved holding CRAG"
     }
   ],
   "summary": {

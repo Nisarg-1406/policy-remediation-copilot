@@ -255,48 +255,8 @@ def _flat_to_clause_record(raw_clause: dict, markdown: str, seg_map: dict) -> Cl
         measure_preds = [_clean_pred(p) for p in (raw_rule.get("measure_all_of") or [])]
         exempt_preds = [_clean_pred(p) for p in (raw_rule.get("exempt_all_of") or [])]
 
-        if raw_rule.get("kind") == "exclusion" and not measure_preds:
-            if "fossil" in combined_text or "fossil" in rationale_text:
-                measure_preds.append({
-                    "field": "fossil_revenue_pct",
-                    "op": "gt",
-                    "value": 10.0,
-                })
-            elif "crypto" in combined_text or "digital asset" in combined_text:
-                measure_preds.append({
-                    "field": "sub_asset_class",
-                    "op": "eq",
-                    "value": "digital_assets",
-                })
-
-        # Check exemptions from text if model left exempt_all_of empty
-        if not exempt_preds and ("other than" in combined_text or "except" in combined_text or "excluding" in combined_text):
-            if "mutual fund" in combined_text or "exchange-traded" in combined_text or "etf" in combined_text:
-                exempt_preds.append({"field": "is_fund", "op": "eq", "value": True})
-            if "treasury" in combined_text or "us treasury" in combined_text:
-                exempt_preds.append({"field": "is_treasury", "op": "eq", "value": True})
-
-
-        if "total equity" in combined_text and ("ceiling" in combined_text or "shall not exceed" in combined_text or "exceed 60%" in combined_text):
-            if not measure_preds:
-                measure_preds.append({
-                    "field": "asset_class",
-                    "op": "eq",
-                    "value": "equity",
-                })
-            raw_rule["aggregate"] = True
-            raw_rule["group_by"] = "none"
-
-        if ("single stock" in combined_text or "individual stock" in combined_text) and not measure_preds:
-            measure_preds.append({
-                "field": "security_type",
-                "op": "eq",
-                "value": "equity",
-            })
-
         measure = Selector(all_of=[Predicate(**p) for p in measure_preds])
-        exempt_preds_clean = [_clean_pred(p) for p in (raw_rule.get("exempt_all_of") or exempt_preds)]
-        exempt = Selector(any_of=[[Predicate(**p)] for p in exempt_preds_clean]) if exempt_preds_clean else None
+        exempt = Selector(any_of=[[Predicate(**p)] for p in exempt_preds]) if exempt_preds else None
 
         def _bound(val, unit, inclusive) -> Optional[Bound]:
             if val is None:

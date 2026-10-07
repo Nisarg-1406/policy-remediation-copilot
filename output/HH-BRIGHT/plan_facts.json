@@ -359,37 +359,43 @@
       "account_id": "BWF-MAIN",
       "security_id": "PTRX",
       "side": "sell",
-      "quantity": 1105.0
+      "quantity": 1105.0,
+      "rationale": "Trims PTRX to reduce exposure within policy limit for R-S036 (clause S036)"
     },
     {
       "account_id": "BWF-MAIN",
       "security_id": "SVRF",
       "side": "sell",
-      "quantity": 5063.0
+      "quantity": 5063.0,
+      "rationale": "Trims SVRF to reduce exposure within policy limit for R-S036 (clause S036)"
     },
     {
       "account_id": "BWF-MAIN",
       "security_id": "B-PETREX-2030",
       "side": "sell",
-      "quantity": 89000.0
+      "quantity": 89000.0,
+      "rationale": "Trims B-PETREX-2030 to reduce exposure within policy limit for R-S036 (clause S036)"
     },
     {
       "account_id": "BWF-MAIN",
       "security_id": "SLTP",
       "side": "sell",
-      "quantity": 1265.0
+      "quantity": 1265.0,
+      "rationale": "Trims SLTP to reduce exposure within policy limit for R-S036 (clause S036)"
     },
     {
       "account_id": "BWF-MAIN",
       "security_id": "CNDR",
       "side": "sell",
-      "quantity": 2925.0
+      "quantity": 2925.0,
+      "rationale": "Trims CNDR to reduce exposure within policy limit for R-S036 (clause S036)"
     },
     {
       "account_id": "BWF-MAIN",
       "security_id": "CRAG",
       "side": "buy",
-      "quantity": 4908.0
+      "quantity": 4908.0,
+      "rationale": "Reinvests proceeds from breach remediation into approved holding CRAG"
     }
   ],
   "summary": {

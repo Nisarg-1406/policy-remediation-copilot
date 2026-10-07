@@ -91,7 +91,7 @@ None.
 | Account | Security | Side | Quantity | Rationale |
 |---------|----------|------|----------|-----------|
 {% for t in facts.trades %}
-| {{ t.account_id }} | {{ t.security_id }} | {{ t.side }} | {{ t.quantity | int | qty }} | Addresses confirmed breach |
+| {{ t.account_id }} | {{ t.security_id }} | {{ t.side }} | {{ t.quantity | int | qty }} | {{ t.rationale | default('Addresses confirmed breach') }} |
 {% endfor %}
 
 **Trade rationale:** All sells remove confirmed breaches. Buys redeploy proceeds to maintain other allocation constraints. The simulator verified that after these trades, no confirmed breach remains and no new breach is created. See the before/after table below.
@@ -108,7 +108,7 @@ No trades proposed. The portfolio is currently within policy constraints.
 
 ## 3. Left Alone
 
-{% if facts.needs_review_findings or facts.cannot_evaluate_findings or facts.tracked_findings %}
+{% if facts.needs_review_findings or facts.cannot_evaluate_findings or facts.tracked_findings or facts.pass_findings %}
 | Item | Reason |
 |------|--------|
 {% for f in facts.needs_review_findings %}
@@ -120,8 +120,11 @@ No trades proposed. The portfolio is currently within policy constraints.
 {% for f in facts.tracked_findings %}
 | {{ f.rule_id }} ({{ f.clause_id }}) | Tracked target — not due yet{% if f.notes %}; {{ f.notes | join('; ') }}{% endif %} |
 {% endfor %}
+{% for f in facts.pass_findings %}
+| {{ f.rule_id }} ({{ f.clause_id }}) | Passed — verified within policy limits{% if f.measured is not none and f.measured is not mapping %} (measured: {{ f.measured | usd if f.unit == 'usd' else (f.measured | pct) }}){% endif %} |
+{% endfor %}
 {% else %}
-Nothing was deliberately left untouched beyond what was already passing.
+All portfolio positions currently comply with verified policy rules.
 {% endif %}
 
 ---

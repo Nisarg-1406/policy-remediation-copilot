@@ -433,12 +433,22 @@
     {
       "rule_id": "R-S042-1",
       "clause_id": "S042",
-      "status": "pass",
-      "measured": 0.0,
+      "status": "breach",
+      "measured": {
+        "KUSX": 0.225349679577794,
+        "__all__": {
+          "KUSX": 0.225349679577794,
+          "HPBAX": 0.07837883552564079,
+          "CRAG": 0.1371564664102014,
+          "LITL": 0.11756895871032579,
+          "KGMXX": 0.007838020717926643,
+          "AXTL": 0.08817017918420783
+        }
+      },
       "limit": {
         "max": 0.15
       },
-      "margin": 0.15,
+      "margin": -0.07534967957779401,
       "unit": "fraction",
       "scope_accounts": [
         "CHEN-TR",
@@ -446,12 +456,21 @@
         "CHEN-MC"
       ],
       "denominator_value": 5103329.2,
-      "contributors": [],
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 1150033.5999999999,
+          "share_of_measure": 1.0
+        }
+      ],
       "unattributed_weight": null,
       "inputs": {},
       "assumptions": [],
       "notes": [
-        "No matching holdings found \u2014 vacuous pass"
+        "Worst group: KUSX = 0.2253",
+        "Breaching groups: KUSX (0.2253)"
       ],
       "tracked": false,
       "source_quotes": [
@@ -463,11 +482,21 @@
       "rule_id": "R-S042-2",
       "clause_id": "S042",
       "status": "pass",
-      "measured": 0.0,
+      "measured": {
+        "KUSX": 0.225349679577794,
+        "__all__": {
+          "KUSX": 0.225349679577794,
+          "HPBAX": 0.07837883552564079,
+          "CRAG": 0.1371564664102014,
+          "LITL": 0.11756895871032579,
+          "KGMXX": 0.007838020717926643,
+          "AXTL": 0.08817017918420783
+        }
+      },
       "limit": {
         "max": 0.3
       },
-      "margin": 0.3,
+      "margin": 0.07465032042220598,
       "unit": "fraction",
       "scope_accounts": [
         "CHEN-TR",
@@ -475,12 +504,21 @@
         "CHEN-MC"
       ],
       "denominator_value": 5103329.2,
-      "contributors": [],
+      "contributors": [
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "KUSX",
+          "via_fund": null,
+          "mv": 1150033.5999999999,
+          "share_of_measure": 1.0
+        }
+      ],
       "unattributed_weight": null,
       "inputs": {},
       "assumptions": [],
       "notes": [
-        "No matching holdings found \u2014 vacuous pass"
+        "Worst group: KUSX = 0.2253",
+        "Top groups: {'KUSX': 0.225349679577794, 'CRAG': 0.1371564664102014, 'LITL': 0.11756895871032579}"
       ],
       "tracked": false,
       "source_quotes": [
@@ -519,7 +557,12 @@
       "rule_id": "R-S050",
       "clause_id": "S050",
       "status": "pass",
-      "measured": 0.23180155120112578,
+      "measured": {
+        "equity": 0.23180155120112578,
+        "__all__": {
+          "equity": 0.23180155120112578
+        }
+      },
       "limit": {
         "max": 0.6
       },
@@ -601,12 +644,182 @@
           "via_fund": "KUSX",
           "mv": 57501.67999999999,
           "share_of_measure": 0.04860832000694126
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "NRVL",
+          "via_fund": "AXTL",
+          "mv": 53995.373999999996,
+          "share_of_measure": 0.04564430844953532
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "KSMC",
+          "via_fund": "AXTL",
+          "mv": 40496.5305,
+          "share_of_measure": 0.03423323133715149
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "KSMC",
+          "via_fund": "KUSX",
+          "mv": 27600.806399999998,
+          "share_of_measure": 0.023331993603331803
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "HLDA",
+          "via_fund": "AXTL",
+          "mv": 22498.072500000002,
+          "share_of_measure": 0.019018461853973052
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "HLDC",
+          "via_fund": "AXTL",
+          "mv": 20248.26525,
+          "share_of_measure": 0.017116615668575745
+        },
+        {
+          "account_id": "CHEN-MC",
+          "security_id": "ORBP",
+          "via_fund": "AXTL",
+          "mv": 17998.458000000002,
+          "share_of_measure": 0.015214769483178443
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "ORBP",
+          "via_fund": "KUSX",
+          "mv": 13800.403199999999,
+          "share_of_measure": 0.011665996801665902
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDA",
+          "via_fund": "KUSX",
+          "mv": 12650.3696,
+          "share_of_measure": 0.010693830401527079
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "PTRX",
+          "via_fund": "KUSX",
+          "mv": 12650.3696,
+          "share_of_measure": 0.010693830401527079
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDC",
+          "via_fund": "KUSX",
+          "mv": 11500.336,
+          "share_of_measure": 0.009721664001388252
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "MRDN",
+          "via_fund": "KUSX",
+          "mv": 10350.3024,
+          "share_of_measure": 0.008749497601249427
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "TLLY",
+          "via_fund": "KUSX",
+          "mv": 10350.3024,
+          "share_of_measure": 0.008749497601249427
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "NRVL",
+          "via_fund": "HPBAX",
+          "mv": 9999.825,
+          "share_of_measure": 0.008453225951196755
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "NHVP",
+          "via_fund": "LITL",
+          "mv": 9599.8896,
+          "share_of_measure": 0.008115145604582465
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "CLRX",
+          "via_fund": "KUSX",
+          "mv": 9200.2688,
+          "share_of_measure": 0.007777331201110602
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "GRBC",
+          "via_fund": "KUSX",
+          "mv": 8050.235199999998,
+          "share_of_measure": 0.006805164800971776
+        },
+        {
+          "account_id": "CHEN-DC",
+          "security_id": "KAIY",
+          "via_fund": "LITL",
+          "mv": 7199.9172,
+          "share_of_measure": 0.006086359203436848
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "BRCH",
+          "via_fund": "KUSX",
+          "mv": 6900.201599999999,
+          "share_of_measure": 0.005832998400832951
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "SUMM",
+          "via_fund": "KUSX",
+          "mv": 5750.168,
+          "share_of_measure": 0.004860832000694126
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "CNDR",
+          "via_fund": "KUSX",
+          "mv": 4600.1344,
+          "share_of_measure": 0.003888665600555301
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "HLDA",
+          "via_fund": "HPBAX",
+          "mv": 3999.9300000000003,
+          "share_of_measure": 0.0033812903804787023
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "SLTP",
+          "via_fund": "KUSX",
+          "mv": 3450.1007999999997,
+          "share_of_measure": 0.0029164992004164754
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "AUTM",
+          "via_fund": "KUSX",
+          "mv": 3450.1007999999997,
+          "share_of_measure": 0.0029164992004164754
+        },
+        {
+          "account_id": "CHEN-TR",
+          "security_id": "DQSV",
+          "via_fund": "KUSX",
+          "mv": 1150.0336,
+          "share_of_measure": 0.0009721664001388253
         }
       ],
       "unattributed_weight": null,
       "inputs": {},
       "assumptions": [],
-      "notes": [],
+      "notes": [
+        "Worst group: equity = 0.2318"
+      ],
       "tracked": false,
       "source_quotes": [
         "7.1 **Equity ceiling.** In light of the Trustees' experience in 2008 and 2022, total equity exposure, including the equity portion of balanced and multi-asset funds, shall not exceed 60% of the market value of the Portfolio."
@@ -615,11 +828,12 @@
     }
   ],
   "confirmed_breaches": [
-    "R-S041"
+    "R-S041",
+    "R-S042-1"
   ],
   "summary": {
-    "pass": 9,
-    "breach": 1,
+    "pass": 8,
+    "breach": 2,
     "needs_review": 0,
     "cannot_evaluate": 0,
     "tracked": 0

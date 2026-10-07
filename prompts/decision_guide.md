@@ -54,8 +54,8 @@ Build the `measure_all_of` list as conjuncts:
 - `{"field": "sub_asset_class", "op": "in", "value": ["intl_developed", "intl_equity"]}` — selects international equity
 - `{"field": "is_fund", "op": "eq", "value": true}` — selects funds only
 - `{"field": "issuer_id", "op": "eq", "entity_name": "Kestrel Semiconductor"}` — system resolves entity_name
-- `{"field": "asset_class", "op": "eq", "value": "alternative"}` — selects alternatives/crypto
 - `{"field": "fossil_revenue_pct", "op": "gt", "value": 0}` — selects companies with any fossil revenue
+If a named category (e.g., 'fossil fuel companies', 'digital assets') is not an enumerated value in the data dictionary, mark the clause `needs_review` with `reason=identification_ambiguity`.
 
 An empty `measure_all_of` list means "all holdings" — rarely correct; use it only for portfolio-wide caps.
 

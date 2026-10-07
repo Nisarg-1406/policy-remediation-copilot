@@ -68,6 +68,7 @@ def build_plan_facts(
             "security_id": t.security_id,
             "side": t.side,
             "quantity": t.quantity,
+            "rationale": getattr(t, "rationale", "") or ("Addresses confirmed breach" if t.side == "sell" else "Reinvests proceeds into approved holding"),
         })
 
     # Summary counts
@@ -196,11 +197,12 @@ def _fallback_memo(hh_id: str, facts: Dict) -> str:
     if not trades:
         lines.append("No trades proposed.")
     else:
-        lines.append("| Account | Security | Side | Quantity |")
-        lines.append("|---------|----------|------|----------|")
+        lines.append("| Account | Security | Side | Quantity | Rationale |")
+        lines.append("|---------|----------|------|----------|-----------|")
         for t in trades:
             qty = int(t["quantity"]) if float(t["quantity"]) == int(float(t["quantity"])) else t["quantity"]
-            lines.append(f"| {t['account_id']} | {t['security_id']} | {t['side']} | {qty:,} |")
+            rat = t.get("rationale") or ("Addresses confirmed breach" if t["side"] == "sell" else "Reinvests proceeds into approved holding")
+            lines.append(f"| {t['account_id']} | {t['security_id']} | {t['side']} | {qty:,} | {rat} |")
 
     lines += ["", "## 3. Left Alone", ""]
     nr = facts.get("needs_review_findings", [])

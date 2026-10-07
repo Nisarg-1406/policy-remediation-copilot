@@ -1,0 +1,72 @@
+{
+  "response": {
+    "clauses": [
+      {
+        "clause_id": "S003",
+        "segment_ids": [
+          "S003"
+        ],
+        "classification": "rule",
+        "rationale": "Hard issuer concentration cap with explicit 8% limit, measurable from holdings market value.",
+        "injection_suspected": false,
+        "rules": [
+          {
+            "rule_id": "R-S003-1",
+            "clause_id": "S003",
+            "source_segment_ids": [
+              "S003"
+            ],
+            "kind": "exposure_cap",
+            "group_by": "issuer",
+            "aggregate": false,
+            "denominator": "portfolio",
+            "lookthrough": "none",
+            "lookthrough_basis": "explicit",
+            "severity": "hard",
+            "min_value": null,
+            "min_unit": null,
+            "min_inclusive": null,
+            "max_value": 0.08,
+            "max_unit": "fraction",
+            "max_inclusive": true,
+            "informational_target": null,
+            "effective_from": null,
+            "deadline": null,
+            "data_requirements": [],
+            "scope_accounts": null,
+            "measure_all_of": [],
+            "exempt_all_of": []
+          }
+        ],
+        "review": null,
+        "not_constraint_type": null
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 289,
+    "prompt_tokens": 4960,
+    "total_tokens": 5249,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 3840,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "cost_usd": 0.0009692500000000001,
+  "latency_s": 4.389367791998666,
+  "model": "gpt-5.4-nano",
+  "cache_hit": false,
+  "cache_key": "8840ca8937a8b00d2501303f1bedc04402fc0ec33031edfb73d9954eaa562fef",
+  "prompt_version": "1.0",
+  "schema_version": "1.0"
+}

@@ -32,6 +32,27 @@
 **Notes:** Worst group: ISS-HALDEN = 0.0531; Breaching groups: ISS-HALDEN (0.0531), ISS-NORTHVALE (0.0529)
 
 
+### BREACH: R-S042-1 (clause S042)
+
+> 5.2 **Pooled vehicles.** No single mutual fund or exchange-traded fund shall exceed 15% of the market value of the Portfolio, except for the Portfolio's core US broad-market index fund, which may represent up to 30%.
+
+| Field | Value |
+|-------|-------|
+| Measured (worst group) | 22.53% |
+| Limit (max) | 15.00% |
+| Margin (distance to limit) | -7.53% |
+| Scope accounts | CHEN-TR, CHEN-DC, CHEN-MC |
+| Denominator MV | $5,103,329 |
+
+**Top contributors:**
+
+| Account | Security | MV | Share |
+|---------|----------|----|-------|
+| CHEN-TR | KUSX | $1,150,034 | 100.0% |
+
+**Notes:** Worst group: KUSX = 0.2253; Breaching groups: KUSX (0.2253)
+
+
 
 **Needs-review findings (not breaches — pending PM input):**
 
@@ -47,10 +68,9 @@ None.
 
 | Account | Security | Side | Quantity | Rationale |
 |---------|----------|------|----------|-----------|
-| CHEN-TR | NRVL | sell | 76 | Addresses confirmed breach |
-| CHEN-DC | HLDA | sell | 98 | Addresses confirmed breach |
-| CHEN-TR | CRAG | buy | 178 | Addresses confirmed breach |
-| CHEN-DC | CRAG | buy | 186 | Addresses confirmed breach |
+| CHEN-TR | KUSX | sell | 1,306 | Addresses confirmed breach |
+| CHEN-TR | NRVL | sell | 87 | Addresses confirmed breach |
+| CHEN-DC | B-HALDEN-2031 | sell | 21,000 | Addresses confirmed breach |
 
 **Trade rationale:** All sells remove confirmed breaches. Buys redeploy proceeds to maintain other allocation constraints. The simulator verified that after these trades, no confirmed breach remains and no new breach is created. See the before/after table below.
 
@@ -59,7 +79,16 @@ None.
 
 ## 3. Left Alone
 
-Nothing was deliberately left untouched beyond what was already passing.
+| Item | Reason |
+|------|--------|
+| R-S033 (S033) | Passed — verified within policy limits (measured: 58.75%) |
+| R-S034 (S034) | Passed — verified within policy limits (measured: 31.36%) |
+| R-S035 (S035) | Passed — verified within policy limits (measured: 2.06%) |
+| R-S036 (S036) | Passed — verified within policy limits (measured: 0.00%) |
+| R-S037 (S037) | Passed — verified within policy limits (measured: 11.76%) |
+| R-S042-2 (S042) | Passed — verified within policy limits |
+| R-S045 (S045) | Passed — verified within policy limits (measured: 0.00%) |
+| R-S050 (S050) | Passed — verified within policy limits |
 
 ---
 
@@ -90,10 +119,10 @@ Nothing was deliberately left untouched beyond what was already passing.
 | R-S036 | PASS | 0.00% | PASS | — |
 | R-S037 | PASS | 11.76% | PASS | — |
 | R-S041 | **BREACH** | (group) | *(see trades)* | 5.1 **Single issuer.** Exposure to any single issuer shall n… |
-| R-S042-1 | PASS | 0.00% | PASS | — |
-| R-S042-2 | PASS | 0.00% | PASS | — |
+| R-S042-1 | **BREACH** | (group) | *(see trades)* | 5.2 **Pooled vehicles.** No single mutual fund or exchange-t… |
+| R-S042-2 | PASS | (group) | PASS | — |
 | R-S045 | PASS | 0.00% | PASS | — |
-| R-S050 | PASS | 23.18% | PASS | — |
+| R-S050 | PASS | (group) | PASS | — |
 
 ---
 
@@ -106,4 +135,4 @@ Nothing was deliberately left untouched beyond what was already passing.
 | Client cashflows | 2026-06-30 | Stale if > 180 days |
 | Approved list | 2026-09-25 | Static at report date |
 
-*Plan is clean: after applying the trades above, the checker confirms 0 confirmed breaches remain and 0 new breaches were created.*
+*Plan status: UNRESOLVED. Confirmed breaches remain pending PM guidance.*

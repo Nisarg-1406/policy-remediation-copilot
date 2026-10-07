@@ -40,3 +40,5 @@ Thumbs.db
 # Exclude extra documentation and archived model caches
 extra/
 cache/archive_gpt4o_mini/
+.mypy_cache/
+pyrightconfig.json

@@ -780,20 +780,7 @@
           },
           "group_by": "fund",
           "aggregate": false,
-          "exempt": {
-            "all_of": [],
-            "any_of": [
-              [
-                {
-                  "field": "is_fund",
-                  "op": "eq",
-                  "value": 1.0,
-                  "entity_name": null,
-                  "resolved_issuer_ids": null
-                }
-              ]
-            ]
-          },
+          "exempt": null,
           "denominator": "portfolio",
           "scope_accounts": null,
           "lookthrough": "none",
@@ -837,20 +824,7 @@
           },
           "group_by": "fund",
           "aggregate": false,
-          "exempt": {
-            "all_of": [],
-            "any_of": [
-              [
-                {
-                  "field": "is_fund",
-                  "op": "eq",
-                  "value": 1.0,
-                  "entity_name": null,
-                  "resolved_issuer_ids": null
-                }
-              ]
-            ]
-          },
+          "exempt": null,
           "denominator": "portfolio",
           "scope_accounts": null,
           "lookthrough": "none",
@@ -1026,8 +1000,8 @@
             ],
             "any_of": []
           },
-          "group_by": "none",
-          "aggregate": true,
+          "group_by": "asset_class",
+          "aggregate": false,
           "exempt": null,
           "denominator": "portfolio",
           "scope_accounts": null,

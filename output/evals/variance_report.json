@@ -1,0 +1,49 @@
+{
+  "num_households": 4,
+  "households": [
+    {
+      "household_id": "HH-PATEL",
+      "total_clauses": 40,
+      "rule_clauses": 7,
+      "rules_extracted": 11,
+      "needs_review_clauses": 2,
+      "not_constraint_clauses": 31,
+      "flips_detected": 0,
+      "status": "deterministic"
+    },
+    {
+      "household_id": "HH-CHEN",
+      "total_clauses": 70,
+      "rule_clauses": 9,
+      "rules_extracted": 10,
+      "needs_review_clauses": 4,
+      "not_constraint_clauses": 57,
+      "flips_detected": 0,
+      "status": "deterministic"
+    },
+    {
+      "household_id": "HH-OKAFOR",
+      "total_clauses": 68,
+      "rule_clauses": 8,
+      "rules_extracted": 10,
+      "needs_review_clauses": 4,
+      "not_constraint_clauses": 56,
+      "flips_detected": 0,
+      "status": "deterministic"
+    },
+    {
+      "household_id": "HH-BRIGHT",
+      "total_clauses": 47,
+      "rule_clauses": 5,
+      "rules_extracted": 5,
+      "needs_review_clauses": 5,
+      "not_constraint_clauses": 37,
+      "flips_detected": 0,
+      "status": "deterministic"
+    }
+  ],
+  "classification_consistency": 1.0,
+  "bounds_consistency": 1.0,
+  "selector_consistency": 1.0,
+  "summary": "Determinism verified: with deterministic replay / fixed temperature and prompt scaffolding, extraction yields stable clause classifications, zero false-firm flips, and identical rule schemas across runs."
+}

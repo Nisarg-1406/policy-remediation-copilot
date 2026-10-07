@@ -448,6 +448,18 @@ def _eval_allocation_range(rule: dict, account_ids: List[str], hh_id: str) -> Fi
             reason="Portfolio has zero market value",
         )
 
+    if lookthrough == "funds":
+        missing_funds = sorted({e.via_fund for e in exposures if e.missing_data and e.via_fund})
+        if missing_funds:
+            return Finding(
+                rule_id=rule["rule_id"], clause_id=rule["clause_id"],
+                status="cannot_evaluate", measured=None,
+                limit={}, margin=None, unit="fraction",
+                scope_accounts=account_ids, denominator_value=denom_mv,
+                reason=f"Fund(s) {', '.join(missing_funds)} have no constituent data; look-through cannot be computed",
+                source_quotes=rule.get("source_quotes", []),
+            )
+
     # Check if measure selector actually has predicates
     has_preds = False
     if measure_selector:
@@ -468,7 +480,7 @@ def _eval_allocation_range(rule: dict, account_ids: List[str], hh_id: str) -> Fi
     numerator_exposures = []
     unattributed_mv = 0.0
     for exp in exposures:
-        if exp.security_id == "__residual__":
+        if exp.security_id == "__residual__" or exp.missing_data or exp.security_id.startswith("__unknown_"):
             unattributed_mv += exp.mv
             continue
         sec = sec_map.get(exp.security_id, {})
@@ -546,12 +558,24 @@ def _eval_exposure_cap(rule: dict, account_ids: List[str], hh_id: str) -> Findin
             reason="Portfolio has zero market value",
         )
 
+    if lookthrough == "funds":
+        missing_funds = sorted({e.via_fund for e in exposures if e.missing_data and e.via_fund})
+        if missing_funds:
+            return Finding(
+                rule_id=rule["rule_id"], clause_id=rule["clause_id"],
+                status="cannot_evaluate", measured=None,
+                limit={"max": rule_max}, margin=None, unit="fraction",
+                scope_accounts=account_ids, denominator_value=denom_mv,
+                reason=f"Fund(s) {', '.join(missing_funds)} have no constituent data; look-through cannot be computed",
+                source_quotes=rule.get("source_quotes", []),
+            )
+
     # Build groups
     groups: Dict[str, float] = {}
     group_contributors: Dict[str, List[Contribution]] = {}
 
     for exp in exposures:
-        if exp.security_id == "__residual__":
+        if exp.security_id == "__residual__" or exp.missing_data or exp.security_id.startswith("__unknown_"):
             continue
         sec = sec_map.get(exp.security_id, {})
 
@@ -603,7 +627,11 @@ def _eval_exposure_cap(rule: dict, account_ids: List[str], hh_id: str) -> Findin
             limit={"max": rule_max}, margin=rule_max if rule_max else None,
             unit="fraction", scope_accounts=account_ids,
             denominator_value=denom_mv,
-            notes=["No matching holdings found — vacuous pass"],
+            notes=[
+                "No matching holdings found — vacuous pass. "
+                "Measured value is 0% because no matching direct holdings were found. "
+                "Verify that look-through data is complete before treating this as passing."
+            ],
             source_quotes=rule.get("source_quotes", []),
         )
 
@@ -672,6 +700,19 @@ def _eval_exclusion(rule: dict, account_ids: List[str], hh_id: str) -> Finding:
 
     denom_mv = sum(e.mv for e in exposures)
 
+    if lookthrough == "funds":
+        missing_funds = sorted({e.via_fund for e in exposures if e.missing_data and e.via_fund})
+        if missing_funds:
+            return Finding(
+                rule_id=rule["rule_id"], clause_id=rule["clause_id"],
+                status="cannot_evaluate", measured=None,
+                limit={"max": 0.0}, margin=None,
+                unit="fraction", scope_accounts=account_ids,
+                denominator_value=denom_mv,
+                reason=f"Fund(s) {', '.join(missing_funds)} have no constituent data; look-through cannot be computed",
+                source_quotes=rule.get("source_quotes", []),
+            )
+
     has_preds = False
     if measure_selector:
         sel_dict = measure_selector.model_dump() if hasattr(measure_selector, "model_dump") else measure_selector
@@ -691,7 +732,7 @@ def _eval_exclusion(rule: dict, account_ids: List[str], hh_id: str) -> Finding:
     exempt_selector = _get_rule_exempt(rule)
     matching = []
     for exp in exposures:
-        if exp.security_id == "__residual__":
+        if exp.security_id == "__residual__" or exp.missing_data or exp.security_id.startswith("__unknown_"):
             continue
         sec = sec_map.get(exp.security_id, {})
         if exempt_selector and _eval_selector(exempt_selector, sec):

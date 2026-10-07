@@ -284,7 +284,7 @@
       "inputs": {},
       "assumptions": [],
       "notes": [
-        "No matching holdings found \u2014 vacuous pass"
+        "No matching holdings found \u2014 vacuous pass. Measured value is 0% because no matching direct holdings were found. Verify that look-through data is complete before treating this as passing."
       ],
       "tracked": false,
       "source_quotes": [
@@ -431,7 +431,7 @@
       "inputs": {},
       "assumptions": [],
       "notes": [
-        "No matching holdings found \u2014 vacuous pass"
+        "No matching holdings found \u2014 vacuous pass. Measured value is 0% because no matching direct holdings were found. Verify that look-through data is complete before treating this as passing."
       ],
       "tracked": false,
       "source_quotes": [

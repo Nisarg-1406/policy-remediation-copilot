@@ -246,3 +246,43 @@ def test_cash_like_security_mv():
     for pos in cash_positions:
         assert abs(pos.mv - pos.quantity) < 1.0, \
             f"CASH_USD MV {pos.mv} != quantity {pos.quantity}"
+
+
+def test_has_lookthrough_data():
+    """has_lookthrough_data accurately reports whether a fund has constituent rows."""
+    from copilot.data.load import has_lookthrough_data
+    assert has_lookthrough_data("KUSX") is True
+    assert has_lookthrough_data("NONEXISTENT_FUND") is False
+
+
+def test_missing_lookthrough_triggers_cannot_evaluate(monkeypatch):
+    """When lookthrough=funds and a fund has no constituents, rule returns cannot_evaluate."""
+    from copilot.data import load as data_load
+    from copilot.check.engine import check_household
+
+    # Mock fund_constituents to exclude KUSX
+    orig_fc = data_load.fund_constituents()
+    mock_fc = [r for r in orig_fc if r["fund_id"] != "KUSX"]
+    monkeypatch.setattr(data_load, "fund_constituents", lambda: mock_fc)
+
+    rule = {
+        "rule_id": "R-TEST-LT",
+        "clause_id": "S-TEST",
+        "kind": "exposure_cap",
+        "measure": {"all_of": [{"field": "issuer_id", "op": "eq", "value": "NRVL"}]},
+        "group_by": "issuer",
+        "aggregate": False,
+        "max": {"value": 0.10, "unit": "fraction", "inclusive": True},
+        "lookthrough": "funds",
+        "severity": "hard",
+        "source_quotes": ["Test quote"],
+    }
+    extraction = {
+        "household_id": "HH-PATEL",
+        "clauses": [{"clause_id": "S-TEST", "classification": "rule", "rules": [rule]}],
+    }
+    result = check_household("HH-PATEL", extraction)
+    f = result["findings"][0]
+    assert f["status"] == "cannot_evaluate"
+    assert "KUSX" in f["reason"]
+

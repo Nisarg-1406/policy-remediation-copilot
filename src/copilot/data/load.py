@@ -54,6 +54,7 @@ class Exposure:
     sub_asset_class: str
     mv: float
     source: str  # "direct" | "lookthrough"
+    missing_data: bool = False
 
 
 # ---------------------------------------------------------------------------
@@ -238,6 +239,11 @@ def _is_fund(security_id: str) -> bool:
     )
 
 
+def has_lookthrough_data(security_id: str) -> bool:
+    """Return True if fund_constituents.csv has at least one constituent row for security_id."""
+    return any(r.get("fund_id") == security_id for r in fund_constituents())
+
+
 def _fund_exposures(fund_id: str, fund_mv: float, depth: int = 0) -> List[Dict]:
     """
     Expand a fund into its constituent exposures by weight.
@@ -295,18 +301,33 @@ def compute_exposures(positions: List[Position], lookthrough: str = "none") -> L
         if lookthrough == "funds" and is_fund_pos:
             # Expand fund into constituents
             constituents = _fund_exposures(pos.security_id, pos.mv)
-            for c in constituents:
-                csec = sec_map.get(c["security_id"] or "", {})
+            if not constituents:
+                # Fund has no constituent rows: surface unknown exposure with missing_data=True
                 exposures.append(Exposure(
                     account_id=pos.account_id,
-                    security_id=c["security_id"] or "__residual__",
+                    security_id=f"__unknown_{pos.security_id}__",
                     via_fund=pos.security_id,
-                    issuer_id=csec.get("issuer_id") or None,
-                    asset_class=csec.get("asset_class") or c.get("residual_asset_class") or "unknown",
-                    sub_asset_class=csec.get("sub_asset_class") or "",
-                    mv=c["mv"],
+                    issuer_id=sec.get("issuer_id") or None,
+                    asset_class=sec.get("asset_class") or "unknown",
+                    sub_asset_class=sec.get("sub_asset_class") or "",
+                    mv=pos.mv,
                     source="lookthrough",
+                    missing_data=True,
                 ))
+            else:
+                for c in constituents:
+                    csec = sec_map.get(c["security_id"] or "", {})
+                    exposures.append(Exposure(
+                        account_id=pos.account_id,
+                        security_id=c["security_id"] or "__residual__",
+                        via_fund=pos.security_id,
+                        issuer_id=csec.get("issuer_id") or None,
+                        asset_class=csec.get("asset_class") or c.get("residual_asset_class") or "unknown",
+                        sub_asset_class=csec.get("sub_asset_class") or "",
+                        mv=c["mv"],
+                        source="lookthrough",
+                        missing_data=False,
+                    ))
         else:
             # Direct holding (or no look-through requested)
             exposures.append(Exposure(
@@ -318,6 +339,7 @@ def compute_exposures(positions: List[Position], lookthrough: str = "none") -> L
                 sub_asset_class=sec.get("sub_asset_class", ""),
                 mv=pos.mv,
                 source="direct",
+                missing_data=False,
             ))
 
     return exposures

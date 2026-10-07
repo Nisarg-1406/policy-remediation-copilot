@@ -56,6 +56,7 @@ class Trade:
     security_id: str
     side: str   # "buy" | "sell"
     quantity: float  # shares for equities/funds, face $ for bonds/bills
+    rationale: str = ""
 
 
 # ---------------------------------------------------------------------------
@@ -295,6 +296,10 @@ def _greedy_plan(
         if portfolio_total == 0:
             continue
 
+        rule_id = finding.get("rule_id", "breach")
+        clause_id = finding.get("clause_id", "")
+        clause_ref = f" (clause {clause_id})" if clause_id else ""
+
         if rule_max is None and kind == "exclusion":
             # Exclusion: sell everything matching
             for contrib in contributors_sorted:
@@ -305,7 +310,13 @@ def _greedy_plan(
                 available = remaining_mv.get((aid, sid), 0.0)
                 if available < dust_threshold:
                     continue
-                trades.append(Trade(account_id=aid, security_id=sid, side="sell", quantity=available))
+                trades.append(Trade(
+                    account_id=aid,
+                    security_id=sid,
+                    side="sell",
+                    quantity=available,
+                    rationale=f"Full exit of {sid} to resolve exclusion breach of {rule_id}{clause_ref}",
+                ))
                 remaining_mv[(aid, sid)] = 0.0
         elif rule_max is not None:
             # Exposure cap / allocation range: sell until within limit + margin
@@ -337,7 +348,13 @@ def _greedy_plan(
                         sell_mv = min(excess_mv, available)
                         if sell_mv < dust_threshold:
                             continue
-                        trades.append(Trade(account_id=pos.account_id, security_id=pos.security_id, side="sell", quantity=sell_mv))
+                        trades.append(Trade(
+                            account_id=pos.account_id,
+                            security_id=pos.security_id,
+                            side="sell",
+                            quantity=sell_mv,
+                            rationale=f"Reduces {pos.security_id} to bring {group_by} {grp_key} exposure within limit for {rule_id}{clause_ref}",
+                        ))
                         remaining_mv[(pos.account_id, pos.security_id)] -= sell_mv
                         excess_mv -= sell_mv
             else:
@@ -361,7 +378,13 @@ def _greedy_plan(
                     sell_mv = min(excess_mv, available)
                     if sell_mv < dust_threshold:
                         continue
-                    trades.append(Trade(account_id=aid, security_id=sid, side="sell", quantity=sell_mv))
+                    trades.append(Trade(
+                        account_id=aid,
+                        security_id=sid,
+                        side="sell",
+                        quantity=sell_mv,
+                        rationale=f"Trims {sid} to reduce exposure within policy limit for {rule_id}{clause_ref}",
+                    ))
                     remaining_mv[(aid, sid)] -= sell_mv
                     excess_mv -= sell_mv
 
@@ -377,7 +400,13 @@ def _greedy_plan(
     for aid, proceeds in account_sells.items():
         if proceeds <= dust_threshold:
             continue
-        trades.append(Trade(account_id=aid, security_id=reinvest_sec, side="buy", quantity=proceeds))
+        trades.append(Trade(
+            account_id=aid,
+            security_id=reinvest_sec,
+            side="buy",
+            quantity=proceeds,
+            rationale=f"Reinvests proceeds from breach remediation into approved holding {reinvest_sec}",
+        ))
 
     return trades
 
@@ -674,6 +703,7 @@ def _round_trades(
             security_id=trade.security_id,
             side="sell",
             quantity=qty,
+            rationale=trade.rationale,
         ))
 
     # 2. Process buys next, capped at available account cash
@@ -700,6 +730,7 @@ def _round_trades(
             security_id=trade.security_id,
             side="buy",
             quantity=qty,
+            rationale=trade.rationale,
         ))
 
     return rounded
@@ -764,7 +795,7 @@ def _apply_and_recheck(
     sys.path.insert(0, str(REPO_ROOT / "helpers"))
 
     try:
-        import portfolio as helper_mod
+        import portfolio as helper_mod  # type: ignore
     except ImportError:
         logger.error("Cannot import helpers/portfolio.py — is helpers/ on the path?")
         return False, ["cannot_verify"], []
@@ -932,7 +963,7 @@ def _validate_trades(trades: List[Trade], hh_id: str) -> List[Trade]:
 
     sys.path.insert(0, str(REPO_ROOT / "helpers"))
     try:
-        import portfolio as helper_mod
+        import portfolio as helper_mod  # type: ignore
     except ImportError:
         logger.error("Cannot import helpers/portfolio.py")
         return trades

@@ -25,7 +25,7 @@ Unstructured English (IPS Markdown)
     [2] CHECKER (Deterministic Python)  <── Arithmetic, Look-Through, Holdings
               │ Findings (PASS / BREACH / NEEDS_REVIEW / CANNOT_EVALUATE)
               ▼
-    [3] PLANNER (Linear Program + Simulator) <── Pure Optimization & Helper Simulation
+    [3] PLANNER (Greedy Rebalancer + LP Fallback + Simulator) <── Pure Optimization & Helper Simulation
               │
               ▼
     trades.csv + plan_memo.md + plan_facts.json (Rendered via Jinja2)
@@ -69,28 +69,26 @@ The checker evaluates extracted rules against real-world holdings as of `2026-09
 
 ---
 
-### Stage 3: Remediation Planner (LP Optimizer + Helper Simulator)
+### Stage 3: Remediation Planner (Greedy Solver + LP Fallback + Helper Simulator)
 
-When confirmed breaches occur, the planner calculates the optimal remediation trades:
+When confirmed breaches occur, the planner calculates remediation trades:
 
-#### 1. Mathematical LP Formulation
-- **Decision Variables:**
-  - $s_{a,i} \ge 0$: Dollar amount of security $i$ to sell in account $a$.
-  - $b_{a,j} \ge 0$: Dollar amount of approved security $j$ to buy in account $a$.
-- **Objective Function (Minimize Turnover):**
-  $$\min \sum_{a,i} s_{a,i} + \sum_{a,j} b_{a,j}$$
-- **Hard Constraints:**
-  1. *Cure Breaches:* For any over-concentrated issuer, post-trade exposure $\le \text{Limit} - \epsilon$ (5 bps buffer).
-  2. *Cash Balance Feasibility:* In every account, $\text{Cash}_{\text{initial}} + \sum_i s_{a,i} - \sum_j b_{a,j} \ge 0$.
-  3. *Preserve Passing Rules:* Total equity and fixed income must remain within IPS bands post-trade.
-  4. *Unmanaged Account Protection:* Accounts with `managed_by_firm: false` are excluded from decision variables.
-  
-#### 2. Discrete Lot Rounding
+#### 1. Primary Solver (Greedy Heuristic)
+- For each confirmed breach, the solver identifies the highest-contributing position and generates sell orders to bring exposure within the limit.
+- Reinvests proceeds per account into approved core holdings from `approved_list.csv`.
+
+#### 2. Fallback Solver (SciPy LP)
+- If greedy trades fail re-check (e.g. complex multi-constraint sleeves), a continuous linear program (`scipy.optimize.linprog` with HiGHS) is invoked:
+  - **Decision Variables:** $s_{a,i} \ge 0$ (sells), $b_{a,j} \ge 0$ (buys).
+  - **Objective:** $\min \sum_{a,i} s_{a,i} + \sum_{a,j} b_{a,j}$ (minimize turnover).
+  - **Constraints:** Cure breaches, preserve cash non-negativity, maintain passing sleeves, and protect unmanaged accounts.
+
+#### 3. Discrete Lot Rounding
 - Equities and mutual funds are rounded to whole integer shares: $\lfloor s_{a,i} / P_i \rfloor$.
 - Bonds and Treasury bills trade exclusively in integer multiples of **$1,000 face value**.
 - Buy quantities are adjusted downwards if necessary to guarantee cash non-negativity.
 
-#### 3. Simulation & Re-Check Loop (`helpers/portfolio.py`)
+#### 4. Simulation & Re-Check Loop (`helpers/portfolio.py`)
 - Trades are simulated using the canonical clearinghouse helper (`apply_trades`).
 - The entire checker re-evaluates the simulated portfolio.
 - If any breach remains or a new breach was created by discrete rounding, the optimizer adjusts constraints and re-solves (iterates up to 5 times).

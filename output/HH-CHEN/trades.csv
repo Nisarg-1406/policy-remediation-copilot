@@ -1,5 +1,4 @@
 account_id,security_id,side,quantity
-CHEN-DC,CRAG,buy,186
-CHEN-DC,HLDA,sell,98
-CHEN-TR,CRAG,buy,178
-CHEN-TR,NRVL,sell,76
+CHEN-DC,B-HALDEN-2031,sell,21000
+CHEN-TR,KUSX,sell,1306
+CHEN-TR,NRVL,sell,87

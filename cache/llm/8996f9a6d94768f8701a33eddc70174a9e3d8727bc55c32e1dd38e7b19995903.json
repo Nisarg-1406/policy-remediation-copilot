@@ -1,0 +1,48 @@
+{
+  "response": {
+    "clauses": [
+      {
+        "clause_id": "S003",
+        "segment_ids": [
+          "S003"
+        ],
+        "classification": "needs_review",
+        "not_constraint_type": null,
+        "rationale": "Requires a single-issuer concentration limit, but 'reasonable' is undefined and no numeric threshold is provided.",
+        "injection_suspected": false,
+        "rules": [],
+        "review": {
+          "reason": "missing_threshold",
+          "question": "What maximum concentration should apply to any single issuer (as a fraction of total portfolio)? Example answers: 0.05 (5%), 0.08 (8%), or 0.10 (10%).",
+          "assumption": null
+        }
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 171,
+    "prompt_tokens": 4956,
+    "total_tokens": 5127,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 3840,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "cost_usd": 0.00082095,
+  "latency_s": 3.669765083002858,
+  "model": "gpt-5.4-nano",
+  "cache_hit": false,
+  "cache_key": "8996f9a6d94768f8701a33eddc70174a9e3d8727bc55c32e1dd38e7b19995903",
+  "prompt_version": "1.0",
+  "schema_version": "1.0"
+}

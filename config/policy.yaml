@@ -25,3 +25,8 @@ budget_warn_usd: 1.00
 
 # Tax tie-break: prefer IRA/Roth accounts when trades are equivalent
 prefer_tax_advantaged: true
+
+# Fossil-fuel exclusion threshold (placeholder — to be configured following PM review)
+# When set (e.g. 0.10 for 10% revenue threshold), checker evaluates against this boundary.
+fossil_revenue_threshold: null
+

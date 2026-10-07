@@ -293,7 +293,7 @@ async def call_llm(
     timeout_s = limits.get("per_call_timeout_s", 120)
     max_retries = limits.get("max_retries", 3)
 
-    import openai
+    import openai  # type: ignore
 
     async with openai.AsyncOpenAI(api_key=_get_api_key()) as client:
         async with sem:

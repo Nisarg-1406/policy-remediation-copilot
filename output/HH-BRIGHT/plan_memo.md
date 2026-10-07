@@ -46,12 +46,12 @@ None.
 
 | Account | Security | Side | Quantity | Rationale |
 |---------|----------|------|----------|-----------|
-| BWF-MAIN | PTRX | sell | 1,105 | Addresses confirmed breach |
-| BWF-MAIN | SVRF | sell | 5,063 | Addresses confirmed breach |
-| BWF-MAIN | B-PETREX-2030 | sell | 89,000 | Addresses confirmed breach |
-| BWF-MAIN | SLTP | sell | 1,265 | Addresses confirmed breach |
-| BWF-MAIN | CNDR | sell | 2,925 | Addresses confirmed breach |
-| BWF-MAIN | CRAG | buy | 4,908 | Addresses confirmed breach |
+| BWF-MAIN | PTRX | sell | 1,105 | Trims PTRX to reduce exposure within policy limit for R-S036 (clause S036) |
+| BWF-MAIN | SVRF | sell | 5,063 | Trims SVRF to reduce exposure within policy limit for R-S036 (clause S036) |
+| BWF-MAIN | B-PETREX-2030 | sell | 89,000 | Trims B-PETREX-2030 to reduce exposure within policy limit for R-S036 (clause S036) |
+| BWF-MAIN | SLTP | sell | 1,265 | Trims SLTP to reduce exposure within policy limit for R-S036 (clause S036) |
+| BWF-MAIN | CNDR | sell | 2,925 | Trims CNDR to reduce exposure within policy limit for R-S036 (clause S036) |
+| BWF-MAIN | CRAG | buy | 4,908 | Reinvests proceeds from breach remediation into approved holding CRAG |
 
 **Trade rationale:** All sells remove confirmed breaches. Buys redeploy proceeds to maintain other allocation constraints. The simulator verified that after these trades, no confirmed breach remains and no new breach is created. See the before/after table below.
 
@@ -60,7 +60,12 @@ None.
 
 ## 3. Left Alone
 
-Nothing was deliberately left untouched beyond what was already passing.
+| Item | Reason |
+|------|--------|
+| R-S024 (S024) | Passed — verified within policy limits (measured: 60.90%) |
+| R-S025 (S025) | Passed — verified within policy limits (measured: 20.85%) |
+| R-S026 (S026) | Passed — verified within policy limits (measured: 7.58%) |
+| R-S030 (S030) | Passed — verified within policy limits |
 
 ---
 

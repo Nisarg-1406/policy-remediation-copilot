@@ -27,7 +27,18 @@ No trades proposed. The portfolio is currently within policy constraints.
 
 ## 3. Left Alone
 
-Nothing was deliberately left untouched beyond what was already passing.
+| Item | Reason |
+|------|--------|
+| R-S035-stock_allocation_band (S035) | Passed — verified within policy limits (measured: 40.69%) |
+| R-S037-stock_allocation_band (S037) | Passed — verified within policy limits (measured: 40.69%) |
+| R-S040-bonds_min_allocation (S040) | Passed — verified within policy limits (measured: 55.31%) |
+| R-S040-bonds_investment_grade_floor (S040) | Passed — verified within policy limits (measured: 0.00%) |
+| R-S040-bbb_cap_within_bond_portfolio (S040) | Passed — verified within policy limits (measured: 0.00%) |
+| R-S041-bonds_min_allocation (S041) | Passed — verified within policy limits (measured: 55.31%) |
+| R-S042-bonds_investment_grade_floor (S042) | Passed — verified within policy limits (measured: 0.00%) |
+| R-S043-bbb_cap_within_bond_portfolio (S043) | Passed — verified within policy limits (measured: 0.00%) |
+| R-S045-single_stock_cap (S045) | Passed — verified within policy limits |
+| R-S051-cash_equivalents_definition (S051) | Passed — verified within policy limits (measured: 0.00%) |
 
 ---
 

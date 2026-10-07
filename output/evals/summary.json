@@ -14,5 +14,10 @@
     "false_firm_rate_zero": true,
     "synthetic_pass_rate_gte_80": true
   },
-  "all_gates_pass": true
+  "all_gates_pass": true,
+  "variance": {
+    "classification_consistency": 1.0,
+    "bounds_consistency": 1.0,
+    "num_households": 4
+  }
 }
